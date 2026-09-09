@@ -17,7 +17,7 @@ if ("serviceWorker" in navigator) {
 
 const root = createRoot(document.getElementById("root")!);
 root.render(
-  <div className="flex min-h-dvh items-center justify-center font-semibold text-rose-500">
+  <div className="flex min-h-dvh items-center justify-center font-semibold text-blue-700">
     Loading vocabulary…
   </div>,
 );

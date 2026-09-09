@@ -14,7 +14,7 @@ export function Result() {
     return (
       <div className="space-y-4 pt-10 text-center">
         <p>ยังไม่มีผลล่าสุด</p>
-        <Link to="/" className="font-bold text-rose-600">
+        <Link to="/" className="font-bold text-blue-600">
           กลับหน้าแรก
         </Link>
       </div>
@@ -25,18 +25,17 @@ export function Result() {
 
   return (
     <div className="space-y-4">
-      <h1 className="font-game-display text-4xl font-black text-rose-600">เก่งมาก! 🎉</h1>
-      <p className="text-sm text-rose-400">เก็บคำศัพท์ได้อีกชุดแล้ว ภูมิใจในตัวเองได้เลย</p>
+      <h1 className="text-4xl font-black">🎉 Great Job!</h1>
       <section className="grid grid-cols-2 gap-3">
-        <Card label="คะแนน" value={String(result.score)} />
-        <Card label="ถูก" value={`${result.correct} / ${result.total}`} />
-        <Card label="ความแม่นยำ" value={`${result.accuracy}%`} />
-        <Card label="เวลาเฉลี่ย" value={`${(result.averageTimeMs / 1000).toFixed(1)} วินาที`} />
-        <Card label="สตรีคยาวสุด" value={String(result.bestStreak)} />
-        <Card label="เลเวล" value={String(result.level)} />
+        <Card label="Score" value={String(result.score)} />
+        <Card label="Correct" value={`${result.correct} / ${result.total}`} />
+        <Card label="Accuracy" value={`${result.accuracy}%`} />
+        <Card label="Avg Time" value={`${(result.averageTimeMs / 1000).toFixed(1)} sec`} />
+        <Card label="Best Streak" value={String(result.bestStreak)} />
+        <Card label="Level" value={String(result.level)} />
       </section>
       <section>
-        <h2 className="mb-2 font-bold text-rose-700">คำที่อยากทบทวนอีกนิด</h2>
+        <h2 className="mb-2 font-bold">Words to Review · ควรทบทวน</h2>
         {wrong.length === 0 ? (
           <p className="text-sm text-slate-500">ไม่มีคำผิดในรอบนี้</p>
         ) : (
@@ -44,7 +43,7 @@ export function Result() {
             {wrong.map((item) => {
               const word = words.find((entry) => entry.id === item.question.wordId);
               return (
-                <li key={item.question.id} className="ui-card p-4">
+                <li key={item.question.id} className="rounded-3xl bg-white/80 p-4 dark:bg-white/10">
                   <Link to={`/practice?word=${item.question.wordId}`} className="font-black">
                     {item.question.targetWord}
                   </Link>
@@ -62,9 +61,9 @@ export function Result() {
       </section>
       <Link
         to="/"
-        className="ui-go flex min-h-12 items-center justify-center"
+        className="flex min-h-12 items-center justify-center rounded-3xl bg-blue-600 font-bold text-white"
       >
-        Home · กลับบ้านนุ่ม ๆ
+        Home
       </Link>
     </div>
   );
@@ -72,7 +71,7 @@ export function Result() {
 
 function Card({ label, value }: { label: string; value: string }) {
   return (
-    <div className="ui-card p-4">
+    <div className="rounded-3xl bg-white/80 p-4 shadow dark:bg-white/10">
       <p className="text-xs text-slate-500">{label}</p>
       <p className="text-2xl font-black">{value}</p>
     </div>

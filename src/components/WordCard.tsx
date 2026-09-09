@@ -10,10 +10,10 @@ type Props = {
 
 export function WordCard({ word, onSpeak, extra }: Props) {
   return (
-    <article className="ui-card p-5">
-      <h2 className="text-3xl font-black text-slate-800 dark:text-white">{word.word}</h2>
-      <p className="mt-1 text-slate-500">{word.ipa}</p>
-      <p className="text-rose-500">{word.phoneticThai}</p>
+    <article className="rounded-3xl bg-white/85 p-5 shadow-lg dark:bg-white/10">
+      <h2 className="text-3xl font-black">{word.word}</h2>
+      <p className="mt-1 text-slate-500 dark:text-slate-300">{word.ipa}</p>
+      <p className="text-blue-500">{word.phoneticThai}</p>
       <p className="mt-3 text-lg font-semibold">{word.meaningTh}</p>
       <p className="text-sm text-slate-500 dark:text-slate-300">{word.meaningEn}</p>
       <p className="mt-2 text-xs uppercase tracking-wide text-slate-400">

@@ -26,14 +26,14 @@ export function AnswerButton({ label, letter, selected, hidden, state = "idle", 
           }
         : selected
           ? {
-              button: "border-pink-400 bg-pink-50/90 shadow-[0_4px_0_0_#f472b6] ring-4 ring-pink-400/15",
-              badge: "bg-pink-400 text-white shadow-sm",
-              text: "text-pink-950",
+              button: "border-blue-600 bg-blue-50/90 shadow-[0_4px_0_0_#2563EB] ring-4 ring-blue-500/10",
+              badge: "bg-blue-600 text-white shadow-sm",
+              text: "text-blue-950",
             }
           : {
-              button: "border-pink-200 bg-white shadow-[0_4px_0_0_#fecdd3]",
-              badge: "bg-rose-100 text-rose-500",
-              text: "text-rose-800",
+              button: "border-slate-200 bg-white shadow-[0_4px_0_0_rgba(0,0,0,0.12)]",
+              badge: "bg-slate-100 text-slate-600",
+              text: "text-slate-700",
             };
 
   return (
@@ -54,7 +54,7 @@ export function AnswerButton({ label, letter, selected, hidden, state = "idle", 
         {label}
       </span>
       {selected && state === "idle" ? (
-        <span className="mt-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-pink-400 text-white" aria-hidden>
+        <span className="mt-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white" aria-hidden>
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
             <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
