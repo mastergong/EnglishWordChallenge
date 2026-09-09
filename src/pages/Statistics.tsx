@@ -4,7 +4,7 @@ import { useStatistics } from "../hooks/useStatistics";
 import { CEFR_LEVELS } from "../types/word";
 
 export function StatisticsPage() {
-  const { stats, accuracy, cefrProgress, weakWords, strongWords } = useStatistics();
+  const { stats, accuracy, playByLevel, weakWords, strongWords } = useStatistics();
 
   return (
     <div className="space-y-5">
@@ -27,10 +27,15 @@ export function StatisticsPage() {
       )}
 
       <section className="space-y-3 rounded-3xl bg-white/80 p-4 dark:bg-white/10">
-        <h2 className="font-bold">CEFR progress</h2>
-        {CEFR_LEVELS.map((level) => (
-          <ProgressBar key={level} label={`${level}    ${cefrProgress[level]}%`} value={cefrProgress[level]} />
-        ))}
+        <h2 className="font-bold">ความก้าวหน้าตามเลเวล</h2>
+        <p className="text-xs text-slate-500">คิดจากเกมที่เลือกเลเวลนั้น · Daily / Adaptive ไม่นับ</p>
+        {CEFR_LEVELS.map((level) => {
+          const row = playByLevel[level];
+          const label = row.total
+            ? `${level}    ${row.accuracy}% · ${row.total} ข้อ`
+            : `${level}    ยังไม่เล่น`;
+          return <ProgressBar key={level} label={label} value={row.accuracy} />;
+        })}
       </section>
 
       <section>

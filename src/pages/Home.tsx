@@ -12,7 +12,7 @@ import type { GameMode } from "../types/game";
 
 export function Home() {
   const navigate = useNavigate();
-  const { stats, accuracy, accuracyByLevel, weakWords } = useStatistics();
+  const { stats, accuracy, playByLevel, weakWords } = useStatistics();
   const { todayState, streak } = useDailyChallenge();
   const settings = loadSettings();
   const [level, setLevel] = useState<CEFRLevel | "adaptive">("A1");
@@ -74,11 +74,12 @@ export function Home() {
       </Link>
 
       <section className="rounded-3xl bg-white/80 p-4 shadow dark:bg-white/10">
-        <h2 className="mb-3 font-bold">เลือกเลเวล</h2>
+        <h2 className="mb-1 font-bold">เลือกเลเวล</h2>
+        <p className="mb-3 text-xs text-slate-500">ปลดเลเวลถัดไปเมื่อเล่นเลเวลก่อนหน้าอย่างน้อย 10 ข้อ และแม่นตามเกณฑ์</p>
         <LevelSelector
           value={level === "adaptive" ? "A1" : level}
           onChange={setLevel}
-          accuracyByLevel={accuracyByLevel}
+          playByLevel={playByLevel}
           lockEnabled={settings.levelLock}
         />
       </section>

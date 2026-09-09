@@ -3,6 +3,7 @@ import type { CEFRLevel } from "../types/word";
 import { loadStatistics, loadWordProgress } from "../utils/storage";
 import { loadWords } from "../utils/loadWords";
 import { CEFR_LEVELS } from "../types/word";
+import { playStatsFromHistory } from "../utils/levels";
 
 export function useStatistics() {
   const stats = loadStatistics();
@@ -26,18 +27,10 @@ export function useStatistics() {
     {} as Record<CEFRLevel, number>,
   );
 
+  const playByLevel = playStatsFromHistory(stats.gameHistory);
   const accuracyByLevel = CEFR_LEVELS.reduce(
     (acc, level) => {
-      const levelWords = words.filter((word) => word.level === level);
-      let seen = 0;
-      let correct = 0;
-      for (const word of levelWords) {
-        const item = progress[String(word.id)];
-        if (!item?.seenCount) continue;
-        seen += item.seenCount;
-        correct += item.correctCount;
-      }
-      acc[level] = seen ? Math.round((correct / seen) * 100) : 0;
+      acc[level] = playByLevel[level].accuracy;
       return acc;
     },
     {} as Record<CEFRLevel, number>,
@@ -53,5 +46,5 @@ export function useStatistics() {
     .filter((item) => (item.progress?.mastery ?? 0) >= 86)
     .sort((a, b) => (b.progress?.mastery ?? 0) - (a.progress?.mastery ?? 0));
 
-  return { stats, progress, accuracy, cefrProgress, accuracyByLevel, weakWords, strongWords, words };
+  return { stats, progress, accuracy, cefrProgress, playByLevel, accuracyByLevel, weakWords, strongWords, words };
 }

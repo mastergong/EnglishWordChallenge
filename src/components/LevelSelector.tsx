@@ -1,19 +1,19 @@
 import type { CEFRLevel } from "../types/word";
 import { CEFR_LEVELS } from "../types/word";
-import { isLevelUnlocked, levelMeta } from "../utils/levels";
+import { isLevelUnlocked, levelMeta, type LevelPlayStat } from "../utils/levels";
 
 type Props = {
   value: CEFRLevel | "adaptive";
   onChange: (level: CEFRLevel | "adaptive") => void;
-  accuracyByLevel: Partial<Record<CEFRLevel, number>>;
+  playByLevel: Record<CEFRLevel, LevelPlayStat>;
   lockEnabled: boolean;
 };
 
-export function LevelSelector({ value, onChange, accuracyByLevel, lockEnabled }: Props) {
+export function LevelSelector({ value, onChange, playByLevel, lockEnabled }: Props) {
   return (
     <div className="grid grid-cols-3 gap-2">
       {CEFR_LEVELS.map((level) => {
-        const unlocked = isLevelUnlocked(level, accuracyByLevel, lockEnabled);
+        const unlocked = isLevelUnlocked(level, playByLevel, lockEnabled);
         const meta = levelMeta(level);
         return (
           <button
@@ -27,7 +27,7 @@ export function LevelSelector({ value, onChange, accuracyByLevel, lockEnabled }:
                 : "border-white/50 bg-white/70 dark:bg-white/10"
             } disabled:opacity-40`}
             aria-pressed={value === level}
-            aria-label={`${level} ${meta.en}`}
+            aria-label={unlocked ? `${level} ${meta.en}` : `${level} ยังล็อก ต้องเล่นเลเวลก่อนหน้าให้แม่นพอ`}
           >
             {level}
             <span className="mt-1 block text-[11px] font-medium opacity-80">{meta.th}</span>
