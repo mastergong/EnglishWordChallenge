@@ -8,10 +8,10 @@ export function Layout({ children }: { children: ReactNode }) {
     return <div className="h-dvh overflow-hidden">{children}</div>;
   }
   return (
-    <div className="mx-auto min-h-dvh w-full min-w-0 max-w-lg overflow-x-hidden px-4 pb-24 pt-6">
+    <div className="mx-auto min-h-dvh w-full min-w-0 max-w-lg overflow-x-hidden px-4 pb-[max(6.5rem,calc(5.25rem+env(safe-area-inset-bottom)))] pt-[max(1.5rem,env(safe-area-inset-top))]">
       {children}
       <nav
-        className="fixed bottom-0 left-0 right-0 z-20 border-t border-white/40 bg-white/85 backdrop-blur dark:bg-slate-950/80"
+        className="fixed bottom-0 left-0 right-0 z-20 border-t border-white/40 bg-white/85 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur dark:bg-slate-950/80"
         aria-label="Main"
       >
         <div className="mx-auto grid max-w-lg grid-cols-6 gap-0.5 px-1 py-2 text-[10px] font-semibold">

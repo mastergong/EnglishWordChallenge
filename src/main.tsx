@@ -9,6 +9,12 @@ import { ensureWords } from "./utils/loadWords";
 
 applyTheme(loadSettings().theme);
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    void navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`);
+  });
+}
+
 const root = createRoot(document.getElementById("root")!);
 root.render(
   <div className="flex min-h-dvh items-center justify-center font-semibold text-indigo-700">

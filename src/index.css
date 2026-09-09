@@ -18,6 +18,11 @@ html,
 body,
 #root {
   min-height: 100%;
+  min-height: 100dvh;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -27,7 +32,13 @@ body {
     radial-gradient(900px 500px at 110% 0%, #67e8f955, transparent 45%),
     var(--bg);
   color: var(--ink);
-  font-family: "Segoe UI", "Noto Sans Thai", "Sarabun", sans-serif;
+  font-family: "Prompt", "Noto Sans Thai", "Sarabun", "Segoe UI", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
 }
 
 button:focus-visible,

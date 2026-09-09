@@ -137,7 +137,7 @@ function GamePlay() {
       <div className="game-blob pointer-events-none absolute -right-20 top-1/3 h-64 w-64 rounded-full bg-purple-300/35" />
       <div className="game-blob pointer-events-none absolute -bottom-10 left-10 h-64 w-64 rounded-full bg-sky-200/50" />
 
-      <header className="relative z-10 shrink-0 px-5 pb-2 pt-4">
+      <header className="relative z-10 shrink-0 px-5 pb-2 pt-[max(1rem,env(safe-area-inset-top))]">
         <div className="mb-3 flex items-center justify-between gap-3">
           <Link
             to="/"
@@ -241,7 +241,7 @@ function GamePlay() {
         ) : null}
       </main>
 
-      <footer className="relative z-10 shrink-0 border-t border-slate-200/70 bg-white/90 px-4 pb-3 pt-2 shadow-2xl backdrop-blur-md">
+      <footer className="relative z-10 shrink-0 border-t border-slate-200/70 bg-white/90 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 shadow-2xl backdrop-blur-md">
         <div className="mb-2 flex items-center justify-center gap-3">
           <button
             type="button"

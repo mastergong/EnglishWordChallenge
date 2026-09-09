@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LevelSelector } from "../components/LevelSelector";
 import { ProgressBar } from "../components/ProgressBar";
+import { InstallHint } from "../components/InstallHint";
 import { useStatistics } from "../hooks/useStatistics";
 import { useDailyChallenge } from "../hooks/useDailyChallenge";
 import { loadSettings, saveSettings } from "../utils/storage";
@@ -51,6 +52,8 @@ export function Home() {
           ฝึกศัพท์อังกฤษให้เก่งขึ้น วันละไม่กี่นาที
         </p>
       </header>
+
+      <InstallHint />
 
       <section className="grid grid-cols-2 gap-3">
         <Stat label="Daily Streak" value={`🔥 ${streak.current}`} />
