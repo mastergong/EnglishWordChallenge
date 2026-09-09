@@ -1,0 +1,500 @@
+able|adjective|Daily Life|สามารถ|having the power to do something|ˈeɪbəl|เอบอะล|During today's lesson, are you able to help?|ระหว่างบทเรียนวันนี้ คุณช่วยได้ไหม
+actor|noun|Culture|นักแสดงชาย|someone who performs in films, plays, or TV shows|ˈæktər|แอคทอะร|In our morning practice, the actor gave a brilliant performance on stage.|ในการฝึกช่วงเช้าของเรา นักแสดงคนนั้นให้การแสดงที่ยอดเยี่ยมบนเวที
+actress|noun|Culture|นักแสดงหญิง|a female person who performs in films, plays, or TV shows|ˈæktres|แอคทรเอส|For a simple example, she is a famous actress known for her roles in many films.|สำหรับตัวอย่างง่าย ๆ เธอเป็นนักแสดงหญิงที่มีชื่อเสียงซึ่งเป็นที่รู้จักจากบทบาทในภาพยนตร์หลายเรื่อง
+actually|adverb|Daily Life|จริงๆ แล้ว|in fact|ˈæˌkʧuəli|แอคชอูอะลอี|In everyday conversation, actually, I don't like coffee.|ในการสนทนาในชีวิตประจำวัน จริงๆ แล้ว ฉันไม่ชอบกาแฟ
+add|verb|Daily Life|เพิ่ม|to put something together with something else to increase the total|æd|แอด|While talking with a friend, please add some sugar to the coffee.|ขณะคุยกับเพื่อน กรุณาเติมน้ำตาลลงในกาแฟด้วย
+afternoon|noun|Daily Life|บ่าย|time between noon and evening|ˌæftərˈnun|แอฟทอะรนอูน|During today's lesson, see you this afternoon.|ระหว่างบทเรียนวันนี้ เจอกันบ่ายนี้
+again|adverb|Daily Life|อีกครั้ง|one more time; returning to a previous state|əˈɡen|อะกเอน|In our morning practice, can you say that again? I didn't hear you.|ในการฝึกช่วงเช้าของเรา คุณช่วยพูดอีกครั้งได้ไหม? ฉันไม่ได้ยิน
+age|noun|Daily Life|อายุ|how old someone is|eɪʤ|เอจ|For a simple example, what's your age?|สำหรับตัวอย่างง่าย ๆ คุณอายุเท่าไหร่
+ago|adverb|Daily Life|ที่แล้ว|in the past|əˈgoʊ|อะกโอ|In everyday conversation, I met him two years ago.|ในการสนทนาในชีวิตประจำวัน ฉันเจอเขาเมื่อสองปีที่แล้ว
+airport|noun|Travel|สนามบิน|a location where planes take off and land|ˈɛrˌpɔrt|เอรพออรท|While talking with a friend, the airport is far from the city.|ขณะคุยกับเพื่อน สนามบินอยู่ไกลจากในเมือง
+already|adverb|Daily Life|แล้ว|before now|ɔˈrɛdi|ออรเอดอี|During today's lesson, I already finished my work.|ระหว่างบทเรียนวันนี้ ฉันทำงานเสร็จแล้ว
+also|adverb|Daily Life|ด้วย|too, as well|ˈɔlsoʊ|ออลสโอ|In our morning practice, I also like pizza.|ในการฝึกช่วงเช้าของเรา ฉันก็ชอบพิซซ่าด้วย
+always|adverb|Daily Life|เสมอ|every time|ˈɔlˌweɪz|ออลวเอซ|For a simple example, I always brush my teeth.|สำหรับตัวอย่างง่าย ๆ ฉันแปรงฟันเสมอ
+amount|noun|Finance|จำนวนเงิน|a quantity of money|əˈmaʊnt|อะมเอานท|In everyday conversation, what is the total amount?|ในการสนทนาในชีวิตประจำวัน ยอดรวมเท่าไร
+animal|noun|Daily Life|สัตว์|a living thing like a dog or cat|ˈænəməl|แอนอะมอะล|Our class practiced the word "animal" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "animal" ในบทสนทนาสั้น ๆ
+anyway|adverb|Daily Life|ยังไงก็ตาม|despite what was said|ˈɛniˌweɪ|เอนอีวเอ|During today's lesson, it's late, but let's go anyway.|ระหว่างบทเรียนวันนี้ สายแล้ว แต่ไปกันเถอะ
+app|noun|Technology|แอป|a software application for mobile devices|æp|แอพ|In our morning practice, I downloaded a new app.|ในการฝึกช่วงเช้าของเรา ฉันดาวน์โหลดแอปใหม่
+arm|noun|Daily Life|แขน|the part of the body between shoulder and hand|ɑrm|อารม|For a simple example, my arm is strong.|สำหรับตัวอย่างง่าย ๆ แขนของฉันแข็งแรง
+art|noun|Culture|ศิลปะ|creative works such as paintings, drawings, and sculptures|ɑːrt|อารท|In everyday conversation, she loves modern art and visits galleries every weekend.|ในการสนทนาในชีวิตประจำวัน เธอชอบศิลปะสมัยใหม่และไปเยี่ยมชมหอศิลป์ทุกสุดสัปดาห์
+ask|verb|Daily Life|ถาม|to say something to get information|æsk|แอสค|While talking with a friend, can I ask you something?|ขณะคุยกับเพื่อน ขอถามอะไรหน่อยได้ไหม
+aunt|noun|Family|ป้า/น้า|the sister of one's mother or father|ænt|แอนท|During today's lesson, my aunt always brings gifts when she visits.|ระหว่างบทเรียนวันนี้ ป้าของฉันมักจะนำของขวัญมาเมื่อมาเยี่ยม
+baby|noun|Family|ทารก|very young child|ˈbeɪbi|บเอบอี|In our morning practice, the baby is sleeping.|ในการฝึกช่วงเช้าของเรา ทารกกำลังนอน
+back|noun|Daily Life|หลัง|the part behind something|bæk|บแอค|For a simple example, sit at the back of the room.|สำหรับตัวอย่างง่าย ๆ นั่งด้านหลังของห้อง
+bad|adjective|Daily Life|แย่|poor quality|bæd|บแอด|In everyday conversation, bad weather.|ในการสนทนาในชีวิตประจำวัน อากาศแย่
+bag|noun|Daily Life|กระเป๋า|a container for carrying things|bæg|บแอก|While talking with a friend, her bag is on the chair.|ขณะคุยกับเพื่อน กระเป๋าของเธออยู่บนเก้าอี้
+banana|noun|Food|กล้วย|a long curved yellow fruit|bəˈnænə|บอะนแอนอะ|Our class practiced the word "banana" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "banana" ในบทสนทนาสั้น ๆ
+band|noun|Culture|วงดนตรี|a group of musicians who play together|bænd|บแอนด|In our morning practice, the band played loud music at the concert.|ในการฝึกช่วงเช้าของเรา วงดนตรีเล่นเพลงดังมากในคอนเสิร์ต
+bath|noun|Daily Life|การอาบน้ำ|an act of washing the body in a bathtub filled with water|bæθ|บแอธ|For a simple example, she takes a bath every evening before bed.|สำหรับตัวอย่างง่าย ๆ เธออาบน้ำทุกเย็นก่อนนอน
+bathroom|noun|Home|ห้องน้ำ|a room with a toilet and a place to wash|ˈbæθˌrum|บแอธรอูม|In everyday conversation, the bathroom is upstairs.|ในการสนทนาในชีวิตประจำวัน ห้องน้ำอยู่ชั้นบน
+become|verb|Daily Life|กลายเป็น|to start to be something; to change into a new state|bɪˈkʌm|บอิคอะม|While talking with a friend, he wants to become a doctor when he grows up.|ขณะคุยกับเพื่อน เขาอยากเป็นหมอเมื่อโตขึ้น
+bed|noun|Home|เตียง|a piece of furniture for sleeping|bɛd|บเอด|During today's lesson, the baby is in the bed.|ระหว่างบทเรียนวันนี้ ทารกนอนอยู่บนเตียง
+bedroom|noun|Home|ห้องนอน|a room for sleeping|ˈbɛˌdrum|บเอดรอูม|In our morning practice, my bedroom has a big window.|ในการฝึกช่วงเช้าของเรา ห้องนอนของฉันมีหน้าต่างใหญ่
+beef|noun|Food|เนื้อวัว|meat from cattle|biːf|บอีฟ|For a simple example, the beef steak was well-cooked.|สำหรับตัวอย่างง่าย ๆ สเต็กเนื้อสุกดี
+beer|noun|Food|เบียร์|an alcoholic drink made from grain, hops, and water|bɪər|บเอียร|In everyday conversation, he ordered a cold beer at the pub.|ในการสนทนาในชีวิตประจำวัน เขาสั่งเบียร์เย็นที่ผับ
+beginning|noun|Daily Life|จุดเริ่มต้น|the point in time or place at which something starts|bɪˈɡɪnɪŋ|บอิกอินอิง|While talking with a friend, the beginning of the movie was very exciting.|ขณะคุยกับเพื่อน ตอนต้นของภาพยนตร์นั้นน่าตื่นเต้นมาก
+best|adjective|Daily Life|ที่ดีที่สุด|of the highest quality or most suitable|best|บเอสท|During today's lesson, this is the best pizza I have ever eaten.|ระหว่างบทเรียนวันนี้ นี่คือพิซซ่าที่ดีที่สุดที่ฉันเคยกิน
+better|adjective|Daily Life|ดีกว่า|of a higher quality or more suitable than something else|ˈbetər|บเอทอะร|In our morning practice, this new phone is much better than my old one.|ในการฝึกช่วงเช้าของเรา โทรศัพท์เครื่องใหม่นี้ดีกว่าเครื่องเก่าของฉันมาก
+big|adjective|Daily Life|ใหญ่|large size|bɪg|บอิก|For a simple example, big house.|สำหรับตัวอย่างง่าย ๆ บ้านใหญ่
+bill|noun|Finance|ธนบัตร|a piece of paper money; also a statement of charges owed|bɪl|บอิล|In everyday conversation, she paid with a twenty-dollar bill.|ในการสนทนาในชีวิตประจำวัน เธอจ่ายด้วยธนบัตรยี่สิบดอลลาร์
+bird|noun|Nature|นก|animal that can fly|bərd|บอะรด|Our class practiced the word "bird" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "bird" ในบทสนทนาสั้น ๆ
+black|adjective|Daily Life|ดำ|darkest color|blæk|บลแอค|During today's lesson, black cat.|ระหว่างบทเรียนวันนี้ แมวสีดำ
+blog|noun|Technology|บล็อก|a website where someone regularly writes articles or opinions|blɒɡ|บลออก|In our morning practice, she writes a travel blog about her adventures around the world.|ในการฝึกช่วงเช้าของเรา เธอเขียนบล็อกท่องเที่ยวเกี่ยวกับการผจญภัยของเธอทั่วโลก
+body|noun|Daily Life|ร่างกาย|the physical part of a person|ˈbɑdi|บอาดอี|For a simple example, take care of your body.|สำหรับตัวอย่างง่าย ๆ ดูแลร่างกายของคุณ
+book|noun|School|หนังสือ|a set of printed pages bound together|bʊk|บอุค|In everyday conversation, this book is interesting.|ในการสนทนาในชีวิตประจำวัน หนังสือเล่มนี้น่าสนใจ
+boot|noun|Shopping|รองเท้าบูท|a sturdy shoe that covers the foot and ankle|buːt|บอูท|Our class practiced the word "boot" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "boot" ในบทสนทนาสั้น ๆ
+bored|adjective|Emotions|เบื่อ|feeling uninterested because there is nothing exciting to do|bɔːrd|บออรด|During today's lesson, the children were bored on the long car journey.|ระหว่างบทเรียนวันนี้ เด็กๆ รู้สึกเบื่อในการเดินทางด้วยรถยนต์ที่ยาวนาน
+bottom|noun|Daily Life|ด้านล่าง|lowest part|ˈbɑtəm|บอาทอะม|In our morning practice, look at the bottom.|ในการฝึกช่วงเช้าของเรา ดูด้านล่าง
+box|noun|Daily Life|กล่อง|a container with straight sides|bɑks|บอาคส|For a simple example, put it in the box.|สำหรับตัวอย่างง่าย ๆ ใส่ไว้ในกล่อง
+boy|noun|Daily Life|เด็กผู้ชาย|a young male person|bɔɪ|บออย|In everyday conversation, the boy is playing.|ในการสนทนาในชีวิตประจำวัน เด็กผู้ชายกำลังเล่น
+boyfriend|noun|Society|แฟนหนุ่ม|a male person that someone is in a romantic relationship with|ˈbɔɪfrend|บออยฟรเอนด|While talking with a friend, she introduced her boyfriend to her parents.|ขณะคุยกับเพื่อน เธอแนะนำแฟนหนุ่มของเธอให้กับพ่อแม่ของเธอ
+breakfast|noun|Food|อาหารเช้า|the first meal of the day|ˈbrɛkfəst|บรเอคฟอะสท|During today's lesson, he has rice for breakfast.|ระหว่างบทเรียนวันนี้ เขากินข้าวเป็นอาหารเช้า
+bright|adjective|Daily Life|สว่าง|giving a lot of light|braɪt|บรไอท|In our morning practice, the sun is bright.|ในการฝึกช่วงเช้าของเรา ดวงอาทิตย์สว่าง
+brother|noun|Family|พี่ชาย/น้องชาย|male sibling|ˈbrəðər|บรอะดอะร|For a simple example, my brother plays football.|สำหรับตัวอย่างง่าย ๆ พี่ชายของฉันเล่นฟุตบอล
+brown|adjective|Daily Life|น้ำตาล|color of wood|braʊn|บรเอาน|In everyday conversation, brown dog.|ในการสนทนาในชีวิตประจำวัน สุนัขสีน้ำตาล
+building|noun|Daily Life|อาคาร|a structure with walls and a roof, such as a house or office|ˈbɪldɪŋ|บอิลดอิง|While talking with a friend, the old building in the city centre was built 200 years ago.|ขณะคุยกับเพื่อน อาคารเก่าในใจกลางเมืองถูกสร้างขึ้นเมื่อ 200 ปีก่อน
+bus|noun|Travel|รถบัส|a large vehicle that carries many people|bəs|บอะส|During today's lesson, I take a bus to work.|ระหว่างบทเรียนวันนี้ ฉันนั่งรถบัสไปทำงาน
+busy|adjective|Work|ยุ่ง|having a lot to do; not free|ˈbɪzi|บอิซอี|In our morning practice, I'm busy this afternoon.|ในการฝึกช่วงเช้าของเรา บ่ายนี้ฉันยุ่ง
+butter|noun|Food|เนย|a soft, yellow food made from cream, used for cooking and spreading on bread|ˈbʌt.ər|บอะท-อะร|For a simple example, she spread butter on her toast.|สำหรับตัวอย่างง่าย ๆ เธอทาเนยบนขนมปังปิ้ง
+cafe|noun|Food|คาเฟ่|a small restaurant or coffee shop where people can have drinks and snacks|ˈkæfeɪ|คแอฟเอ|In everyday conversation, let's meet at the cafe near the library.|ในการสนทนาในชีวิตประจำวัน มาเจอกันที่คาเฟ่ใกล้ห้องสมุดกันเถอะ
+cake|noun|Food|เค้ก|sweet food for special occasions|keɪk|คเอค|While talking with a friend, birthday cake is delicious.|ขณะคุยกับเพื่อน เค้กวันเกิดอร่อย
+call|verb|Daily Life|โทร, เรียก|to telephone someone or say loudly|kɔl|คออล|During today's lesson, I'll call you later.|ระหว่างบทเรียนวันนี้ ฉันจะโทรหาเธอทีหลัง
+camera|noun|Technology|กล้อง|device for taking pictures|ˈkæmərə|คแอมอะรอะ|In our morning practice, take a photo with the camera.|ในการฝึกช่วงเช้าของเรา ถ่ายรูปด้วยกล้อง
+cap|noun|Shopping|หมวกแก๊ป|a soft flat hat with a visor|kæp|คแอพ|For a simple example, he wore a baseball cap to the game.|สำหรับตัวอย่างง่าย ๆ เขาสวมหมวกแก๊ปไปดูเกม
+car|noun|Travel|รถยนต์|a road vehicle with an engine and four wheels|kɑr|คอาร|In everyday conversation, he drives a small car.|ในการสนทนาในชีวิตประจำวัน เขาขับรถคันเล็ก
+card|noun|Daily Life|บัตร|small piece of paper or plastic|kɑrd|คอารด|While talking with a friend, show your ID card.|ขณะคุยกับเพื่อน แสดงบัตรประชาชน
+carrot|noun|Food|แครอท|an orange root vegetable|ˈkærət|คแอรอะท|Our class practiced the word "carrot" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "carrot" ในบทสนทนาสั้น ๆ
+carry|verb|Daily Life|ถือ|to hold and move something|ˈkɛri|คเอรอี|In our morning practice, carry this bag for me.|ในการฝึกช่วงเช้าของเรา ถือกระเป๋านี้ให้ฉันหน่อย
+catch|verb|Daily Life|จับ|to grab something flying toward you|kæʧ|คแอช|For a simple example, catch the ball!|สำหรับตัวอย่างง่าย ๆ จับบอล!
+cent|noun|Business|เซนต์|a small unit of money equal to one hundredth of a dollar or euro|sent|สเอนท|Our class practiced the word "cent" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "cent" ในบทสนทนาสั้น ๆ
+center|noun|Daily Life|จุดกลาง|the middle point|ˈsɛnər|สเอนอะร|While talking with a friend, meet at the center of town.|ขณะคุยกับเพื่อน มาเจอกันที่ใจกลางเมือง
+century|noun|Daily Life|ศตวรรษ|one hundred years|ˈsɛnʧəri|สเอนชอะรอี|During today's lesson, we live in the 21st century.|ระหว่างบทเรียนวันนี้ เราอยู่ในศตวรรษที่ 21
+cheap|adjective|Finance|ถูก|not costing much money|ʧip|ชอีพ|In our morning practice, this shirt is cheap.|ในการฝึกช่วงเช้าของเรา เสื้อตัวนี้ถูก
+check|verb|Daily Life|ตรวจสอบ|to look at something to make sure|ʧɛk|ชเอค|For a simple example, please check your email.|สำหรับตัวอย่างง่าย ๆ กรุณาตรวจสอบอีเมล
+cheese|noun|Food|เนยแข็ง|food made from milk|ʧiz|ชอีซ|In everyday conversation, this cheese is delicious.|ในการสนทนาในชีวิตประจำวัน เนยแข็งนี้อร่อย
+chicken|noun|Food|ไก่|a common kind of meat or bird|ˈʧɪkən|ชอิคอะน|While talking with a friend, she cooks chicken for dinner.|ขณะคุยกับเพื่อน เธอทำไก่เป็นมื้อเย็น
+chocolate|noun|Food|ช็อกโกแลต|a sweet food made from cacao beans, often eaten as a snack|ˈtʃɒklɪt|ชออคลอิท|Our class practiced the word "chocolate" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "chocolate" ในบทสนทนาสั้น ๆ
+circle|noun|Daily Life|วงกลม|round shape|ˈsərkəl|สอะรคอะล|In our morning practice, draw a circle.|ในการฝึกช่วงเช้าของเรา วาดวงกลม
+city|noun|Places|เมือง|a large town|ˈsɪti|สอิทอี|For a simple example, bangkok is a big city.|สำหรับตัวอย่างง่าย ๆ กรุงเทพฯ เป็นเมืองใหญ่
+class|noun|School|ชั้นเรียน / คาบเรียน|a lesson or group of students|klæs|คลแอส|In everyday conversation, the class starts at nine.|ในการสนทนาในชีวิตประจำวัน คาบเรียนเริ่มตอนเก้าโมง
+clean|verb|Home|ทำความสะอาด / สะอาด|to remove dirt; not dirty|klin|คลอีน|While talking with a friend, please clean the table.|ขณะคุยกับเพื่อน โปรดเช็ดโต๊ะให้สะอาด
+clear|adjective|Daily Life|ชัดเจน|easy to see or understand|klɪr|คลอิร|During today's lesson, the water is clear.|ระหว่างบทเรียนวันนี้ น้ำใส
+click|verb|Technology|คลิก|to press a button on a mouse or screen|klɪk|คลอิค|In our morning practice, click the button to continue.|ในการฝึกช่วงเช้าของเรา คลิกปุ่มเพื่อดำเนินการต่อ
+climb|verb|Sports|ปีน|to go up something using your hands and feet|klaɪm|คลไอม|For a simple example, the children love to climb trees in the park.|สำหรับตัวอย่างง่าย ๆ เด็กๆ ชอบปีนต้นไม้ในสวนสาธารณะ
+cloth|noun|Home|ผ้า|material made from threads|klɔθ|คลออธ|In everyday conversation, clean with a cloth.|ในการสนทนาในชีวิตประจำวัน เช็ดด้วยผ้า
+clothes|noun|Daily Life|เสื้อผ้า|things you wear on your body|kloʊðz|คลโอดซ|While talking with a friend, wash your clothes.|ขณะคุยกับเพื่อน ซักเสื้อผ้า
+clothing|noun|Shopping|เสื้อผ้า|items worn to cover the body|ˈkloʊðɪŋ|คลโอดอิง|During today's lesson, the store sells men's clothing.|ระหว่างบทเรียนวันนี้ ร้านนี้ขายเสื้อผ้าผู้ชาย
+club|noun|Society|ชมรม|a group of people who meet regularly because of a shared interest|klʌb|คลอะบ|In our morning practice, she joined a book club at the local library.|ในการฝึกช่วงเช้าของเรา เธอเข้าร่วมชมรมหนังสือที่ห้องสมุดท้องถิ่น
+coffee|noun|Food|กาแฟ|a hot drink made from coffee beans|ˈkɔfi|คออฟอี|For a simple example, she likes black coffee.|สำหรับตัวอย่างง่าย ๆ เธอชอบกาแฟดำ
+coin|noun|Finance|เหรียญ|a small round piece of metal used as money|kɔɪn|คออยน|In everyday conversation, he found a gold coin on the ground.|ในการสนทนาในชีวิตประจำวัน เขาเจอเหรียญทองบนพื้น
+cold|adjective|Weather|เย็น / หนาว|having a low temperature|koʊld|คโอลด|While talking with a friend, it's cold today.|ขณะคุยกับเพื่อน วันนี้อากาศหนาว
+college|noun|Education|วิทยาลัย|an educational institution for higher learning after school|ˈkɒlɪdʒ|คออลอิจ|During today's lesson, he is studying engineering at college.|ระหว่างบทเรียนวันนี้ เขากำลังศึกษาวิศวกรรมที่วิทยาลัย
+computer|noun|Technology|คอมพิวเตอร์|an electronic machine for storing and processing data|kəmˈpjutər|คอะมพยอูทอะร|In our morning practice, the computer is on the desk.|ในการฝึกช่วงเช้าของเรา คอมพิวเตอร์อยู่บนโต๊ะทำงาน
+cooking|noun|Food|การทำอาหาร|the activity of preparing food by heating it|ˈkʊkɪŋ|คอุคอิง|For a simple example, she enjoys cooking Italian food for her friends.|สำหรับตัวอย่างง่าย ๆ เธอชอบทำอาหารอิตาเลียนให้กับเพื่อนๆ
+cool|adjective|Weather|เย็นสบาย|slightly cold; pleasant temperature|kul|คอูล|In everyday conversation, the evening is cool.|ในการสนทนาในชีวิตประจำวัน ตอนเย็นอากาศเย็นสบาย
+corner|noun|Daily Life|มุม|place where two lines meet|ˈkɔrnər|คออรนอะร|While talking with a friend, stand in the corner.|ขณะคุยกับเพื่อน ยืนในมุม
+count|verb|Daily Life|นับ|to say numbers in order|kaʊnt|คเอานท|During today's lesson, count from one to ten.|ระหว่างบทเรียนวันนี้ นับจากหนึ่งถึงสิบ
+couple|noun|Daily Life|คู่|two people together|ˈkəpəl|คอะพอะล|In our morning practice, a young couple walked by.|ในการฝึกช่วงเช้าของเรา คู่รักหนุ่มสาวเดินผ่านไป
+cousin|noun|Family|ลูกพี่ลูกน้อง|a child of one's uncle or aunt|ˈkʌz.ən|คอะซ-อะน|Our class practiced the word "cousin" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "cousin" ในบทสนทนาสั้น ๆ
+cow|noun|Nature|วัว|a large female farm animal kept for its milk or meat|kaʊ|คเอา|Our class practiced the word "cow" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "cow" ในบทสนทนาสั้น ๆ
+cream|noun|Food|ครีม|a thick liquid made from the fat of milk, used in cooking or on food|kriːm|ครอีม|While talking with a friend, she put cream and sugar in her coffee.|ขณะคุยกับเพื่อน เธอใส่ครีมและน้ำตาลในกาแฟของเธอ
+cut|verb|Daily Life|ตัด|to divide with a sharp tool|kət|คอะท|During today's lesson, cut the paper.|ระหว่างบทเรียนวันนี้ ตัดกระดาษ
+dad|noun|Daily Life|พ่อ|an informal word for father|dæd|ดแอด|In our morning practice, my dad taught me how to ride a bicycle.|ในการฝึกช่วงเช้าของเรา พ่อของฉันสอนให้ฉันขี่จักรยาน
+daily|adjective|Daily Life|ประจำวัน|happening every day|ˈdeɪli|ดเอลอี|For a simple example, reading is my daily habit.|สำหรับตัวอย่างง่าย ๆ การอ่านเป็นนิสัยประจำวันของฉัน
+dancer|noun|Culture|นักเต้น|someone who dances, especially as a job or art form|ˈdænsər|ดแอนสอะร|In everyday conversation, the ballet dancer performed beautifully on stage.|ในการสนทนาในชีวิตประจำวัน นักบัลเล่ต์แสดงได้อย่างสวยงามบนเวที
+dark|adjective|Daily Life|มืด|having no light|dɑrk|ดอารค|While talking with a friend, it's dark outside.|ขณะคุยกับเพื่อน ข้างนอกมืด
+date|noun|Daily Life|วันที่|day, month, and year|deɪt|ดเอท|During today's lesson, what's today's date?|ระหว่างบทเรียนวันนี้ วันนี้วันที่เท่าไหร่
+daughter|noun|Family|ลูกสาว|a female child|ˈdɔːtər|ดออทอะร|In our morning practice, their daughter loves dancing.|ในการฝึกช่วงเช้าของเรา ลูกสาวชอบเต้นรำ
+day|noun|Daily Life|วัน|24 hours|deɪ|ดเอ|For a simple example, have a good day.|สำหรับตัวอย่างง่าย ๆ ขอให้เป็นวันที่ดี
+dear|adjective|Emotions|ที่รัก|loved very much; used as a term of affection or in letter greetings|dɪər|ดเอียร|In everyday conversation, she is a very dear friend who I have known for years.|ในการสนทนาในชีวิตประจำวัน เธอเป็นเพื่อนที่รักซึ่งฉันรู้จักมาหลายปีแล้ว
+delicious|adjective|Food|อร่อยมาก|having a very pleasant and enjoyable taste or smell|dɪˈlɪʃəs|ดอิลอิชอะส|While talking with a friend, the soup smells delicious — I can't wait to eat it!|ขณะคุยกับเพื่อน ซุปมีกลิ่นหอมอร่อยมาก ฉันรอไม่ไหวที่จะกิน!
+description|noun|Daily Life|คำอธิบาย|a statement that says what something or someone is like|dɪˈskrɪpʃən|ดอิสครอิพชอะน|During today's lesson, she gave a detailed description of the missing bag.|ระหว่างบทเรียนวันนี้ เธออธิบายรายละเอียดของกระเป๋าที่หายไป
+desk|noun|Home|โต๊ะทำงาน|table for working|dɛsk|ดเอสค|In our morning practice, clean your desk.|ในการฝึกช่วงเช้าของเรา ทำความสะอาดโต๊ะทำงาน
+die|verb|Daily Life|ตาย|to stop living|daɪ|ดไอ|Our class practiced the word "die" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "die" ในบทสนทนาสั้น ๆ
+difference|noun|Daily Life|ความแตกต่าง|how things are not the same|ˈdɪfərəns|ดอิฟอะรอะนส|In everyday conversation, there's a big difference.|ในการสนทนาในชีวิตประจำวัน มีความแตกต่างมาก
+dig|verb|Nature|ขุด|to break up and move earth|dɪɡ|ดอิก|Our class practiced the word "dig" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "dig" ในบทสนทนาสั้น ๆ
+dinner|noun|Food|อาหารเย็น / มื้อค่ำ|the main meal in the evening|ˈdɪnər|ดอินอะร|During today's lesson, what's for dinner?|ระหว่างบทเรียนวันนี้ มื้อเย็นกินอะไร
+dirty|adjective|Home|สกปรก|not clean|ˈdərti|ดอะรทอี|In our morning practice, your shoes are dirty.|ในการฝึกช่วงเช้าของเรา รองเท้าคุณสกปรก
+dish|noun|Food|จาน / อาหาร|a type of food prepared in a particular way; a plate for food|dɪʃ|ดอิช|For a simple example, this pasta dish is my favourite meal.|สำหรับตัวอย่างง่าย ๆ อาหารพาสต้านี้เป็นมื้อโปรดของฉัน
+dog|noun|Daily Life|หมา|animal that people keep as pets|dɔg|ดออก|In everyday conversation, the dog is friendly.|ในการสนทนาในชีวิตประจำวัน หมาเป็นมิตร
+dollar|noun|Finance|ดอลลาร์|the basic unit of money in the US and other countries|ˈdɒlər|ดออลอะร|Our class practiced the word "dollar" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "dollar" ในบทสนทนาสั้น ๆ
+down|adverb|Daily Life|ลง|toward a lower place|daʊn|ดเอาน|During today's lesson, come down from there.|ระหว่างบทเรียนวันนี้ ลงมาจากที่นั่น
+downstairs|adverb|Daily Life|ชั้นล่าง|to or on a lower floor of a building|ˌdaʊnˈsteəz|ดเอานสทแอร์ซ|In our morning practice, please come downstairs for dinner.|ในการฝึกช่วงเช้าของเรา กรุณาลงมาข้างล่างเพื่อรับประทานอาหารเย็น
+drink|verb|Daily Life|ดื่ม|to take liquid|drɪŋk|ดรอิงค|For a simple example, drink water.|สำหรับตัวอย่างง่าย ๆ ดื่มน้ำ
+dry|adjective|Daily Life|แห้ง|not wet|draɪ|ดรไอ|In everyday conversation, the clothes are dry.|ในการสนทนาในชีวิตประจำวัน เสื้อผ้าแห้งแล้ว
+early|adverb|Daily Life|เช้า / เร็ว (ก่อนเวลา)|before the usual time; near the beginning|ˈərli|อะรลอี|While talking with a friend, he arrived early to the meeting.|ขณะคุยกับเพื่อน เขามาถึงการประชุมเร็ว
+earn|verb|Finance|หาเงิน|to receive money in return for work|ɜːrn|เออร์รน|Our class practiced the word "earn" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "earn" ในบทสนทนาสั้น ๆ
+east|noun|Daily Life|ตะวันออก|direction where sun rises|ist|อีสท|In our morning practice, the sun rises in the east.|ในการฝึกช่วงเช้าของเรา ดวงอาทิตย์ขึ้นทางตะวันออก
+eat|verb|Daily Life|กิน|to put food in mouth|it|อีท|For a simple example, I eat rice.|สำหรับตัวอย่างง่าย ๆ ฉันกินข้าว
+edge|noun|Daily Life|ขอบ|outer boundary of something|ɛʤ|เอจ|In everyday conversation, be careful of the sharp edge.|ในการสนทนาในชีวิตประจำวัน ระวังขอบที่คม
+else|adverb|Daily Life|อย่างอื่น|other than this|ɛls|เอลส|While talking with a friend, what else do you want?|ขณะคุยกับเพื่อน คุณต้องการอะไรอีก
+email|noun|Technology|อีเมล|a message sent electronically|iˈmeɪl|อีมเอล|During today's lesson, I send an email to my boss.|ระหว่างบทเรียนวันนี้ ฉันส่งอีเมลถึงหัวหน้า
+empty|adjective|Daily Life|ว่าง|having nothing inside|ˈɛmti|เอมทอี|In our morning practice, the box is empty.|ในการฝึกช่วงเช้าของเรา กล่องว่าง
+end|verb|Daily Life|จบ|to stop or finish|ɛnd|เอนด|For a simple example, the movie will end at 9 PM.|สำหรับตัวอย่างง่าย ๆ หนังจะจบตอนสามทุ่ม
+enough|adjective|Daily Life|พอ|as much as needed|ɪˈnəf|อินอะฟ|In everyday conversation, do we have enough food?|ในการสนทนาในชีวิตประจำวัน เรามีอาหารพอไหม
+euro|noun|Finance|ยูโร|the basic unit of money used in many European countries|ˈjʊəroʊ|ยอัวรโอ|Our class practiced the word "euro" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "euro" ในบทสนทนาสั้น ๆ
+even|adverb|Daily Life|แม้กระทั่ง|including this extreme case|ˈivɪn|อีวอิน|During today's lesson, even children can do this.|ระหว่างบทเรียนวันนี้ แม้เด็กๆ ก็ทำได้
+evening|noun|Daily Life|เย็น|time at the end of the day|ˈivnɪŋ|อีวนอิง|In our morning practice, I watch TV in the evening.|ในการฝึกช่วงเช้าของเรา ฉันดูทีวีตอนเย็น
+ever|adverb|Daily Life|เคย|at any time|ˈɛvər|เอวอะร|For a simple example, have you ever been to Japan?|สำหรับตัวอย่างง่าย ๆ คุณเคยไปญี่ปุ่นไหม
+exactly|adverb|Daily Life|ตรงๆ|precisely|ɪgˈzæktli|อิกซแอคทลอี|In everyday conversation, that's exactly what I mean.|ในการสนทนาในชีวิตประจำวัน นั่นแหละที่ฉันหมายถึง
+example|noun|Daily Life|ตัวอย่าง|something that shows how|ɪgˈzæmpəl|อิกซแอมพอะล|While talking with a friend, give me an example.|ขณะคุยกับเพื่อน ยกตัวอย่างให้ฟัง
+excellent|adjective|Daily Life|ยอดเยี่ยม|very very good|ˈɛksələnt|เอคสอะลอะนท|During today's lesson, your work is excellent.|ระหว่างบทเรียนวันนี้ งานของคุณยอดเยี่ยม
+extra|adjective|Daily Life|พิเศษ / เพิ่มเติม|more than what is usual or expected|ˈekstrə|เอคสทรอะ|In our morning practice, can I have some extra sauce, please?|ในการฝึกช่วงเช้าของเรา ฉันขอซอสเพิ่มได้ไหม?
+eye|noun|Daily Life|ตา|organ for seeing|aɪ|ไอ|Our class practiced the word "eye" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "eye" ในบทสนทนาสั้น ๆ
+face|noun|Daily Life|หน้า|front of head|feɪs|ฟเอส|In everyday conversation, pretty face.|ในการสนทนาในชีวิตประจำวัน หน้าสวย
+fact|noun|Daily Life|ข้อเท็จจริง|something that is true|fækt|ฟแอคท|While talking with a friend, that's a fact.|ขณะคุยกับเพื่อน นั่นคือข้อเท็จจริง
+family|noun|Family|ครอบครัว|parents and children|ˈfæməli|ฟแอมอะลอี|During today's lesson, I love my family.|ระหว่างบทเรียนวันนี้ ฉันรักครอบครัว
+famous|adjective|Daily Life|มีชื่อเสียง|known by many people|ˈfeɪməs|ฟเอมอะส|In our morning practice, she is a famous singer.|ในการฝึกช่วงเช้าของเรา เธอเป็นนักร้องที่มีชื่อเสียง
+fan|noun|Home|พัดลม|a device with rotating blades that creates a current of air for cooling|fæn|ฟแอน|For a simple example, please turn on the fan; it's very hot in here.|สำหรับตัวอย่างง่าย ๆ กรุณาเปิดพัดลม ร้อนมากเลย
+fantastic|adjective|Daily Life|วิเศษมาก|extremely good or enjoyable|fænˈtæstɪk|ฟแอนทแอสทอิค|In everyday conversation, we had a fantastic time at the beach.|ในการสนทนาในชีวิตประจำวัน เราสนุกมากที่ชายหาด
+farm|noun|Nature|ฟาร์ม|an area of land used for growing crops or raising animals|fɑːm|ฟอาม|While talking with a friend, the children visited a farm to see the animals.|ขณะคุยกับเพื่อน เด็ก ๆ ไปเยี่ยมฟาร์มเพื่อดูสัตว์
+fast|adjective|Daily Life|เร็ว|moving quickly|fæst|ฟแอสท|During today's lesson, the car is fast.|ระหว่างบทเรียนวันนี้ รถเร็ว
+fat|adjective|Health|อ้วน|having a lot of flesh on the body; overweight|fæt|ฟแอท|In our morning practice, eating too much sugar can make you fat.|ในการฝึกช่วงเช้าของเรา การกินน้ำตาลมากเกินไปอาจทำให้คุณอ้วน
+father|noun|Family|พ่อ|male parent|ˈfɑðər|ฟอาดอะร|For a simple example, my father works hard.|สำหรับตัวอย่างง่าย ๆ พ่อของฉันทำงานหนัก
+feel|verb|Daily Life|รู้สึก|to have an emotion or touch something|fil|ฟอีล|In everyday conversation, I feel happy today.|ในการสนทนาในชีวิตประจำวัน วันนี้ฉันรู้สึกมีความสุข
+feeling|noun|Emotions|ความรู้สึก|an emotion or physical sensation experienced by someone|ˈfiːlɪŋ|ฟอีลอิง|While talking with a friend, I had a strange feeling that something was wrong.|ขณะคุยกับเพื่อน ฉันมีความรู้สึกแปลก ๆ ว่ามีบางอย่างผิดพลาด
+few|adjective|Daily Life|น้อย|a small number|fju|ฟยอู|During today's lesson, I have a few friends.|ระหว่างบทเรียนวันนี้ ฉันมีเพื่อนไม่กี่คน
+fill|verb|Daily Life|เติม / บรรจุ|to put something into a container until it is full|fɪl|ฟอิล|In our morning practice, please fill the glass with water.|ในการฝึกช่วงเช้าของเรา กรุณาเติมน้ำในแก้ว
+film|noun|Communication|ภาพยนตร์|a story shown in moving pictures; a movie|fɪlm|ฟอิลม|For a simple example, let's watch a film tonight.|สำหรับตัวอย่างง่าย ๆ คืนนี้เราไปดูหนังกันนะ
+fine|adjective|Daily Life|ดี|good or okay|faɪn|ฟไอน|In everyday conversation, I'm fine, thank you.|ในการสนทนาในชีวิตประจำวัน ฉันสบายดี ขอบคุณ
+finish|verb|Work|เสร็จ / จบ|to complete something|ˈfɪnɪʃ|ฟอินอิช|Our class practiced the word "finish" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "finish" ในบทสนทนาสั้น ๆ
+first|adjective|Daily Life|แรก|coming before all others|fərst|ฟอะรสท|During today's lesson, this is my first day at work.|ระหว่างบทเรียนวันนี้ นี่คือวันแรกของฉันที่ทำงาน
+fish|noun|Food|ปลา|an animal that lives in water; a kind of meat|fɪʃ|ฟอิช|In our morning practice, this fish is fresh.|ในการฝึกช่วงเช้าของเรา ปลานี้สด
+flight|noun|Travel|เที่ยวบิน|a journey made by air in an aircraft|flaɪt|ฟลไอท|For a simple example, our flight to Bangkok departs at noon.|สำหรับตัวอย่างง่าย ๆ เที่ยวบินของเราไปกรุงเทพออกตอนเที่ยง
+floor|noun|Home|พื้น / ชั้น|the surface you walk on; a level in a building|flɔr|ฟลออร|In everyday conversation, her office is on the third floor.|ในการสนทนาในชีวิตประจำวัน ออฟฟิศของเธออยู่ชั้นสาม
+flower|noun|Nature|ดอกไม้|the colorful part of a plant|flaʊər|ฟลเอาอะร|While talking with a friend, she got a flower from the garden.|ขณะคุยกับเพื่อน เธอได้ดอกไม้จากสวน
+fold|verb|Daily Life|พับ|to bend something over itself|foʊld|ฟโอลด|During today's lesson, fold the paper.|ระหว่างบทเรียนวันนี้ พับกระดาษ
+food|noun|Food|อาหาร|things people eat|fud|ฟอูด|In our morning practice, thai food is delicious.|ในการฝึกช่วงเช้าของเรา อาหารไทยอร่อย
+foot|noun|Daily Life|เท้า|part for walking|fʊt|ฟอุท|For a simple example, my foot is big.|สำหรับตัวอย่างง่าย ๆ เท้าฉันใหญ่
+football|noun|Sports|ฟุตบอล|a team sport in which players kick a ball toward a goal|ˈfʊtbɔːl|ฟอุทบออล|In everyday conversation, he plays football every Saturday with his friends.|ในการสนทนาในชีวิตประจำวัน เขาเล่นฟุตบอลทุกวันเสาร์กับเพื่อน ๆ
+forest|noun|Nature|ป่า|a large area with many trees|ˈfɔrɪst|ฟออรอิสท|While talking with a friend, there are wild animals in the forest.|ขณะคุยกับเพื่อน มีสัตว์ป่าอยู่ในป่า
+friend|noun|Society|เพื่อน|person you like|frɛnd|ฟรเอนด|During today's lesson, she is my friend.|ระหว่างบทเรียนวันนี้ เธอเป็นเพื่อนฉัน
+friendly|adjective|Society|เป็นมิตร|kind and pleasant toward others|ˈfrendli|ฟรเอนดลอี|In our morning practice, the neighbours are very friendly and always say hello.|ในการฝึกช่วงเช้าของเรา เพื่อนบ้านเป็นมิตรมากและทักทายเสมอ
+front|noun|Daily Life|ด้านหน้า|forward part|frənt|ฟรอะนท|For a simple example, stand in front.|สำหรับตัวอย่างง่าย ๆ ยืนด้านหน้า
+fruit|noun|Food|ผลไม้|sweet food that grows on trees or plants|frut|ฟรอูท|In everyday conversation, fruit is good for you.|ในการสนทนาในชีวิตประจำวัน ผลไม้ดีต่อสุขภาพ
+fun|noun|Daily Life|ความสนุก|enjoyment and pleasure|fʌn|ฟอะน|While talking with a friend, we had so much fun at the park.|ขณะคุยกับเพื่อน เราสนุกมากที่สวนสาธารณะ
+funny|adjective|Daily Life|ตลก|making you laugh|ˈfəni|ฟอะนอี|During today's lesson, that joke is funny.|ระหว่างบทเรียนวันนี้ เรื่องตลกนั้นตลกดี
+future|noun|Daily Life|อนาคต|time that will come|fˈjuʧər|ฟยอูชอะร|In our morning practice, think about your future.|ในการฝึกช่วงเช้าของเรา คิดเกี่ยวกับอนาคตของคุณ
+game|noun|Society|เกม|an activity you do for fun or competition|geɪm|กเอม|For a simple example, this game is easy to play.|สำหรับตัวอย่างง่าย ๆ เกมนี้เล่นง่าย
+gate|noun|Home|ประตูรั้ว|movable barrier in a fence or wall|ɡeɪt|กเอท|In everyday conversation, close the gate so the dog doesn't escape.|ในการสนทนาในชีวิตประจำวัน ปิดประตูรั้วเพื่อไม่ให้สุนัขหนี
+geography|noun|Education|ภูมิศาสตร์|the study of the Earth's surface, countries, and physical features|dʒiˈɒɡrəfi|จอีออกรอะฟอี|While talking with a friend, geography is my favourite subject at school.|ขณะคุยกับเพื่อน ภูมิศาสตร์เป็นวิชาโปรดของฉันที่โรงเรียน
+get|verb|Daily Life|ได้|to receive|gɪt|กอิท|During today's lesson, I get a gift.|ระหว่างบทเรียนวันนี้ ฉันได้ของขวัญ
+girl|noun|Daily Life|เด็กผู้หญิง|a young female person|gərl|กอะรล|In our morning practice, the girl is playing.|ในการฝึกช่วงเช้าของเรา เด็กผู้หญิงกำลังเล่น
+give|verb|Daily Life|ให้|to hand to someone|gɪv|กอิว|For a simple example, give me water.|สำหรับตัวอย่างง่าย ๆ ให้น้ำฉัน
+go|verb|Daily Life|ไป|to move to place|goʊ|กโอ|In everyday conversation, I go to school.|ในการสนทนาในชีวิตประจำวัน ฉันไปโรงเรียน
+good|adjective|Daily Life|ดี|high quality|gʊd|กอุด|While talking with a friend, good food.|ขณะคุยกับเพื่อน อาหารดี
+grandfather|noun|Family|ปู่/ตา|the father of one's father or mother|ˈɡræn.fɑː.ðər|กรแอน-ฟอา-ดอะร|During today's lesson, my grandfather taught me how to fish.|ระหว่างบทเรียนวันนี้ ปู่ของฉันสอนฉันตกปลา
+grandparent|noun|Society|ปู่ย่าตายาย|the parent of one's parent; a grandfather or grandmother|ˈɡrænpeərənt|กรแอนพแอร์รอะนท|In our morning practice, my grandparent tells wonderful stories about the past.|ในการฝึกช่วงเช้าของเรา ปู่ย่าตายายของฉันเล่าเรื่องราวที่น่าอัศจรรย์เกี่ยวกับอดีต
+gray|adjective|Daily Life|สีเทา|a color between black and white|greɪ|กรเอ|For a simple example, the sky is gray.|สำหรับตัวอย่างง่าย ๆ ท้องฟ้าสีเทา
+great|adjective|Daily Life|ยอดเยี่ยม|very good or important|greɪt|กรเอท|In everyday conversation, that's a great idea!|ในการสนทนาในชีวิตประจำวัน นั่นเป็นความคิดที่ดีมาก!
+green|adjective|Daily Life|เขียว|color of grass|grin|กรอีน|While talking with a friend, green leaves on tree.|ขณะคุยกับเพื่อน ใบไม้สีเขียวบนต้นไม้
+ground|noun|Daily Life|พื้นดิน|the earth's surface|graʊnd|กรเอานด|During today's lesson, sit on the ground.|ระหว่างบทเรียนวันนี้ นั่งบนพื้นดิน
+grow|verb|Daily Life|โต, เติบโต|to become bigger or older|groʊ|กรโอ|In our morning practice, plants grow in the sun.|ในการฝึกช่วงเช้าของเรา พืชเติบโตในแสงแดด
+guess|verb|Daily Life|เดา|to give an answer without being certain it is correct|ɡes|กเอส|For a simple example, can you guess how old I am?|สำหรับตัวอย่างง่าย ๆ คุณเดาได้ไหมว่าฉันอายุเท่าไหร่?
+guitar|noun|Culture|กีตาร์|a musical instrument with strings that you play with your fingers|ɡɪˈtɑː|กอิทอา|In everyday conversation, she plays the guitar beautifully.|ในการสนทนาในชีวิตประจำวัน เธอเล่นกีตาร์ได้สวยงามมาก
+gym|noun|Health|ยิม|a room or building with equipment for physical exercise|dʒɪm|จอิม|While talking with a friend, I go to the gym three times a week.|ขณะคุยกับเพื่อน ฉันไปยิมสัปดาห์ละสามครั้ง
+half|noun|Daily Life|ครึ่ง|one of two equal parts; thirty minutes past the hour|hæf|ฮแอฟ|During today's lesson, it's half past three.|ระหว่างบทเรียนวันนี้ ตอนนี้บ่ายสามโมงครึ่ง
+hand|noun|Daily Life|มือ|part with fingers|hænd|ฮแอนด|Our class practiced the word "hand" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "hand" ในบทสนทนาสั้น ๆ
+hang|verb|Shopping|แขวน|to suspend from a hook or hanger|hæŋ|ฮแอง|For a simple example, hang your coat in the closet.|สำหรับตัวอย่างง่าย ๆ แขวนเสื้อโค้ทในตู้เสื้อผ้า
+happen|verb|Daily Life|เกิดขึ้น|to take place or occur|ˈhæpən|ฮแอพอะน|Our class practiced the word "happen" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "happen" ในบทสนทนาสั้น ๆ
+hate|verb|Emotions|เกลียด|to have a very strong dislike for something or someone|heɪt|ฮเอท|While talking with a friend, I hate waking up early in the morning.|ขณะคุยกับเพื่อน ฉันเกลียดการตื่นเช้ามาก
+have|verb|Daily Life|มี|to own or possess something; to experience something|hæv|ฮแอว|During today's lesson, do you have any questions about the lesson?|ระหว่างบทเรียนวันนี้ คุณมีคำถามเกี่ยวกับบทเรียนไหม?
+head|noun|Daily Life|หัว|top part of body|hɛd|ฮเอด|In our morning practice, my head hurts.|ในการฝึกช่วงเช้าของเรา หัวฉันปวด
+hear|verb|Daily Life|ได้ยิน|to listen with ears|hir|ฮอีร|For a simple example, I hear music.|สำหรับตัวอย่างง่าย ๆ ฉันได้ยินเพลง
+help|verb|Society|ช่วยเหลือ / ความช่วยเหลือ|to make it easier for someone to do something|hɛlp|ฮเอลพ|In everyday conversation, can you help me?|ในการสนทนาในชีวิตประจำวัน ช่วยฉันหน่อยได้ไหม
+here|adverb|Daily Life|ที่นี่|in this place|hir|ฮอีร|While talking with a friend, come here please.|ขณะคุยกับเพื่อน มาที่นี่
+hide|verb|Nature|ซ่อน|to conceal oneself or something|haɪd|ฮไอด|During today's lesson, the cat likes to hide under the bed.|ระหว่างบทเรียนวันนี้ แมวชอบซ่อนตัวใต้เตียง
+high|adjective|Daily Life|สูง|far from the ground|haɪ|ฮไอ|In our morning practice, that building is high.|ในการฝึกช่วงเช้าของเรา อาคารนั้นสูง
+holiday|noun|Travel|วันหยุด|a day when you do not have to work or study|ˈhɑlɪˌdeɪ|ฮอาลอิดเอ|For a simple example, we plan a trip for the holiday.|สำหรับตัวอย่างง่าย ๆ เราวางแผนเที่ยวในวันหยุด
+home|noun|Home|บ้าน|the place where you live|hoʊm|ฮโอม|In everyday conversation, I work from home.|ในการสนทนาในชีวิตประจำวัน ฉันทำงานที่บ้าน
+horse|noun|Nature|ม้า|a large animal with four legs used for riding or carrying things|hɔːs|ฮออส|While talking with a friend, she learned how to ride a horse last summer.|ขณะคุยกับเพื่อน เธอเรียนรู้วิธีขี่ม้าเมื่อฤดูร้อนที่แล้ว
+hot|adjective|Weather|ร้อน|having a high temperature|hɑt|ฮอาท|During today's lesson, the soup is hot.|ระหว่างบทเรียนวันนี้ ซุปนี้ร้อน
+house|noun|Home|บ้าน|a building where people live|haʊs|ฮเอาส|In our morning practice, their house has a garden.|ในการฝึกช่วงเช้าของเรา บ้านของพวกเขามีสวน
+however|adverb|Daily Life|อย่างไรก็ตาม|but, nevertheless|ˌhaʊˈɛvər|ฮเอาเอวอะร|For a simple example, it's expensive. However, it's good quality.|สำหรับตัวอย่างง่าย ๆ มันแพง อย่างไรก็ตาม มันคุณภาพดี
+huge|adjective|Daily Life|ใหญ่มาก|very very big|juʤ|ยอูจ|In everyday conversation, that's a huge elephant.|ในการสนทนาในชีวิตประจำวัน นั่นเป็นช้างตัวใหญ่มาก
+hungry|adjective|Food|หิว|wanting or needing food|ˈhəŋgri|ฮอะงกรอี|While talking with a friend, I'm hungry. Let's eat.|ขณะคุยกับเพื่อน ฉันหิว ไปกินข้าวกัน
+ice|noun|Food|น้ำแข็ง|frozen water|aɪs|ไอส|During today's lesson, add ice to the glass.|ระหว่างบทเรียนวันนี้ ใส่น้ำแข็งลงในแก้ว
+include|verb|Daily Life|รวมถึง|to have someone or something as part of a group or set|ɪnˈkluːd|อินคลอูด|Our class practiced the word "include" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "include" ในบทสนทนาสั้น ๆ
+indoor|adjective|Weather|ในร่ม|done or situated inside a building|ˈɪndɔːr|อินดออร|For a simple example, the indoor shopping mall stays cool in summer.|สำหรับตัวอย่างง่าย ๆ ศูนย์การค้าในร่มเย็นสบายในฤดูร้อน
+instead|adverb|Daily Life|แทน|in place of|ˌɪnˈstɛd|อินสทเอด|In everyday conversation, let's walk instead of driving.|ในการสนทนาในชีวิตประจำวัน เดินแทนการขับรถ
+interested|adjective|Emotions|สนใจ|wanting to know about or take part in something|ˈɪntrəstɪd|อินทรอะสทอิด|While talking with a friend, are you interested in learning a new language?|ขณะคุยกับเพื่อน คุณสนใจที่จะเรียนภาษาใหม่ไหม?
+iron|verb|Shopping|รีด|to press clothes with a heated tool to remove wrinkles|ˈaɪərn|ไออะรน|During today's lesson, I need to iron my shirt for tomorrow.|ระหว่างบทเรียนวันนี้ ฉันต้องรีดเสื้อสำหรับพรุ่งนี้
+island|noun|Nature|เกาะ|a piece of land surrounded by water|ˈaɪlənd|ไอลอะนด|In our morning practice, we spent our holiday on an island.|ในการฝึกช่วงเช้าของเรา เราไปพักผ่อนวันหยุดที่เกาะ
+jam|noun|Food|แยม|a sweet fruit spread for bread|dʒæm|จแอม|For a simple example, spread jam on the toast.|สำหรับตัวอย่างง่าย ๆ ทาแยมบนขนมปังปิ้ง
+jeans|noun|Shopping|กางเกงยีนส์|casual trousers made of denim|dʒiːnz|จอีนซ|In everyday conversation, I wear jeans almost every day.|ในการสนทนาในชีวิตประจำวัน ฉันใส่ยีนส์เกือบทุกวัน
+juice|noun|Food|น้ำผลไม้|a drink made from fruit or vegetables|ʤus|จอูส|While talking with a friend, orange juice is popular.|ขณะคุยกับเพื่อน น้ำส้มเป็นที่นิยม
+jump|verb|Daily Life|กระโดด|to move quickly up and down or forward|ʤəmp|จอะมพ|During today's lesson, the cat can jump high.|ระหว่างบทเรียนวันนี้ แมวกระโดดได้สูง
+just|adverb|Daily Life|เพิ่ง / แค่|only; a short time ago; exactly|dʒʌst|จอะสท|In our morning practice, I just finished my homework.|ในการฝึกช่วงเช้าของเรา ฉันเพิ่งทำการบ้านเสร็จ
+keep|verb|Daily Life|เก็บ, รักษา|to have something and not give it away|kip|คอีพ|For a simple example, keep your money safe.|สำหรับตัวอย่างง่าย ๆ เก็บเงินให้ปลอดภัย
+kitchen|noun|Home|ห้องครัว|a room where you cook food|ˈkɪʧən|คอิชอะน|In everyday conversation, the kitchen is clean.|ในการสนทนาในชีวิตประจำวัน ห้องครัวสะอาด
+know|verb|Daily Life|รู้ / ทราบ|to have information or be aware of something|nəʊ|นโอ|While talking with a friend, do you know the answer to this question?|ขณะคุยกับเพื่อน คุณรู้คำตอบของคำถามนี้ไหม?
+lake|noun|Nature|ทะเลสาบ|a large area of water surrounded by land|leɪk|ลเอค|During today's lesson, there are many fish in the lake.|ระหว่างบทเรียนวันนี้ มีปลามากมายในทะเลสาบ
+lamp|noun|Home|โคมไฟ|object that gives light|læmp|ลแอมพ|In our morning practice, turn on the lamp.|ในการฝึกช่วงเช้าของเรา เปิดโคมไฟ
+laptop|noun|Technology|แล็ปท็อป|portable personal computer|ˈlæptɒp|ลแอพทออพ|For a simple example, I always carry my laptop to work.|สำหรับตัวอย่างง่าย ๆ ฉันพกแล็ปท็อปไปทำงานเสมอ
+large|adjective|Daily Life|ใหญ่|big in size|lɑrʤ|ลอารจ|In everyday conversation, she lives in a large house.|ในการสนทนาในชีวิตประจำวัน เธออยู่ในบ้านใหญ่
+late|adverb|Daily Life|สาย / ดึก|after the expected time; near the end of the day|leɪt|ลเอท|While talking with a friend, sorry I'm late.|ขณะคุยกับเพื่อน ขอโทษที่มาสาย
+later|adverb|Daily Life|ทีหลัง|at a time in the future|ˈleɪtər|ลเอทอะร|During today's lesson, I'll call you later.|ระหว่างบทเรียนวันนี้ ฉันจะโทรหาทีหลัง
+leaf|noun|Nature|ใบไม้|flat green part of a plant|liːf|ลอีฟ|In our morning practice, the leaf fell from the tree.|ในการฝึกช่วงเช้าของเรา ใบไม้ร่วงจากต้นไม้
+learn|verb|School|เรียนรู้|to get knowledge or skill|lərn|ลอะรน|For a simple example, I want to learn English.|สำหรับตัวอย่างง่าย ๆ ฉันอยากเรียนภาษาอังกฤษ
+left|adverb|Daily Life|ซ้าย|the opposite of right|lɛft|ลเอฟท|In everyday conversation, turn left at the corner.|ในการสนทนาในชีวิตประจำวัน เลี้ยวซ้ายที่หัวมุม
+leg|noun|Daily Life|ขา|the part of the body used for walking|lɛg|ลเอก|While talking with a friend, my leg hurts.|ขณะคุยกับเพื่อน ขาของฉันเจ็บ
+lend|verb|Finance|ให้ยืม|to give something to someone temporarily|lɛnd|ลเอนด|During today's lesson, could you lend me some money?|ระหว่างบทเรียนวันนี้ ช่วยให้ฉันยืมเงินหน่อยได้ไหม
+let|verb|Daily Life|อนุญาต / ให้|to allow someone to do something|let|ลเอท|In our morning practice, my parents let me stay up late on weekends.|ในการฝึกช่วงเช้าของเรา พ่อแม่ของฉันอนุญาตให้ฉันนอนดึกในวันหยุดสุดสัปดาห์
+letter|noun|Daily Life|จดหมาย / ตัวอักษร|a written message sent to someone; a symbol of the alphabet|ˈletə|ลเอทอะ|For a simple example, she wrote a letter to her grandmother.|สำหรับตัวอย่างง่าย ๆ เธอเขียนจดหมายถึงยาย
+library|noun|School|ห้องสมุด|place with many books|ˈlaɪbrɛˌri|ลไอบรเอรอี|In everyday conversation, I study at the library.|ในการสนทนาในชีวิตประจำวัน ฉันเรียนที่ห้องสมุด
+list|noun|Daily Life|รายการ / รายชื่อ|a series of names or items written one after another|lɪst|ลอิสท|While talking with a friend, she made a shopping list before going to the store.|ขณะคุยกับเพื่อน เธอทำรายการช็อปปิ้งก่อนไปร้าน
+little|adjective|Daily Life|เล็ก|small in size|ˈlɪtəl|ลอิทอะล|During today's lesson, I have a little dog.|ระหว่างบทเรียนวันนี้ ฉันมีสุนัขตัวเล็ก
+location|noun|Daily Life|ที่ตั้ง|where something is|loʊˈkeɪʃən|ลโอคเอชอะน|In our morning practice, what's your location?|ในการฝึกช่วงเช้าของเรา คุณอยู่ที่ไหน
+lock|noun|Home|กุญแจ|device for securing a door|lɒk|ลออค|For a simple example, make sure to check the lock before leaving the house.|สำหรับตัวอย่างง่าย ๆ อย่าลืมตรวจสอบกุญแจก่อนออกจากบ้าน
+loose|adjective|Shopping|หลวม|not fitting tightly|luːs|ลอูส|In everyday conversation, I prefer loose shirts in summer.|ในการสนทนาในชีวิตประจำวัน ฉันชอบเสื้อหลวมในฤดูร้อน
+loud|adjective|Daily Life|ดัง|making much noise|laʊd|ลเอาด|While talking with a friend, the music is loud.|ขณะคุยกับเพื่อน เพลงดัง
+love|verb|Daily Life|รัก|to care deeply|ləv|ลอะว|During today's lesson, I love you.|ระหว่างบทเรียนวันนี้ ฉันรักเธอ
+low|adjective|Daily Life|ต่ำ|close to the ground|loʊ|ลโอ|In our morning practice, the chair is low.|ในการฝึกช่วงเช้าของเรา เก้าอี้ต่ำ
+lunch|noun|Food|อาหารกลางวัน|a meal eaten in the middle of the day|lənʧ|ลอะนช|For a simple example, we ate lunch at 12.|สำหรับตัวอย่างง่าย ๆ พวกเรากินข้าวกลางวันตอนเที่ยง
+main|adjective|Daily Life|หลัก / สำคัญที่สุด|the most important or largest|meɪn|มเอน|In everyday conversation, what is the main reason for your visit?|ในการสนทนาในชีวิตประจำวัน เหตุผลหลักในการมาเยือนของคุณคืออะไร?
+make|verb|Daily Life|ทำ / สร้าง|to create or produce something|meɪk|มเอค|While talking with a friend, can you make a sandwich for me?|ขณะคุยกับเพื่อน คุณช่วยทำแซนวิชให้ฉันได้ไหม?
+man|noun|Daily Life|ผู้ชาย|an adult male person|mæn|มแอน|During today's lesson, the man is working.|ระหว่างบทเรียนวันนี้ ผู้ชายกำลังทำงาน
+map|noun|Travel|แผนที่|a drawing that shows where places are|mæp|มแอพ|In our morning practice, use the map to find the cafe.|ในการฝึกช่วงเช้าของเรา ใช้แผนที่เพื่อหาคาเฟ่
+maybe|adverb|Daily Life|บางที|perhaps|ˈmeɪbi|มเอบอี|For a simple example, maybe it will rain tomorrow.|สำหรับตัวอย่างง่าย ๆ บางทีพรุ่งนี้อาจจะฝนตก
+meal|noun|Food|มื้ออาหาร|an occasion when food is eaten; the food itself|miːl|มอีล|In everyday conversation, dinner is my favourite meal of the day.|ในการสนทนาในชีวิตประจำวัน อาหารเย็นคือมื้ออาหารที่ฉันชอบที่สุดในแต่ละวัน
+mean|verb|Daily Life|หมายความว่า / มีความหมาย|to have a particular meaning or to intend to say|miːn|มอีน|While talking with a friend, what does this word mean?|ขณะคุยกับเพื่อน คำนี้หมายความว่าอะไร?
+meaning|noun|Education|ความหมาย|what a word, sign, or action represents|ˈmiːnɪŋ|มอีนอิง|During today's lesson, can you explain the meaning of this phrase?|ระหว่างบทเรียนวันนี้ คุณช่วยอธิบายความหมายของวลีนี้ได้ไหม?
+medium|adjective|Shopping|กลาง|of middle size between small and large|ˈmiːdiəm|มอีดอีอะม|In our morning practice, I'd like a medium, please.|ในการฝึกช่วงเช้าของเรา ขอไซส์ M ครับ
+meet|verb|Society|พบ / เจอ|to see and talk to someone|mit|มอีท|For a simple example, let's meet at 6 pm.|สำหรับตัวอย่างง่าย ๆ มาเจอกันหกโมงเย็น
+member|noun|Society|สมาชิก|someone who belongs to a group or organization|ˈmembə|มเอมบอะ|In everyday conversation, she is a member of the local gym.|ในการสนทนาในชีวิตประจำวัน เธอเป็นสมาชิกของยิมในท้องถิ่น
+menu|noun|Food|เมนู|a list of food and drink in a restaurant|ˈmɛnju|มเอนยอู|While talking with a friend, can I see the menu?|ขณะคุยกับเพื่อน ขอดูเมนูได้ไหม
+mile|noun|Daily Life|ไมล์|a unit of distance equal to approximately 1.6 kilometres|maɪl|มไอล|During today's lesson, the nearest supermarket is a mile away.|ระหว่างบทเรียนวันนี้ ซูเปอร์มาร์เก็ตที่ใกล้ที่สุดอยู่ห่างออกไปหนึ่งไมล์
+milk|noun|Food|นม|a white liquid from cows, goats, or plants|mɪlk|มอิลค|In our morning practice, I drink milk at breakfast.|ในการฝึกช่วงเช้าของเรา ฉันดื่มนมตอนอาหารเช้า
+mirror|noun|Home|กระจก|glass that shows your reflection|ˈmɪrər|มอิรอะร|For a simple example, look in the mirror.|สำหรับตัวอย่างง่าย ๆ มองในกระจก
+miss|verb|Daily Life|คิดถึง / พลาด|to fail to catch, reach, or hit; to feel sad about someone's absence|mɪs|มอิส|In everyday conversation, I miss my family when I travel.|ในการสนทนาในชีวิตประจำวัน ฉันคิดถึงครอบครัวเมื่อฉันเดินทาง
+moment|noun|Daily Life|ชั่วขณะ|a very brief period of time|ˈmoʊmənt|มโอมอะนท|While talking with a friend, wait a moment, please.|ขณะคุยกับเพื่อน รอสักครู่
+money|noun|Finance|เงิน|coins and bills|ˈməni|มอะนอี|During today's lesson, I need money.|ระหว่างบทเรียนวันนี้ ฉันต้องการเงิน
+morning|noun|Daily Life|เช้า|early day|ˈmɔrnɪŋ|มออรนอิง|In our morning practice, good morning.|ในการฝึกช่วงเช้าของเรา สวัสดีตอนเช้า
+mother|noun|Family|แม่|female parent|ˈməðər|มอะดอะร|For a simple example, my mother is kind.|สำหรับตัวอย่างง่าย ๆ แม่ของฉันใจดี
+mouth|noun|Daily Life|ปาก|organ for eating|maʊθ|มเอาธ|In everyday conversation, open your mouth.|ในการสนทนาในชีวิตประจำวัน อ้าปาก
+movie|noun|Society|ภาพยนตร์|a film shown in a cinema or on TV|ˈmuvi|มอูวอี|While talking with a friend, we watch a movie tonight.|ขณะคุยกับเพื่อน พวกเราดูหนังคืนนี้
+mud|noun|Nature|โคลน|wet earth or soil|mʌd|มอะด|During today's lesson, his shoes were covered in mud.|ระหว่างบทเรียนวันนี้ รองเท้าของเขาเปื้อนโคลน
+music|noun|Society|ดนตรี|sounds arranged in a pleasant way|mˈjuzɪk|มยอูซอิค|In our morning practice, she listens to music every day.|ในการฝึกช่วงเช้าของเรา เธอฟังเพลงทุกวัน
+name|noun|Daily Life|ชื่อ|what you are called|neɪm|นเอม|For a simple example, my name is John.|สำหรับตัวอย่างง่าย ๆ ฉันชื่อจอห์น
+neck|noun|Daily Life|คอ|the part connecting the head to the body|nɛk|นเอค|In everyday conversation, my neck is stiff.|ในการสนทนาในชีวิตประจำวัน คอของฉันแข็ง
+need|verb|Daily Life|ต้องการ / จำเป็น|to require something because it is necessary|nid|นอีด|While talking with a friend, I need more time.|ขณะคุยกับเพื่อน ฉันต้องการเวลาเพิ่ม
+negative|adjective|Daily Life|เชิงลบ / ปฏิเสธ|expressing denial or refusal; not positive or helpful|ˈneɡətɪv|นเอกอะทอิว|During today's lesson, try not to have a negative attitude.|ระหว่างบทเรียนวันนี้ พยายามอย่ามีทัศนคติเชิงลบ
+new|adjective|Daily Life|ใหม่|recently made|nu|นอู|In our morning practice, new car.|ในการฝึกช่วงเช้าของเรา รถใหม่
+news|noun|Communication|ข่าว|new information about recent events|njuːz|นยอูซ|For a simple example, have you heard the news about the new school?|สำหรับตัวอย่างง่าย ๆ คุณได้ยินข่าวเกี่ยวกับโรงเรียนใหม่ไหม?
+newspaper|noun|Communication|หนังสือพิมพ์|a printed publication containing news and articles|ˈnjuːzpeɪpə|นยอูซพเอพอะ|In everyday conversation, my dad reads the newspaper every morning.|ในการสนทนาในชีวิตประจำวัน พ่อของฉันอ่านหนังสือพิมพ์ทุกเช้า
+next|adjective|Daily Life|ต่อไป|coming after this one|nɛkst|นเอคสท|While talking with a friend, see you next week.|ขณะคุยกับเพื่อน เจอกันสัปดาห์หน้า
+nice|adjective|Weather|ดี, สวย|pleasant or enjoyable|naɪs|นไอส|During today's lesson, what a nice day it is!|ระหว่างบทเรียนวันนี้ วันนี้อากาศดีจริงๆ
+no|adverb|Daily Life|ไม่|disagreement|noʊ|นโอ|In our morning practice, no, I don't want.|ในการฝึกช่วงเช้าของเรา ไม่ ฉันไม่ต้องการ
+noisy|adjective|Home|มีเสียงดัง|making a lot of noise|ˈnɔɪ.zi|นออย-ซอี|For a simple example, the apartment is noisy because it faces the main road.|สำหรับตัวอย่างง่าย ๆ อพาร์ตเมนต์มีเสียงดังเพราะหันหน้าไปทางถนนใหญ่
+north|noun|Daily Life|เหนือ|direction opposite to south|nɔrθ|นออรธ|In everyday conversation, canada is north of USA.|ในการสนทนาในชีวิตประจำวัน แคนาดาอยู่เหนือของสหรัฐอเมริกา
+nose|noun|Daily Life|จมูก|organ for smelling|noʊz|นโอซ|While talking with a friend, big nose.|ขณะคุยกับเพื่อน จมูกใหญ่
+now|adverb|Daily Life|ตอนนี้|at this time|naʊ|นเอา|During today's lesson, I'm busy right now.|ระหว่างบทเรียนวันนี้ ตอนนี้ฉันยุ่ง
+number|noun|Daily Life|ตัวเลข|a word or symbol that represents an amount|ˈnəmbər|นอะมบอะร|In our morning practice, what's your phone number?|ในการฝึกช่วงเช้าของเรา เบอร์โทรศัพท์คุณคืออะไร
+object|noun|Daily Life|วัตถุ / สิ่งของ|a physical thing that can be touched or seen|ˈɒbdʒɪkt|ออบจอิคท|For a simple example, what is that strange object on the table?|สำหรับตัวอย่างง่าย ๆ วัตถุแปลกๆ บนโต๊ะนั้นคืออะไร?
+ocean|noun|Nature|มหาสมุทร|one of the five large areas of salt water on Earth|ˈoʊʃən|โอชอะน|In everyday conversation, the Pacific Ocean is the largest.|ในการสนทนาในชีวิตประจำวัน มหาสมุทรแปซิฟิกมีขนาดใหญ่ที่สุด
+old|adjective|Daily Life|เก่า|not new|oʊld|โอลด|While talking with a friend, old book.|ขณะคุยกับเพื่อน หนังสือเก่า
+once|adverb|Daily Life|ครั้งหนึ่ง|one time|wəns|วอะนส|During today's lesson, I met him once.|ระหว่างบทเรียนวันนี้ ฉันเจอเขาครั้งหนึ่ง
+onion|noun|Food|หัวหอม|a round vegetable with many layers and a strong smell, used in cooking|ˈʌn.jən|อะน-ยอะน|Our class practiced the word "onion" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "onion" ในบทสนทนาสั้น ๆ
+only|adverb|Daily Life|เพียง|just, no more than|ˈoʊnli|โอนลอี|For a simple example, I have only five dollars.|สำหรับตัวอย่างง่าย ๆ ฉันมีเงินแค่ห้าดอลลาร์
+opposite|adjective|Daily Life|ตรงข้าม|completely different or on the other side|ˈɒpəzɪt|ออพอะซอิท|In everyday conversation, the bank is on the opposite side of the street.|ในการสนทนาในชีวิตประจำวัน ธนาคารอยู่ฝั่งตรงข้ามของถนน
+orange|noun|Food|ส้ม|a round orange-colored fruit|ˈɔrɪnʤ|ออรอินจ|While talking with a friend, this orange is juicy.|ขณะคุยกับเพื่อน ส้มลูกนี้น้ำเยอะ
+order|noun|Daily Life|คำสั่ง / ลำดับ|a request for goods or food; a sequence or arrangement|ˈɔːrdər|ออรดอะร|During today's lesson, I placed an order for a pizza.|ระหว่างบทเรียนวันนี้ ฉันสั่งพิซซ่า
+other|adjective|Daily Life|อื่น|different from this|ˈəðər|อะดอะร|In our morning practice, do you have other colors?|ในการฝึกช่วงเช้าของเรา คุณมีสีอื่นไหม
+oven|noun|Home|เตาอบ|an enclosed chamber for baking or roasting food|ˈʌvən|อะวอะน|For a simple example, preheat the oven to 180 degrees.|สำหรับตัวอย่างง่าย ๆ อุ่นเตาอบที่ 180 องศา
+owe|verb|Finance|เป็นหนี้|to be required to pay money to someone|oʊ|โอ|In everyday conversation, I owe you fifty dollars.|ในการสนทนาในชีวิตประจำวัน ฉันเป็นหนี้คุณห้าสิบดอลลาร์
+own|adjective|Daily Life|ของตัวเอง|belonging to yourself|oʊn|โอน|While talking with a friend, I want my own room.|ขณะคุยกับเพื่อน ฉันอยากมีห้องของตัวเอง
+page|noun|Education|หน้า|one side of a sheet of paper in a book or document|peɪdʒ|พเอจ|During today's lesson, please turn to page 10.|ระหว่างบทเรียนวันนี้ กรุณาเปิดไปที่หน้า 10
+pair|noun|Shopping|คู่|a set of two corresponding things|pɛr|พเอร|In our morning practice, I bought a new pair of socks.|ในการฝึกช่วงเช้าของเรา ฉันซื้อถุงเท้าคู่ใหม่
+paper|noun|School|กระดาษ|thin material used for writing or printing|ˈpeɪpər|พเอพอะร|For a simple example, write your name on the paper.|สำหรับตัวอย่างง่าย ๆ เขียนชื่อของคุณบนกระดาษ
+paragraph|noun|Education|ย่อหน้า|a section of writing that starts on a new line|ˈpærəɡræf|พแอรอะกรแอฟ|In everyday conversation, write a paragraph about your family.|ในการสนทนาในชีวิตประจำวัน เขียนย่อหน้าเกี่ยวกับครอบครัวของคุณ
+parent|noun|Daily Life|พ่อแม่|mother or father|ˈpɛrənt|พเอรอะนท|Our class practiced the word "parent" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "parent" ในบทสนทนาสั้น ๆ
+past|noun|Daily Life|อดีต|time before now|pæst|พแอสท|During today's lesson, that happened in the past.|ระหว่างบทเรียนวันนี้ นั่นเกิดขึ้นในอดีต
+pay|verb|Finance|จ่าย|to give money for something|peɪ|พเอ|In our morning practice, pay for the food.|ในการฝึกช่วงเช้าของเรา จ่ายเงินค่าอาหาร
+payment|noun|Finance|การชำระเงิน|an amount of money paid for something|ˈpeɪmənt|พเอมอะนท|For a simple example, the payment is due on the first of the month.|สำหรับตัวอย่างง่าย ๆ การชำระเงินครบกำหนดวันที่หนึ่งของเดือน
+pen|noun|School|ปากกา|a tool to write with ink|pɛn|พเอน|In everyday conversation, can I borrow your pen?|ในการสนทนาในชีวิตประจำวัน ฉันขอยืมปากกาคุณได้ไหม
+pencil|noun|School|ดินสอ|a tool to write with graphite|ˈpɛnsəl|พเอนสอะล|While talking with a friend, sharpen your pencil, please.|ขณะคุยกับเพื่อน กรุณาเหลาดินสอของคุณ
+people|noun|Daily Life|คน|more than one person|ˈpipəl|พอีพอะล|During today's lesson, many people came to the party.|ระหว่างบทเรียนวันนี้ คนมาเยอะที่งานปาร์ตี้
+perfect|adjective|Daily Life|สมบูรณ์แบบ|without any faults; completely correct|ˈpɜːrfɪkt|พเออร์รฟอิคท|In our morning practice, the weather today is perfect for a picnic.|ในการฝึกช่วงเช้าของเรา สภาพอากาศวันนี้เหมาะสมสำหรับการปิกนิก
+perhaps|adverb|Daily Life|บางที|maybe|pərˈhæps|พอะรฮแอพส|For a simple example, perhaps we should wait.|สำหรับตัวอย่างง่าย ๆ บางทีเราควรรอ
+person|noun|Daily Life|บุคคล|a human being|ˈpərsən|พอะรสอะน|In everyday conversation, she is a nice person.|ในการสนทนาในชีวิตประจำวัน เธอเป็นคนดี
+phone|noun|Technology|โทรศัพท์|a device for calling or texting|foʊn|ฟโอน|While talking with a friend, where is my phone?|ขณะคุยกับเพื่อน โทรศัพท์ฉันอยู่ไหน
+photo|noun|Daily Life|รูปถ่าย|an informal word for a picture made with a camera|ˈfoʊˌtoʊ|ฟโอทโอ|During today's lesson, I take a photo of the view.|ระหว่างบทเรียนวันนี้ ฉันถ่ายรูปวิว
+photograph|noun|Culture|ภาพถ่าย|a picture produced by using a camera|ˈfoʊtəɡræf|ฟโอทอะกรแอฟ|In our morning practice, she showed me a photograph of her dog.|ในการฝึกช่วงเช้าของเรา เธอแสดงรูปถ่ายสุนัขของเธอให้ฉันดู
+phrase|noun|Education|วลี|a group of words used together as a unit|freɪz|ฟรเอซ|For a simple example, good morning is a common phrase.|สำหรับตัวอย่างง่าย ๆ Good morning เป็นวลีที่ใช้บ่อย
+piece|noun|Daily Life|ชิ้น|a part of something|pis|พอีส|In everyday conversation, give me a piece of cake.|ในการสนทนาในชีวิตประจำวัน ให้ฉันเค้กชิ้นหนึ่ง
+pig|noun|Nature|หมู|a farm animal with a round body and a flat nose|pɪɡ|พอิก|While talking with a friend, the pig rolled in the mud.|ขณะคุยกับเพื่อน หมูกลิ้งในโคลน
+pink|adjective|Daily Life|ชมพู|light red color|pɪŋk|พอิงค|During today's lesson, pink flowers.|ระหว่างบทเรียนวันนี้ ดอกไม้สีชมพู
+place|noun|Daily Life|สถานที่|a particular area or spot|pleɪs|พลเอส|In our morning practice, this is a nice place.|ในการฝึกช่วงเช้าของเรา นี่เป็นสถานที่ดี
+plate|noun|Home|จาน|flat dish for food|pleɪt|พลเอท|For a simple example, put food on the plate.|สำหรับตัวอย่างง่าย ๆ ใส่อาหารในจาน
+player|noun|Sports|นักกีฬา / ผู้เล่น|someone who takes part in a game or sport|ˈpleɪər|พลเออะร|In everyday conversation, he is the best player on the team.|ในการสนทนาในชีวิตประจำวัน เขาเป็นผู้เล่นที่ดีที่สุดในทีม
+please|adverb|Society|กรุณา|polite request|pliz|พลอีซ|While talking with a friend, please help me.|ขณะคุยกับเพื่อน กรุณาช่วยฉัน
+point|noun|Daily Life|คะแนน / จุด / ประเด็น|a single fact or idea; a sharp tip; a unit of score|pɔɪnt|พออยนท|Our class practiced the word "point" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "point" ในบทสนทนาสั้น ๆ
+policeman|noun|Law|ตำรวจ (ชาย)|a male police officer|pəˈliːsmən|พอะลอีสมอะน|In our morning practice, the policeman helped the lost child find her parents.|ในการฝึกช่วงเช้าของเรา ตำรวจช่วยเด็กหลงทางหาพ่อแม่
+pool|noun|Sports|สระน้ำ|a place filled with water for swimming|puːl|พอูล|For a simple example, the kids played in the pool all afternoon.|สำหรับตัวอย่างง่าย ๆ เด็กๆ เล่นในสระน้ำตลอดบ่าย
+popular|adjective|Society|เป็นที่นิยม|liked or enjoyed by many people|ˈpɒpjʊlər|พออพยอุลอะร|In everyday conversation, this song is very popular with teenagers.|ในการสนทนาในชีวิตประจำวัน เพลงนี้ได้รับความนิยมมากในหมู่วัยรุ่น
+positive|adjective|Emotions|เชิงบวก|having a hopeful or confident attitude; good|ˈpɒzɪtɪv|พออซอิทอิว|While talking with a friend, try to stay positive even when things are hard.|ขณะคุยกับเพื่อน พยายามคิดบวกแม้สิ่งต่างๆ จะยาก
+pound|noun|Finance|ปอนด์ (สกุลเงิน/หน่วยน้ำหนัก)|the basic unit of money in the UK|paʊnd|พเอานด|Our class practiced the word "pound" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "pound" ในบทสนทนาสั้น ๆ
+pretty|adjective|Shopping|สวย|attractive in a pleasant way|ˈprɪt.i|พรอิท-อี|In our morning practice, the garden looks pretty in spring.|ในการฝึกช่วงเช้าของเรา สวนสวยงามในฤดูใบไม้ผลิ
+print|verb|Technology|พิมพ์|to produce text on paper using a machine|prɪnt|พรอินท|For a simple example, please print the report.|สำหรับตัวอย่างง่าย ๆ กรุณาพิมพ์รายงาน
+probably|adverb|Daily Life|น่าจะ / คงจะ|almost certainly; very likely|ˈprɒbəbli|พรออบอะบลอี|In everyday conversation, it will probably rain tomorrow.|ในการสนทนาในชีวิตประจำวัน พรุ่งนี้น่าจะฝนตก
+pull|verb|Daily Life|ดึง|to move something toward you|pʊl|พอุล|While talking with a friend, pull the rope.|ขณะคุยกับเพื่อน ดึงเชือก
+purple|adjective|Daily Life|สีม่วง|having a color that is a mix of red and blue|ˈpɜːrpəl|พเออร์รพอะล|During today's lesson, she wore a purple dress to the party.|ระหว่างบทเรียนวันนี้ เธอสวมชุดสีม่วงไปงานปาร์ตี้
+push|verb|Daily Life|ผลัก|to move something away from you|pʊʃ|พอุช|In our morning practice, push the door open.|ในการฝึกช่วงเช้าของเรา ผลักประตูให้เปิด
+put|verb|Daily Life|วาง|to place somewhere|pʊt|พอุท|For a simple example, put it here.|สำหรับตัวอย่างง่าย ๆ วางไว้ที่นี่
+quick|adjective|Daily Life|เร็ว|moving fast or taking a short time|kwɪk|ควอิค|In everyday conversation, let me make a quick phone call.|ในการสนทนาในชีวิตประจำวัน ขอโทรศัพท์สั้นๆ สักหน่อย
+quickly|adverb|Daily Life|อย่างรวดเร็ว|at a fast speed; without delay|ˈkwɪkli|ควอิคลอี|While talking with a friend, please come quickly, we are late!|ขณะคุยกับเพื่อน กรุณามาเร็วๆ เราสายแล้ว!
+quiet|adjective|Daily Life|เงียบ|making little noise|kwaɪət|ควไออะท|During today's lesson, please be quiet.|ระหว่างบทเรียนวันนี้ เงียบหน่อย
+quite|adverb|Daily Life|ค่อนข้าง|rather, fairly|kwaɪt|ควไอท|In our morning practice, the movie was quite good.|ในการฝึกช่วงเช้าของเรา หนังเรื่องนั้นดีพอสมควร
+radio|noun|Communication|วิทยุ|a device that receives and plays broadcast sound|ˈreɪdioʊ|รเอดอีโอ|For a simple example, he listened to the news on the radio.|สำหรับตัวอย่างง่าย ๆ เขาฟังข่าวทางวิทยุ
+reader|noun|Education|ผู้อ่าน|someone who reads; a book used for reading practice|ˈriːdər|รอีดอะร|In everyday conversation, she is an avid reader who finishes a book every week.|ในการสนทนาในชีวิตประจำวัน เธอเป็นนักอ่านตัวยงที่อ่านหนังสือจบทุกสัปดาห์
+reading|noun|Education|การอ่าน|the activity of looking at and understanding written text|ˈriːdɪŋ|รอีดอิง|While talking with a friend, reading is one of my favourite hobbies.|ขณะคุยกับเพื่อน การอ่านหนังสือเป็นหนึ่งในงานอดิเรกที่ฉันชอบ
+really|adverb|Daily Life|จริงๆ|truly, very much|ˈrɪli|รอิลอี|During today's lesson, I really like this song.|ระหว่างบทเรียนวันนี้ ฉันชอบเพลงนี้จริงๆ
+red|adjective|Daily Life|แดง|color of blood|rɛd|รเอด|In our morning practice, the apple is red.|ในการฝึกช่วงเช้าของเรา แอปเปิลเป็นสีแดง
+rent|noun|Places|ค่าเช่า|a payment made for the use of property|rent|รเอนท|For a simple example, the rent for this apartment is $1500 a month.|สำหรับตัวอย่างง่าย ๆ ค่าเช่าอพาร์ทเมนท์นี้ 1500 ดอลลาร์ต่อเดือน
+repeat|verb|Daily Life|ทำซ้ำ / พูดซ้ำ|to do or say something again|rɪˈpiːt|รอิพอีท|In everyday conversation, could you please repeat that? I didn't hear you.|ในการสนทนาในชีวิตประจำวัน คุณช่วยพูดซ้ำได้ไหม? ฉันไม่ได้ยิน
+restaurant|noun|Food|ร้านอาหาร|a location where you can buy and eat meals|ˈrɛˌstrɑnt|รเอสทรอานท|While talking with a friend, this restaurant is near my office.|ขณะคุยกับเพื่อน ร้านอาหารนี้อยู่ใกล้ออฟฟิศของฉัน
+rice|noun|Food|ข้าว|a small white grain that people eat|raɪs|รไอส|During today's lesson, we eat rice every day.|ระหว่างบทเรียนวันนี้ เรากินข้าวทุกวัน
+right|adverb|Daily Life|ขวา|the opposite of left|raɪt|รไอท|In our morning practice, turn right here.|ในการฝึกช่วงเช้าของเรา เลี้ยวขวาตรงนี้
+river|noun|Nature|แม่น้ำ|a large, natural flow of water that goes across the land into a sea|ˈrɪvər|รอิวอะร|For a simple example, the river is very long.|สำหรับตัวอย่างง่าย ๆ แม่น้ำนี้ยาวมาก
+road|noun|Travel|ถนน|a long hard surface for vehicles to travel on|roʊd|รโอด|In everyday conversation, drive carefully on this road.|ในการสนทนาในชีวิตประจำวัน ขับรถอย่างระมัดระวังบนถนนนี้
+room|noun|Home|ห้อง|a part of a building with walls|rum|รอูม|While talking with a friend, my room is small but clean.|ขณะคุยกับเพื่อน ห้องของฉันเล็กแต่สะอาด
+rough|adjective|Daily Life|ขรุขระ|having an uneven surface|rəf|รอะฟ|During today's lesson, the wall is rough.|ระหว่างบทเรียนวันนี้ ผนังขรุขระ
+round|adjective|Daily Life|กลม|shaped like a circle|raʊnd|รเอานด|In our morning practice, the ball is round.|ในการฝึกช่วงเช้าของเรา บอลกลม
+rule|noun|Daily Life|กฎ|an instruction that says what must or must not be done|ruːl|รอูล|Our class practiced the word "rule" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "rule" ในบทสนทนาสั้น ๆ
+run|verb|Daily Life|วิ่ง|to move fast on foot|rən|รอะน|In everyday conversation, run fast.|ในการสนทนาในชีวิตประจำวัน วิ่งเร็ว
+salad|noun|Food|สลัด|a dish of mixed vegetables, often with dressing|ˈsæləd|สแอลอะด|While talking with a friend, she orders a salad.|ขณะคุยกับเพื่อน เธอสั่งสลัด
+salt|noun|Food|เกลือ|a white substance used to add flavor|sɔlt|สออลท|During today's lesson, this soup needs some salt.|ระหว่างบทเรียนวันนี้ ซุปนี้ต้องเติมเกลือหน่อย
+sand|noun|Nature|ทราย|tiny pieces of rock|sænd|สแอนด|In our morning practice, walk on the sand.|ในการฝึกช่วงเช้าของเรา เดินบนทราย
+sandwich|noun|Food|แซนด์วิช|two pieces of bread with food between them|ˈsænwɪʧ|สแอนวอิช|For a simple example, he eats a sandwich for lunch.|สำหรับตัวอย่างง่าย ๆ เขากินแซนด์วิชเป็นมื้อกลางวัน
+school|noun|School|โรงเรียน|a location where children learn|skul|สคอูล|In everyday conversation, our school is new.|ในการสนทนาในชีวิตประจำวัน โรงเรียนของเราใหม่
+scientist|noun|Science|นักวิทยาศาสตร์|someone who studies or works in science|ˈsaɪəntɪst|สไออะนทอิสท|While talking with a friend, the scientist discovered a new species of insect.|ขณะคุยกับเพื่อน นักวิทยาศาสตร์ค้นพบแมลงสายพันธุ์ใหม่
+sea|noun|Nature|ทะเล|the large area of salt water that covers much of the earth|si|สอี|During today's lesson, we swam in the sea.|ระหว่างบทเรียนวันนี้ เราไปว่ายน้ำในทะเล
+section|noun|Daily Life|ส่วน / แผนก|a distinct part of something larger|ˈsekʃən|สเอคชอะน|In our morning practice, the library has a children's section.|ในการฝึกช่วงเช้าของเรา ห้องสมุดมีส่วนสำหรับเด็ก
+sell|verb|Shopping|ขาย|to give something to someone in exchange for money|sɛl|สเอล|For a simple example, they sell designer clothes at half price.|สำหรับตัวอย่างง่าย ๆ พวกเขาขายเสื้อผ้าแบรนด์ครึ่งราคา
+send|verb|Technology|ส่ง|to transmit a message electronically|sɛnd|สเอนด|In everyday conversation, send me an email please.|ในการสนทนาในชีวิตประจำวัน ส่งอีเมลมาให้ฉันด้วย
+sentence|noun|Education|ประโยค|a group of words that expresses a complete thought|ˈsentəns|สเอนทอะนส|While talking with a friend, can you write a sentence using the word happy?|ขณะคุยกับเพื่อน คุณสามารถเขียนประโยคโดยใช้คำว่า happy ได้ไหม?
+seventy|noun|Daily Life|เจ็ดสิบ|the number 70|ˈsevənti|สเอวอะนทอี|During today's lesson, my grandfather is seventy years old.|ระหว่างบทเรียนวันนี้ ปู่ของฉันอายุเจ็ดสิบปี
+shake|verb|Daily Life|เขย่า|to move quickly back and forth|ʃeɪk|ชเอค|In our morning practice, shake the bottle.|ในการฝึกช่วงเช้าของเรา เขย่าขวด
+sheep|noun|Nature|แกะ|a farm animal with thick wool, kept for its wool and meat|ʃiːp|ชอีพ|For a simple example, the farmer has a flock of sheep on the hill.|สำหรับตัวอย่างง่าย ๆ เกษตรกรมีฝูงแกะบนเนินเขา
+shoe|noun|Shopping|รองเท้า|covering for the foot|ʃu|ชอู|Our class practiced the word "shoe" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "shoe" ในบทสนทนาสั้น ๆ
+shop|noun|Shopping|ร้านค้า / ซื้อของ|a place to buy things; to buy things|ʃɑp|ชอาพ|While talking with a friend, I shop for clothes online.|ขณะคุยกับเพื่อน ฉันซื้อเสื้อผ้าทางออนไลน์
+shopping|noun|Daily Life|การช้อปปิ้ง|the activity of buying goods from shops|ˈʃɒpɪŋ|ชออพอิง|During today's lesson, let's go shopping at the new mall.|ระหว่างบทเรียนวันนี้ ไปช้อปปิ้งที่ห้างใหม่กันเถอะ
+show|verb|Daily Life|แสดง / สาธิต|to let someone see something; to display|ʃoʊ|ชโอ|In our morning practice, can you show me how to use this app?|ในการฝึกช่วงเช้าของเรา คุณช่วยสาธิตวิธีใช้แอปนี้ให้ฉันดูได้ไหม?
+side|noun|Daily Life|ข้าง|left or right part|saɪd|สไอด|For a simple example, move to the side.|สำหรับตัวอย่างง่าย ๆ ขยับไปข้างๆ
+singer|noun|Culture|นักร้อง|someone who sings, especially as a job|ˈsɪŋər|สอิงอะร|In everyday conversation, she is a famous singer with many fans.|ในการสนทนาในชีวิตประจำวัน เธอเป็นนักร้องที่มีชื่อเสียงและมีแฟนคลับมากมาย
+sink|noun|Home|อ่างล้างจาน|a basin with a water supply for washing|sɪŋk|สอิงค|While talking with a friend, wash your hands in the sink.|ขณะคุยกับเพื่อน ล้างมือที่อ่างล้างจาน
+sit|verb|Daily Life|นั่ง|to rest on chair|sɪt|สอิท|During today's lesson, sit down please.|ระหว่างบทเรียนวันนี้ นั่งลง
+situation|noun|Daily Life|สถานการณ์|the set of circumstances or conditions at a particular time|ˌsɪtʃuˈeɪʃən|สอิชอูเอชอะน|In our morning practice, we need to handle this situation carefully.|ในการฝึกช่วงเช้าของเรา เราต้องจัดการสถานการณ์นี้อย่างระมัดระวัง
+sixty|noun|Daily Life|หกสิบ|the number 60|ˈsɪksti|สอิคสทอี|For a simple example, there are sixty minutes in one hour.|สำหรับตัวอย่างง่าย ๆ หนึ่งชั่วโมงมีหกสิบนาที
+sleep|verb|Daily Life|นอน|to rest with closed eyes|slip|สลอีพ|In everyday conversation, I sleep at night.|ในการสนทนาในชีวิตประจำวัน ฉันนอนตอนกลางคืน
+small|adjective|Daily Life|เล็ก|little size|smɔl|สมออล|While talking with a friend, small cat.|ขณะคุยกับเพื่อน แมวเล็ก
+smell|noun|Daily Life|กลิ่น|something you notice with your nose|smɛl|สมเอล|During today's lesson, a good smell.|ระหว่างบทเรียนวันนี้ กลิ่นดี
+smooth|adjective|Daily Life|เรียบ|having an even surface|smuð|สมอูด|In our morning practice, the table is smooth.|ในการฝึกช่วงเช้าของเรา โต๊ะเรียบ
+sneaker|noun|Shopping|รองเท้าผ้าใบ|a soft shoe with a rubber sole, used for sports or casual wear|ˈsniː.kər|สนอี-คอะร|Our class practiced the word "sneaker" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "sneaker" ในบทสนทนาสั้น ๆ
+sock|noun|Shopping|ถุงเท้า|clothing for feet inside shoes|sɑk|สอาค|Our class practiced the word "sock" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "sock" ในบทสนทนาสั้น ๆ
+soft|adjective|Daily Life|นุ่ม|not hard to touch|sɔft|สออฟท|While talking with a friend, the pillow is soft.|ขณะคุยกับเพื่อน หมอนนุ่ม
+sometimes|adverb|Daily Life|บางครั้ง|not always, but at times|ˈsəmˌtaɪmz|สอะมทไอมซ|During today's lesson, sometimes I feel sad.|ระหว่างบทเรียนวันนี้ บางครั้งฉันรู้สึกเศร้า
+son|noun|Family|ลูกชาย|a male child|sʌn|สอะน|In our morning practice, their son is five years old.|ในการฝึกช่วงเช้าของเรา ลูกชายอายุห้าขวบ
+soon|adverb|Daily Life|เร็วๆ นี้|in a short time from now|suːn|สอูน|For a simple example, I'll be there soon.|สำหรับตัวอย่างง่าย ๆ ฉันจะไปถึงเร็วๆ นี้
+sound|noun|Daily Life|เสียง|something you hear|saʊnd|สเอานด|In everyday conversation, I hear a sound.|ในการสนทนาในชีวิตประจำวัน ฉันได้ยินเสียง
+soup|noun|Food|ซุป|a hot liquid food|sup|สอูพ|While talking with a friend, the soup is hot.|ขณะคุยกับเพื่อน ซุปนี้ร้อน
+south|noun|Daily Life|ใต้|direction opposite to north|saʊθ|สเอาธ|During today's lesson, mexico is south of USA.|ระหว่างบทเรียนวันนี้ เม็กซิโกอยู่ใต้ของสหรัฐอเมริกา
+spell|verb|Education|สะกด|to write or say the letters of a word in order|spel|สพเอล|In our morning practice, how do you spell your name?|ในการฝึกช่วงเช้าของเรา คุณสะกดชื่อของคุณอย่างไร?
+spelling|noun|Education|การสะกดคำ|the way a word is spelled; the sequence of letters in a word|ˈspelɪŋ|สพเอลอิง|For a simple example, check the spelling of that word.|สำหรับตัวอย่างง่าย ๆ ตรวจสอบการสะกดคำนั้น
+spot|noun|Shopping|จุด|a round mark of color different from the surrounding area|spɒt|สพออท|Our class practiced the word "spot" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "spot" ในบทสนทนาสั้น ๆ
+spring|noun|Weather|ฤดูใบไม้ผลิ|the season between winter and summer|sprɪŋ|สพรอิง|While talking with a friend, flowers bloom in spring.|ขณะคุยกับเพื่อน ดอกไม้บานในฤดูใบไม้ผลิ
+stamp|noun|Travel|แสตมป์|small adhesive label for postage or a mark pressed onto a surface|stæmp|สทแอมพ|Our class practiced the word "stamp" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "stamp" ในบทสนทนาสั้น ๆ
+stand|verb|Daily Life|ยืน|to be upright|stænd|สทแอนด|In our morning practice, stand up.|ในการฝึกช่วงเช้าของเรา ยืนขึ้น
+start|verb|Work|เริ่ม|to begin doing something|stɑrt|สทอารท|Our class practiced the word "start" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "start" ในบทสนทนาสั้น ๆ
+statement|noun|Daily Life|คำแถลง|something that is said or written officially|ˈsteɪtmənt|สทเอทมอะนท|In everyday conversation, the president made a statement.|ในการสนทนาในชีวิตประจำวัน ประธานาธิบดีออกแถลงการณ์
+station|noun|Travel|สถานี|a location where trains or buses stop|ˈsteɪʃən|สทเอชอะน|While talking with a friend, meet me at the station.|ขณะคุยกับเพื่อน เจอกันที่สถานี
+step|noun|Daily Life|ขั้นตอน|a stage in a process|step|สทเอพ|During today's lesson, the first step is to create an account.|ระหว่างบทเรียนวันนี้ ขั้นตอนแรกคือสร้างบัญชี
+still|adverb|Daily Life|ยังคง|continuing until now|stɪl|สทอิล|In our morning practice, are you still working?|ในการฝึกช่วงเช้าของเรา คุณยังทำงานอยู่ไหม
+stone|noun|Nature|ก้อนหิน|small piece of rock|stoʊn|สทโอน|For a simple example, throw a stone.|สำหรับตัวอย่างง่าย ๆ โยนก้อนหิน
+stop|verb|Daily Life|หยุด|to not move anymore|stɑp|สทอาพ|In everyday conversation, stop the car.|ในการสนทนาในชีวิตประจำวัน หยุดรถ
+story|noun|Culture|เรื่องราว|a description of events, real or imagined|ˈstɔːri|สทออรอี|While talking with a friend, she read a story to the children.|ขณะคุยกับเพื่อน เธออ่านนิทานให้เด็กๆ ฟัง
+stove|noun|Home|เตา|a cooking appliance with burners|stoʊv|สทโอว|During today's lesson, put the pot on the stove.|ระหว่างบทเรียนวันนี้ วางหม้อบนเตา
+stranger|noun|Society|คนแปลกหน้า|person you do not know|ˈstreɪndʒər|สทรเอนจอะร|Our class practiced the word "stranger" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "stranger" ในบทสนทนาสั้น ๆ
+street|noun|Places|ถนน (ในเมือง)|a road in a city or town|strit|สทรอีท|For a simple example, the street is busy today.|สำหรับตัวอย่างง่าย ๆ ถนนคึกคักวันนี้
+student|noun|School|นักเรียน / นักศึกษา|someone who studies at a school or college|ˈstudənt|สทอูดอะนท|In everyday conversation, she is a university student.|ในการสนทนาในชีวิตประจำวัน เธอเป็นนักศึกษามหาวิทยาลัย
+study|verb|School|เรียน|to learn about something|ˈstədi|สทอะดอี|While talking with a friend, study hard for the test.|ขณะคุยกับเพื่อน เรียนหนักเพื่อสอบ
+success|noun|Daily Life|ความสำเร็จ|achieving a goal or doing well|səkˈses|สอะคสเอส|During today's lesson, hard work leads to success.|ระหว่างบทเรียนวันนี้ การทำงานหนักนำไปสู่ความสำเร็จ
+sugar|noun|Food|น้ำตาล|a sweet substance used in food and drinks|ˈʃʊgər|ชอุกอะร|In our morning practice, don't add too much sugar.|ในการฝึกช่วงเช้าของเรา อย่าใส่น้ำตาลมากเกินไป
+supermarket|noun|Shopping|ซูเปอร์มาร์เก็ต|a large store that sells food, drinks, and household items|ˈsuːpərˌmɑːrkɪt|สอูพอะรมอารคอิท|For a simple example, I need to go to the supermarket to buy some vegetables.|สำหรับตัวอย่างง่าย ๆ ฉันต้องไปซูเปอร์มาร์เก็ตซื้อผักบ้าง
+sure|adjective|Daily Life|แน่ใจ|certain about something|ʃʊr|ชอุร|In everyday conversation, are you sure about that?|ในการสนทนาในชีวิตประจำวัน คุณแน่ใจเรื่องนั้นไหม
+swimming|noun|Sports|การว่ายน้ำ|the sport or activity of moving through water|ˈswɪmɪŋ|สวอิมอิง|While talking with a friend, swimming is great exercise.|ขณะคุยกับเพื่อน การว่ายน้ำเป็นการออกกำลังกายที่ดี
+table|noun|Home|โต๊ะ|a piece of furniture with a flat top|ˈteɪbəl|ทเอบอะล|During today's lesson, dinner is on the table.|ระหว่างบทเรียนวันนี้ มื้อเย็นอยู่บนโต๊ะ
+take|verb|Daily Life|เอาไป / พาไป / ใช้|to move something away; to accept or use|teɪk|ทเอค|In our morning practice, please take this book to your room.|ในการฝึกช่วงเช้าของเรา ช่วยเอาหนังสือเล่มนี้ไปไว้ในห้องของเธอ
+talk|verb|Daily Life|พูดคุย|to speak and have a conversation with someone|tɔːk|ทออค|Our class practiced the word "talk" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "talk" ในบทสนทนาสั้น ๆ
+taxi|noun|Travel|แท็กซี่|a car that you pay to ride in|ˈtæksi|ทแอคสอี|In everyday conversation, we take a taxi to the hotel.|ในการสนทนาในชีวิตประจำวัน เรานั่งแท็กซี่ไปโรงแรม
+tea|noun|Food|ชา|a hot drink made by infusing dried leaves|ti|ทอี|While talking with a friend, would you like some tea?|ขณะคุยกับเพื่อน ต้องการชาสักหน่อยไหม
+telephone|noun|Technology|โทรศัพท์|a device used to speak to someone far away|ˈtelɪfəʊn|ทเอลอิฟโอน|During today's lesson, she answered the telephone.|ระหว่างบทเรียนวันนี้ เธอรับโทรศัพท์
+television|noun|Communication|โทรทัศน์|an electronic device that displays moving pictures and sound|ˈtelɪvɪʒən|ทเอลอิวอิชอะน|In our morning practice, they watched television all evening.|ในการฝึกช่วงเช้าของเรา พวกเขาดูโทรทัศน์ตลอดทั้งคืน
+tell|verb|Daily Life|บอก|to give information to someone in words|tel|ทเอล|For a simple example, tell me your name, please.|สำหรับตัวอย่างง่าย ๆ บอกชื่อของคุณให้ฉันทราบด้วย
+tennis|noun|Sports|เทนนิส|a sport played with rackets and a ball on a court|ˈtenɪs|ทเอนอิส|In everyday conversation, she plays tennis every weekend.|ในการสนทนาในชีวิตประจำวัน เธอเล่นเทนนิสทุกสุดสัปดาห์
+terrible|adjective|Daily Life|แย่มาก|very bad or unpleasant|ˈterɪbəl|ทเอรอิบอะล|While talking with a friend, the weather was terrible today.|ขณะคุยกับเพื่อน สภาพอากาศวันนี้เลวร้ายมาก
+test|noun|Education|การทดสอบ|a set of questions or tasks to measure knowledge or ability|test|ทเอสท|During today's lesson, I have a test tomorrow.|ระหว่างบทเรียนวันนี้ ฉันมีการสอบพรุ่งนี้
+text|noun|Technology|ข้อความ|a written message sent by phone|tɛkst|ทเอคสท|In our morning practice, she sent me a text message.|ในการฝึกช่วงเช้าของเรา เธอส่งข้อความมาให้ฉัน
+thank|verb|Daily Life|ขอบคุณ|to express gratitude to someone|θæŋk|ธแองค|For a simple example, I want to thank you for your help.|สำหรับตัวอย่างง่าย ๆ ฉันต้องการขอบคุณคุณสำหรับความช่วยเหลือ
+then|adverb|Daily Life|จากนั้น|at that time; after that|ðɛn|ดเอน|In everyday conversation, we ate dinner, then watched a movie.|ในการสนทนาในชีวิตประจำวัน เรากินข้าว แล้วดูหนัง
+thing|noun|Daily Life|สิ่งของ|an object or item|θɪŋ|ธอิง|While talking with a friend, put the thing on the table.|ขณะคุยกับเพื่อน เอาสิ่งของนั่นวางบนโต๊ะ
+think|verb|Daily Life|คิด|to use your mind to consider something|θɪŋk|ธอิงค|During today's lesson, I think this is a good idea.|ระหว่างบทเรียนวันนี้ ฉันคิดว่านี่เป็นความคิดที่ดี
+thirsty|adjective|Food|กระหายน้ำ|needing or wanting a drink|ˈθərsti|ธอะรสทอี|In our morning practice, she is thirsty after running.|ในการฝึกช่วงเช้าของเรา เธอกระหายน้ำหลังจากวิ่ง
+throw|verb|Daily Life|โยน|to make something fly through the air|θroʊ|ธรโอ|For a simple example, throw the ball to me.|สำหรับตัวอย่างง่าย ๆ โยนบอลมาให้ฉัน
+time|noun|Daily Life|เวลา|hours and minutes|taɪm|ทไอม|In everyday conversation, what time is it?|ในการสนทนาในชีวิตประจำวัน กี่โมงแล้ว
+title|noun|Culture|ชื่อเรื่อง|the name of a book, film, or other work; a formal name or rank|ˈtaɪtəl|ทไอทอะล|While talking with a friend, what is the title of this book?|ขณะคุยกับเพื่อน ชื่อเรื่องของหนังสือนี้คืออะไร?
+today|noun|Daily Life|วันนี้|this day|təˈdeɪ|ทอะดเอ|During today's lesson, today is Monday.|ระหว่างบทเรียนวันนี้ วันนี้วันจันทร์
+together|adverb|Society|ด้วยกัน|with each other; in the same place|təˈgɛðər|ทอะกเอดอะร|In our morning practice, let's cook together.|ในการฝึกช่วงเช้าของเรา มาทำอาหารด้วยกัน
+tomato|noun|Food|มะเขือเทศ|a red fruit used in cooking|təˈmeɪtoʊ|ทอะมเอทโอ|Our class practiced the word "tomato" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "tomato" ในบทสนทนาสั้น ๆ
+tomorrow|noun|Daily Life|พรุ่งนี้|next day|təˈmɑˌroʊ|ทอะมอารโอ|In everyday conversation, see you tomorrow.|ในการสนทนาในชีวิตประจำวัน เจอกันพรุ่งนี้
+tonight|adverb|Daily Life|คืนนี้|on the present evening or night|təˈnaɪt|ทอะนไอท|While talking with a friend, what are you doing tonight?|ขณะคุยกับเพื่อน คืนนี้คุณจะทำอะไร
+too|adverb|Daily Life|ด้วย / เกินไป|also; more than enough|tuː|ทอู|During today's lesson, I want to come too.|ระหว่างบทเรียนวันนี้ ฉันก็อยากมาด้วย
+topic|noun|Education|หัวข้อ|the subject that is being discussed or written about|ˈtɒpɪk|ทออพอิค|In our morning practice, the topic of today's lesson is history.|ในการฝึกช่วงเช้าของเรา หัวข้อของบทเรียนวันนี้คือประวัติศาสตร์
+touch|verb|Daily Life|สัมผัส|to feel with your hands|təʧ|ทอะช|For a simple example, don't touch that.|สำหรับตัวอย่างง่าย ๆ อย่าสัมผัสนั่น
+towel|noun|Home|ผ้าเช็ดตัว|cloth for drying|taʊəl|ทเอาอะล|In everyday conversation, use a clean towel.|ในการสนทนาในชีวิตประจำวัน ใช้ผ้าเช็ดตัวสะอาด
+town|noun|Daily Life|เมือง|a place larger than a village but smaller than a city|taʊn|ทเอาน|While talking with a friend, I grew up in a small town.|ขณะคุยกับเพื่อน ฉันโตมาในเมืองเล็กๆ
+tree|noun|Nature|ต้นไม้|a tall plant with a trunk, branches, and leaves|tri|ทรอี|During today's lesson, the tree gives us shade.|ระหว่างบทเรียนวันนี้ ต้นไม้ให้ร่มเงาแก่เรา
+true|adjective|Daily Life|จริง|in accordance with fact or reality; correct|truː|ทรอู|In our morning practice, is it true that you are moving?|ในการฝึกช่วงเช้าของเรา จริงไหมที่คุณกำลังจะย้าย?
+try|verb|Daily Life|พยายาม|to attempt to do something|traɪ|ทรไอ|For a simple example, try to understand.|สำหรับตัวอย่างง่าย ๆ พยายามที่จะเข้าใจ
+turn|verb|Daily Life|หัน|to move in a different direction|tərn|ทอะรน|In everyday conversation, turn left here.|ในการสนทนาในชีวิตประจำวัน เลี้ยวซ้ายตรงนี้
+type|verb|Technology|พิมพ์|to write using a keyboard|taɪp|ทไอพ|While talking with a friend, she can type very fast.|ขณะคุยกับเพื่อน เธอพิมพ์ได้เร็วมาก
+ugly|adjective|Shopping|น่าเกลียด|unpleasant or unattractive to look at|ˈʌɡli|อะกลอี|During today's lesson, he said the sweater was ugly.|ระหว่างบทเรียนวันนี้ เขาบอกว่าเสื้อสเวตเตอร์นั้นน่าเกลียด
+umbrella|noun|Weather|ร่ม|a thing you hold over your head when it rains|ˈəmˌbrɛlə|อะมบรเอลอะ|In our morning practice, take an umbrella with you.|ในการฝึกช่วงเช้าของเรา พกร่มไปด้วย
+uncle|noun|Family|ลุง/อา|the brother of one's mother or father|ˈʌŋ.kəl|อะง-คอะล|For a simple example, my uncle lives in another country.|สำหรับตัวอย่างง่าย ๆ ลุงของฉันอาศัยอยู่ต่างประเทศ
+up|adverb|Daily Life|ขึ้น|toward a higher place|əp|อะพ|In everyday conversation, look up at the sky.|ในการสนทนาในชีวิตประจำวัน มองขึ้นไปบนฟ้า
+upstairs|adverb|Daily Life|ชั้นบน|on or to a higher floor of a building|ˈʌpsterz|อะพสทเอรซ|While talking with a friend, my bedroom is upstairs.|ขณะคุยกับเพื่อน ห้องนอนของฉันอยู่ชั้นบน
+use|verb|Daily Life|ใช้|to do something with a tool or object for a purpose|juːz|ยอูซ|During today's lesson, can I use your pen?|ระหว่างบทเรียนวันนี้ ฉันใช้ปากกาของคุณได้ไหม?
+useful|adjective|Daily Life|มีประโยชน์|able to be used for a practical purpose; helpful|ˈjuːsfʊl|ยอูสฟอุล|In our morning practice, a map is very useful when traveling.|ในการฝึกช่วงเช้าของเรา แผนที่มีประโยชน์มากเมื่อเดินทาง
+vegetable|noun|Food|ผัก|a plant or part of a plant used as food|ˈvɛʤtəbəl|วเอจทอะบอะล|Our class practiced the word "vegetable" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "vegetable" ในบทสนทนาสั้น ๆ
+very|adverb|Daily Life|มาก|to a high degree|ˈvɛri|วเอรอี|In everyday conversation, the food is very good.|ในการสนทนาในชีวิตประจำวัน อาหารอร่อยมาก
+village|noun|Daily Life|หมู่บ้าน|a small settlement in the countryside, smaller than a town|ˈvɪlɪdʒ|วอิลอิจ|While talking with a friend, the village has only fifty houses.|ขณะคุยกับเพื่อน หมู่บ้านมีเพียงห้าสิบหลัง
+visitor|noun|Daily Life|ผู้เยี่ยมชม|someone who visits a place or person|ˈvɪzɪtər|วอิซอิทอะร|During today's lesson, we had a visitor from abroad.|ระหว่างบทเรียนวันนี้ เรามีผู้เยี่ยมเยียนจากต่างประเทศ
+wait|verb|Society|รอ|to stay until something happens|weɪt|วเอท|In our morning practice, please wait here.|ในการฝึกช่วงเช้าของเรา กรุณารอตรงนี้
+walk|verb|Daily Life|เดิน|to move on foot|wɔk|วออค|For a simple example, walk slowly.|สำหรับตัวอย่างง่าย ๆ เดินช้าๆ
+wall|noun|Home|ผนัง|a vertical structure that encloses a space|wɔːl|วออล|In everyday conversation, hang the picture on the wall.|ในการสนทนาในชีวิตประจำวัน แขวนรูปบนผนัง
+want|verb|Daily Life|อยาก|to wish to have or do something|wɔnt|วออนท|While talking with a friend, I want a new phone.|ขณะคุยกับเพื่อน ฉันอยากได้โทรศัพท์เครื่องใหม่
+warm|adjective|Weather|อุ่น|slightly hot; comfortable temperature|wɔrm|วออรม|During today's lesson, the water is warm.|ระหว่างบทเรียนวันนี้ น้ำนั้นอุ่น
+water|noun|Food|น้ำ|a clear liquid we drink|ˈwɔtər|วออทอะร|In our morning practice, drink more water.|ในการฝึกช่วงเช้าของเรา ดื่มน้ำมากขึ้น
+way|noun|Daily Life|วิธี|a method or manner of doing something|weɪ|วเอ|For a simple example, show me the way to the station.|สำหรับตัวอย่างง่าย ๆ บอกทางไปสถานีให้ฉันหน่อย
+weather|noun|Weather|สภาพอากาศ|the condition of the air at a place and time|ˈwɛðər|วเอดอะร|In everyday conversation, the weather is hot and sunny.|ในการสนทนาในชีวิตประจำวัน อากาศร้อนและแดดออก
+well|adverb|Daily Life|อย่างดี|in a good or satisfactory way|wel|วเอล|While talking with a friend, she plays the piano very well.|ขณะคุยกับเพื่อน เธอเล่นเปียโนได้ดีมาก
+wet|adjective|Daily Life|เปียก|covered with water|wɛt|วเอท|During today's lesson, my hair is wet.|ระหว่างบทเรียนวันนี้ ผมของฉันเปียก
+while|noun|Daily Life|สักพัก|a period of time|waɪl|วไอล|In our morning practice, I waited for a while.|ในการฝึกช่วงเช้าของเรา ฉันรอสักพัก
+white|adjective|Daily Life|ขาว|lightest color|waɪt|วไอท|For a simple example, white shirt.|สำหรับตัวอย่างง่าย ๆ เสื้อสีขาว
+wife|noun|Family|ภรรยา|a married woman|waɪf|วไอฟ|In everyday conversation, his wife is a teacher.|ในการสนทนาในชีวิตประจำวัน ภรรยาของเขาเป็นครู
+window|noun|Home|หน้าต่าง|an opening in a wall to let in light and air|ˈwɪndoʊ|วอินดโอ|While talking with a friend, open the window for fresh air.|ขณะคุยกับเพื่อน เปิดหน้าต่างเพื่อรับอากาศสดชื่น
+wine|noun|Food|ไวน์|alcoholic drink made from fermented grapes|waɪn|วไอน|During today's lesson, she ordered a glass of red wine.|ระหว่างบทเรียนวันนี้ เธอสั่งไวน์แดงหนึ่งแก้ว
+winter|noun|Weather|ฤดูหนาว|the coldest season of the year|ˈwɪntər|วอินทอะร|In our morning practice, it snows a lot in winter here.|ในการฝึกช่วงเช้าของเรา ที่นี่หิมะตกมากในฤดูหนาว
+woman|noun|Daily Life|ผู้หญิง|an adult female person|ˈwʊmən|วอุมอะน|For a simple example, the woman is reading.|สำหรับตัวอย่างง่าย ๆ ผู้หญิงกำลังอ่าน
+word|noun|Daily Life|คำ|A single unit of language that has meaning|wɜːrd|วเออร์รด|In everyday conversation, can you spell that word for me?|ในการสนทนาในชีวิตประจำวัน คุณสะกดคำนั้นให้ฉันได้ไหม?
+work|verb|Work|ทำงาน / งาน|to do job|wərk|วอะรค|While talking with a friend, I work every day.|ขณะคุยกับเพื่อน ฉันทำงานทุกวัน
+worker|noun|Work|คนงาน|someone who does a job, especially physical or manual work|ˈwɜːrkər|วเออร์รคอะร|Our class practiced the word "worker" in a short conversation.|ชั้นเรียนของเราฝึกใช้คำว่า "worker" ในบทสนทนาสั้น ๆ
+world|noun|Daily Life|โลก|the earth and all people in it|wərld|วอะรลด|In our morning practice, people around the world speak different languages.|ในการฝึกช่วงเช้าของเรา คนทั่วโลกพูดภาษาที่แตกต่างกัน
+writer|noun|Culture|นักเขียน|someone who writes books, stories, or articles as a job|ˈraɪtər|รไอทอะร|For a simple example, she is a famous writer who has published many novels.|สำหรับตัวอย่างง่าย ๆ เธอเป็นนักเขียนที่มีชื่อเสียงที่ตีพิมพ์นวนิยายหลายเรื่อง
+writing|noun|Education|การเขียน|The activity or skill of creating text, or something that has been written|ˈraɪtɪŋ|รไอทอิง|In everyday conversation, his writing has improved a lot this year.|ในการสนทนาในชีวิตประจำวัน การเขียนของเขาดีขึ้นมากในปีนี้
+wrong|adjective|Daily Life|ผิด|Not correct or not true; not the right one|rɔːŋ|รออง|While talking with a friend, sorry, that answer is wrong.|ขณะคุยกับเพื่อน ขอโทษ คำตอบนั้นผิด
+yard|noun|Home|สนาม|a piece of land next to a house, used as a garden|jɑːrd|ยอารด|During today's lesson, the kids played in the yard after school.|ระหว่างบทเรียนวันนี้ เด็กๆ เล่นในสนามหลังเลิกเรียน
+yellow|adjective|Daily Life|เหลือง|color of sun|ˈjɛloʊ|ยเอลโอ|In our morning practice, yellow banana.|ในการฝึกช่วงเช้าของเรา กล้วยสีเหลือง
+yes|adverb|Daily Life|ใช่|agreement|jɛs|ยเอส|For a simple example, yes, I agree.|สำหรับตัวอย่างง่าย ๆ ใช่ ฉันเห็นด้วย
+yesterday|noun|Daily Life|เมื่อวาน|past day|ˈjɛstərˌdeɪ|ยเอสทอะรดเอ|In everyday conversation, yesterday was fun.|ในการสนทนาในชีวิตประจำวัน เมื่อวานสนุก
+yet|adverb|Daily Life|ยัง|until now or up to this time|jɛt|ยเอท|While talking with a friend, have you finished yet?|ขณะคุยกับเพื่อน คุณเสร็จยังครับ

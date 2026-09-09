@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --bg: #f4f1ff;
+  --ink: #1c1638;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #0f1020;
+  --ink: #f6f3ff;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #c4b5fd55, transparent 50%),
+    radial-gradient(900px 500px at 110% 0%, #67e8f955, transparent 45%),
+    var(--bg);
+  color: var(--ink);
+  font-family: "Segoe UI", "Noto Sans Thai", "Sarabun", sans-serif;
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible {
+  outline: 3px solid #818cf8;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.font-game {
+  font-family: "Prompt", "Noto Sans Thai", "Sarabun", sans-serif;
+}
+
+.font-game-display {
+  font-family: "Nunito", "Prompt", "Noto Sans Thai", sans-serif;
+}
+
+@keyframes timer-ring-pulse {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.96);
+    opacity: 0.8;
+  }
+}
+
+.timer-ring-pulse {
+  animation: timer-ring-pulse 1.5s ease-in-out infinite;
+}
+
+.game-blob {
+  filter: blur(55px);
+}
