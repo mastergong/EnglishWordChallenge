@@ -18,9 +18,10 @@ export function Settings() {
 
   return (
     <div className="space-y-5">
-      <h1 className="text-3xl font-black">Settings · ตั้งค่า</h1>
+      <h1 className="font-game-display text-3xl font-black text-rose-600">ตั้งค่านุ่ม ๆ</h1>
+      <p className="-mt-3 text-sm text-rose-400">ปรับให้เล่นสบายตามจังหวะของตัวเอง</p>
 
-      <Group title="Countdown">
+      <Group title="เวลานับถอยหลังก่อนเริ่ม">
         <Pills
           values={[3, 5, 10, 15]}
           value={settings.countdownSec}
@@ -29,7 +30,7 @@ export function Settings() {
         />
       </Group>
 
-      <Group title="Question timer">
+      <Group title="เวลาต่อข้อ">
         <Pills
           values={[3, 5, 10, 15]}
           value={settings.questionTimeSec}
@@ -38,7 +39,7 @@ export function Settings() {
         />
       </Group>
 
-      <Group title="Question count">
+      <Group title="จำนวนข้อ">
         <Pills
           values={[10, 20, 30, 40, 50]}
           value={settings.questionCount}
@@ -46,20 +47,20 @@ export function Settings() {
         />
       </Group>
 
-      <Toggle label="Sound" on={settings.sound} onClick={() => update({ sound: !settings.sound })} />
-      <Toggle label="Speech" on={settings.speech} onClick={() => update({ speech: !settings.speech })} />
-      <Group title="Voice">
+      <Toggle label="เสียงเอฟเฟกต์" on={settings.sound} onClick={() => update({ sound: !settings.sound })} />
+      <Toggle label="อ่านออกเสียง" on={settings.speech} onClick={() => update({ speech: !settings.speech })} />
+      <Group title="สำเนียง">
         <div className="grid grid-cols-2 gap-2">
           <button
             type="button"
-            className={`min-h-11 rounded-2xl ${settings.voice === "en-US" ? "bg-indigo-600 text-white" : "bg-white/70 dark:bg-white/10"}`}
+            className={`min-h-11 rounded-2xl ${settings.voice === "en-US" ? "ui-chip-on" : "ui-chip"}`}
             onClick={() => update({ voice: "en-US" })}
           >
             English US
           </button>
           <button
             type="button"
-            className={`min-h-11 rounded-2xl ${settings.voice === "en-GB" ? "bg-indigo-600 text-white" : "bg-white/70 dark:bg-white/10"}`}
+            className={`min-h-11 rounded-2xl ${settings.voice === "en-GB" ? "ui-chip-on" : "ui-chip"}`}
             onClick={() => update({ voice: "en-GB" })}
           >
             English UK
@@ -67,25 +68,25 @@ export function Settings() {
         </div>
       </Group>
       <Toggle
-        label="Auto pronunciation"
+        label="อ่านคำให้อัตโนมัติ"
         on={settings.autoPronounce}
         onClick={() => update({ autoPronounce: !settings.autoPronounce })}
       />
-      <Group title="Dark mode">
+      <Group title="โหมดมืด">
         <ThemeToggle value={settings.theme} onChange={(theme) => update({ theme })} />
       </Group>
       <Toggle
-        label="Adaptive learning"
+        label="ปรับความยากตามเรา"
         on={settings.adaptiveLearning}
         onClick={() => update({ adaptiveLearning: !settings.adaptiveLearning })}
       />
       <Toggle
-        label="Level lock"
+        label="ล็อกเลเวลจนกว่าจะแม่น"
         on={settings.levelLock}
         onClick={() => update({ levelLock: !settings.levelLock })}
       />
       <Toggle
-        label="Auto next question"
+        label="ไปข้อถัดไปให้อัตโนมัติ"
         on={settings.autoNext}
         onClick={() => update({ autoNext: !settings.autoNext })}
       />
@@ -96,7 +97,7 @@ export function Settings() {
           <button
             type="button"
             className={`min-h-12 rounded-2xl px-3 text-sm font-semibold ${
-              settings.confirmSubmit ? "bg-indigo-600 text-white" : "bg-white/70 dark:bg-white/10"
+              settings.confirmSubmit ? "ui-chip-on" : "ui-chip"
             }`}
             onClick={() => update({ confirmSubmit: true })}
           >
@@ -105,7 +106,7 @@ export function Settings() {
           <button
             type="button"
             className={`min-h-12 rounded-2xl px-3 text-sm font-semibold ${
-              !settings.confirmSubmit ? "bg-indigo-600 text-white" : "bg-white/70 dark:bg-white/10"
+              !settings.confirmSubmit ? "ui-chip-on" : "ui-chip"
             }`}
             onClick={() => update({ confirmSubmit: false })}
           >
@@ -116,7 +117,7 @@ export function Settings() {
 
       <button
         type="button"
-        className="min-h-12 w-full rounded-2xl bg-white/80 font-semibold dark:bg-white/10"
+        className="ui-card min-h-12 w-full font-semibold"
         onClick={() => {
           resetAllProgress();
           window.location.reload();
@@ -165,7 +166,7 @@ function Pills<T extends number>({
           key={item}
           type="button"
           className={`min-h-11 rounded-2xl font-semibold ${
-            item === value ? "bg-indigo-600 text-white" : "bg-white/70 dark:bg-white/10"
+            item === value ? "ui-chip-on" : "ui-chip"
           }`}
           onClick={() => onChange(item)}
         >
@@ -182,7 +183,7 @@ function Toggle({ label, on, onClick }: { label: string; on: boolean; onClick: (
     <button
       type="button"
       onClick={onClick}
-      className="flex min-h-12 w-full items-center justify-between rounded-2xl bg-white/80 px-4 font-semibold dark:bg-white/10"
+      className="ui-card flex min-h-12 w-full items-center justify-between px-4 font-semibold"
       aria-pressed={on}
     >
       {label}

@@ -13,12 +13,12 @@ export function ThemeToggle({ value, onChange }: Props) {
           key={item}
           type="button"
           className={`min-h-11 rounded-2xl border px-3 py-2 text-sm font-semibold capitalize ${
-            value === item ? "bg-indigo-600 text-white" : "bg-white/70 dark:bg-white/10"
+            value === item ? "ui-chip-on" : "ui-chip"
           }`}
           aria-pressed={value === item}
           onClick={() => onChange(item)}
         >
-          {item}
+          {item === "light" ? "สว่าง" : item === "dark" ? "มืดนุ่ม" : "ตามเครื่อง"}
         </button>
       ))}
     </div>

@@ -22,15 +22,22 @@ export function Home() {
     sessionStorage.setItem("ewc.level", level);
   }, [level]);
 
+  const hello =
+    streak.current >= 3
+      ? `เก่งมาก! สตรีค ${streak.current} วันแล้ว มาต่อกันอีกนิดนะ`
+      : streak.current > 0
+        ? `ยินดีต้อนรับกลับมา วันนี้มาเก็บคำใหม่กันเถอะ`
+        : "สวัสดี มาเรียนศัพท์แบบสบาย ๆ ด้วยกันนะ";
+
   const modes = useMemo(
     () =>
       [
-        ["classic", "Classic", `${questionCount} ข้อ`],
-        ["challenge", "Challenge", `${questionCount} ข้อ`],
-        ["endless", "Endless", "จนกว่าจะผิด"],
-        ["timeAttack", "Time Attack", "60 วินาที"],
-        ["adaptive", "Adaptive", "ปรับตามคุณ"],
-        ["practice", "Practice", "ไม่มีจับเวลา"],
+        ["classic", "🌸 เล่นอุ่น ๆ", `${questionCount} ข้อ · ค่อย ๆ เก่งขึ้น`],
+        ["challenge", "💪 ท้าทายหน่อย", `${questionCount} ข้อเต็ม ๆ`],
+        ["endless", "♾️ เล่นต่อได้เรื่อย", "จนกว่าจะอยากพัก"],
+        ["timeAttack", "⏰ แข่งกับนาฬิกา", "สนุกใน 60 วินาที"],
+        ["adaptive", "🎯 ปรับตามคุณ", "เน้นคำที่ยังจำไม่แม่น"],
+        ["practice", "🧸 ฝึกแบบไม่เร่ง", "ไม่มีจับเวลา"],
       ] as Array<[GameMode, string, string]>,
     [questionCount],
   );
@@ -42,39 +49,41 @@ export function Home() {
 
   return (
     <div className="space-y-5">
-      <header className="pt-2">
-        <p className="text-sm font-semibold text-indigo-500">Mobile vocabulary game</p>
-        <h1 className="text-4xl font-black leading-tight">
-          English Word
-          <span className="block text-indigo-600 dark:text-indigo-300">Challenge</span>
+      <header className="ui-card relative overflow-hidden p-5">
+        <div className="pointer-events-none absolute -right-6 -top-8 text-7xl opacity-20" aria-hidden>
+          ☁️
+        </div>
+        <p className="text-sm font-semibold text-rose-400">มุมเรียนศัพท์นุ่ม ๆ</p>
+        <h1 className="font-game-display mt-1 text-4xl font-black leading-tight text-rose-600">
+          Word
+          <span className="block text-pink-400">Challenge</span>
         </h1>
-        <p className="mt-2 text-slate-600 dark:text-slate-300">
-          ฝึกศัพท์อังกฤษให้เก่งขึ้น วันละไม่กี่นาที
-        </p>
+        <p className="mt-2 text-sm leading-relaxed text-rose-700/80 dark:text-rose-100/80">{hello}</p>
       </header>
 
       <InstallHint />
 
       <section className="grid grid-cols-2 gap-3">
-        <Stat label="Daily Streak" value={`🔥 ${streak.current}`} />
-        <Stat label="Best Score" value={`⭐ ${stats.bestScore}`} />
-        <Stat label="Words Learned" value={`📚 ${stats.wordsLearned}`} />
-        <Stat label="Accuracy" value={`🎯 ${accuracy}%`} />
+        <Stat emoji="🔥" label="ไฟต่อเนื่อง" value={`${streak.current} วัน`} />
+        <Stat emoji="⭐" label="คะแนนสูงสุด" value={`${stats.bestScore}`} />
+        <Stat emoji="📚" label="คำที่เคยเจอ" value={`${stats.wordsLearned}`} />
+        <Stat emoji="🎯" label="ความแม่นยำ" value={`${accuracy}%`} />
       </section>
 
       <Link
         to="/daily"
-        className="block rounded-3xl bg-indigo-600 p-5 text-white shadow-lg"
+        className="block overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-amber-300 via-rose-400 to-pink-400 p-5 text-white shadow-[0_8px_0_0_#fb7185]"
       >
-        <p className="text-sm opacity-80">Today&apos;s Challenge · โจทย์ประจำวัน</p>
-        <p className="text-2xl font-black">10 Questions</p>
-        <p className="mt-1 text-sm">
-          Best {todayState.bestScore} {todayState.completed ? "· Completed" : "· ยังไม่เล่นวันนี้"}
+        <p className="text-sm font-semibold opacity-90">☀️ ภารกิจวันนี้</p>
+        <p className="font-game-display mt-1 text-2xl font-black">10 ข้อน่ารัก ๆ</p>
+        <p className="mt-1 text-sm opacity-90">
+          {todayState.completed ? "เล่นครบแล้ว เก่งมาก!" : "ยังไม่เล่นวันนี้ มาลองสักนิดนะ"} · สูงสุด {todayState.bestScore}
         </p>
       </Link>
 
-      <section className="rounded-3xl bg-white/80 p-4 shadow dark:bg-white/10">
-        <h2 className="mb-3 font-bold">เลือกเลเวล</h2>
+      <section className="ui-card p-4">
+        <h2 className="mb-1 font-bold text-rose-700">เลือกเลเวลที่สบายใจ</h2>
+        <p className="mb-3 text-xs text-rose-400">เริ่มง่าย ๆ แล้วค่อยยากขึ้นได้</p>
         <LevelSelector
           value={level === "adaptive" ? "A1" : level}
           onChange={setLevel}
@@ -83,8 +92,9 @@ export function Home() {
         />
       </section>
 
-      <section className="rounded-3xl bg-white/80 p-4 shadow dark:bg-white/10">
-        <h2 className="mb-3 font-bold">จำนวนข้อ</h2>
+      <section className="ui-card p-4">
+        <h2 className="mb-1 font-bold text-rose-700">อยากเล่นกี่ข้อ</h2>
+        <p className="mb-3 text-xs text-rose-400">น้อยก็ได้ เยอะก็ได้ ตามอารมณ์วันนี้</p>
         <div className="grid grid-cols-5 gap-2">
           {([10, 20, 30, 40, 50] as const).map((count) => (
             <button
@@ -94,9 +104,7 @@ export function Home() {
                 setQuestionCount(count);
                 saveSettings({ ...loadSettings(), questionCount: count });
               }}
-              className={`min-h-11 rounded-2xl text-sm font-bold ${
-                questionCount === count ? "bg-indigo-600 text-white" : "bg-white/80 dark:bg-white/10"
-              }`}
+              className={`text-sm font-bold ${questionCount === count ? "ui-chip-on" : "ui-chip"}`}
             >
               {count}
             </button>
@@ -104,72 +112,62 @@ export function Home() {
         </div>
       </section>
 
-      <button
-        type="button"
-        onClick={() => start("classic")}
-        className="flex min-h-14 w-full items-center justify-center rounded-3xl bg-indigo-600 text-xl font-black text-white shadow-lg"
-      >
-        ▶ START GAME · เริ่มเกม
+      <button type="button" onClick={() => start("classic")} className="ui-go flex min-h-14 w-full items-center justify-center text-xl">
+        เริ่มเรียนกันเลย ✨
       </button>
 
-      <Link
-        to="/map"
-        className="flex min-h-12 w-full items-center justify-center rounded-3xl bg-white/80 font-bold shadow dark:bg-white/10"
-      >
-        🧠 Mind Map · ice ⇒ rice ⇒ price
+      <Link to="/map" className="ui-card flex min-h-12 w-full items-center justify-center gap-2 font-bold text-rose-600">
+        🗺️ ดูคำที่เสียงคล้ายกัน
       </Link>
 
       <button
         type="button"
         onClick={() => navigate("/game?mode=adaptive&level=adaptive&weak=1")}
-        className="flex min-h-12 w-full items-center justify-center rounded-3xl bg-white/80 font-bold shadow dark:bg-white/10"
+        className="ui-card flex min-h-12 w-full items-center justify-center font-bold text-rose-600"
       >
-        Continue Learning · ต่อจากคำที่ยังอ่อน
+        💕 ทบทวนคำที่ยังจำไม่แม่น
       </button>
 
       <div className="grid grid-cols-2 gap-3">
         {modes.map(([mode, title, hint]) => (
-          <button
-            key={mode}
-            type="button"
-            onClick={() => start(mode)}
-            className="min-h-20 rounded-3xl bg-white/80 p-4 text-left shadow dark:bg-white/10"
-          >
-            <p className="font-bold">{title}</p>
-            <p className="text-sm text-slate-500">{hint}</p>
+          <button key={mode} type="button" onClick={() => start(mode)} className="ui-card min-h-20 p-4 text-left">
+            <p className="font-bold text-rose-700">{title}</p>
+            <p className="mt-1 text-xs leading-relaxed text-rose-400">{hint}</p>
           </button>
         ))}
       </div>
 
-      <section className="rounded-3xl bg-white/80 p-4 shadow dark:bg-white/10">
-        <h2 className="font-bold">Need Review · ควรทบทวน</h2>
+      <section className="ui-card p-4">
+        <h2 className="font-bold text-rose-700">คำที่อยากเจออีกครั้ง</h2>
         {weakWords.length === 0 ? (
-          <p className="mt-2 text-sm text-slate-500">เริ่มเล่นเกมเพื่อสร้างสถิติของคุณ</p>
+          <p className="mt-2 text-sm text-rose-400">ยังไม่มีคำที่ต้องทบทวน เริ่มเล่นเกมแล้วจะมีให้ดูที่นี่</p>
         ) : (
           <ul className="mt-3 space-y-2">
             {weakWords.slice(0, 4).map((item) => (
               <li key={item.word.id} className="flex justify-between text-sm">
-                <span>❌ {item.word.word}</span>
-                <span>Wrong {item.progress?.wrongCount}</span>
+                <span>💭 {item.word.word}</span>
+                <span className="text-rose-400">พลาด {item.progress?.wrongCount} ครั้ง</span>
               </li>
             ))}
           </ul>
         )}
-        <Link to="/practice?weak=1" className="mt-3 inline-block font-semibold text-indigo-600">
-          Practice Weak Words
+        <Link to="/practice?weak=1" className="mt-3 inline-block font-semibold text-rose-500">
+          ไปฝึกแบบนุ่ม ๆ →
         </Link>
       </section>
 
-      <ProgressBar value={accuracy} label="Overall accuracy" />
+      <ProgressBar value={accuracy} label="ความแม่นยำโดยรวม" />
     </div>
   );
 }
 
-function Stat({ label, value }: { label: string; value: string }) {
+function Stat({ emoji, label, value }: { emoji: string; label: string; value: string }) {
   return (
-    <div className="rounded-3xl bg-white/80 p-4 shadow dark:bg-white/10">
-      <p className="text-xs text-slate-500">{label}</p>
-      <p className="text-xl font-black">{value}</p>
+    <div className="ui-card p-4">
+      <p className="text-xs text-rose-400">
+        {emoji} {label}
+      </p>
+      <p className="font-game-display mt-1 text-xl font-black text-rose-600">{value}</p>
     </div>
   );
 }

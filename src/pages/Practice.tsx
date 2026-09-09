@@ -51,7 +51,8 @@ export function Practice() {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-3xl font-black">Practice · ฝึกคำศัพท์</h1>
+      <h1 className="font-game-display text-3xl font-black text-rose-600">มุมฝึกนุ่ม ๆ</h1>
+      <p className="text-sm text-rose-400">อ่าน ฟัง แล้วบอกตัวเองตามจริงนะ</p>
       <WordCard
         word={word}
         onSpeak={() => settings.speech && speakEnglish(word.word, settings.voice)}
@@ -59,17 +60,17 @@ export function Practice() {
           <div className="flex w-full gap-2">
             <button
               type="button"
-              className="min-h-12 flex-1 rounded-2xl bg-emerald-600 font-bold text-white"
+              className="min-h-12 flex-1 rounded-2xl bg-gradient-to-b from-rose-400 to-rose-500 font-bold text-white shadow-[0_4px_0_0_#e11d48]"
               onClick={() => mark(true)}
             >
-              I Know This
+              I Know This · จำได้แล้ว 💕
             </button>
             <button
               type="button"
-              className="min-h-12 flex-1 rounded-2xl bg-amber-500 font-bold text-white"
+              className="min-h-12 flex-1 rounded-2xl bg-amber-200 font-bold text-rose-700 shadow-[0_4px_0_0_#fbbf24]"
               onClick={() => mark(false)}
             >
-              Need More Practice
+              Need More Practice · ยังไม่แม่น
             </button>
           </div>
         }

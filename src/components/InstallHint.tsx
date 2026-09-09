@@ -30,20 +30,20 @@ export function InstallHint() {
   }
 
   return (
-    <section className="rounded-3xl border border-indigo-200 bg-indigo-50 p-4 text-sm text-indigo-950 dark:border-indigo-500/40 dark:bg-indigo-950/40 dark:text-indigo-100">
+    <section className="ui-card border border-rose-200 p-4 text-sm text-rose-900 dark:text-rose-50">
       <p className="font-bold">ใช้บนมือถือแบบแอป</p>
-      <p className="mt-1 text-indigo-800 dark:text-indigo-200">
+      <p className="mt-1 text-rose-700 dark:text-rose-100/80">
         เพิ่มไปที่หน้าจอหลัก จะเปิดเต็มจอ ไม่มีแถบเบราว์เซอร์
       </p>
       <button
         type="button"
         onClick={() => void install()}
-        className="mt-3 flex min-h-11 w-full items-center justify-center rounded-2xl bg-indigo-600 font-bold text-white"
+        className="ui-go mt-3 flex min-h-11 w-full items-center justify-center"
       >
         {deferred ? "ติดตั้งแอป" : "วิธีเพิ่มไปหน้าจอหลัก"}
       </button>
       {iosHint || !deferred ? (
-        <ol className="mt-3 list-decimal space-y-1 pl-5 text-xs text-indigo-800 dark:text-indigo-200">
+        <ol className="mt-3 list-decimal space-y-1 pl-5 text-xs text-rose-700 dark:text-rose-100/80">
           <li>iPhone: Safari → แชร์ → เพิ่มไปยังหน้าจอโฮม</li>
           <li>Android: เมนู Chrome → ติดตั้งแอป / เพิ่มไปยังหน้าจอหลัก</li>
         </ol>

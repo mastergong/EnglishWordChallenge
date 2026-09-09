@@ -22,9 +22,7 @@ export function LevelSelector({ value, onChange, accuracyByLevel, lockEnabled }:
             disabled={!unlocked}
             onClick={() => onChange(level)}
             className={`min-h-11 rounded-2xl border px-2 py-3 text-sm font-bold ${
-              value === level
-                ? "border-indigo-500 bg-indigo-600 text-white"
-                : "border-white/50 bg-white/70 dark:bg-white/10"
+              value === level ? "ui-chip-on border-transparent" : "ui-chip"
             } disabled:opacity-40`}
             aria-pressed={value === level}
             aria-label={`${level} ${meta.en}`}

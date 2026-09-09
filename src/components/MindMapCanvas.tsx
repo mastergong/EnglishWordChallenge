@@ -94,7 +94,7 @@ export function MindMapCanvas({ words, activeId, onSelect }: Props) {
               y1={cy}
               x2={node.x}
               y2={node.y}
-              stroke="#818cf8"
+              stroke="#fb7185"
               strokeWidth="2.5"
               strokeLinecap="round"
             />
@@ -138,7 +138,7 @@ function NodeCard({
       onPointerDown={(event) => event.stopPropagation()}
       aria-label={`${word.word} ${word.phoneticThai} ${meaning}`}
       className={`absolute z-10 rounded-2xl px-2 py-2 text-center shadow-xl ${
-        active ? "z-20 bg-indigo-600 text-white ring-4 ring-indigo-300" : "bg-zinc-800 text-white"
+        active ? "z-20 bg-rose-400 text-white ring-4 ring-rose-200" : "border border-rose-100 bg-white text-slate-800"
       }`}
       style={{
         left: x,
@@ -149,8 +149,8 @@ function NodeCard({
       }}
     >
       <p className="text-sm font-black leading-tight">{word.word}</p>
-      <p className={`mt-1 text-[11px] leading-tight ${active ? "text-indigo-100" : "text-sky-300"}`}>{word.ipa}</p>
-      <p className="text-[11px] leading-tight text-white/80">{word.phoneticThai}</p>
+      <p className={`mt-1 text-[11px] leading-tight ${active ? "text-rose-50" : "text-rose-400"}`}>{word.ipa}</p>
+      <p className={`text-[11px] leading-tight ${active ? "text-white/80" : "text-slate-500"}`}>{word.phoneticThai}</p>
       <p className="mt-1 line-clamp-2 text-[11px] font-semibold leading-snug">{meaning}</p>
     </button>
   );

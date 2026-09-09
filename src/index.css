@@ -4,14 +4,14 @@
 
 :root {
   color-scheme: light;
-  --bg: #f4f1ff;
-  --ink: #1c1638;
+  --bg: #fffdfb;
+  --ink: #1e293b;
 }
 
 .dark {
   color-scheme: dark;
-  --bg: #0f1020;
-  --ink: #f6f3ff;
+  --bg: #4a3a48;
+  --ink: #fff7f8;
 }
 
 html,
@@ -27,18 +27,61 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(1200px 600px at 10% -10%, #c4b5fd55, transparent 50%),
-    radial-gradient(900px 500px at 110% 0%, #67e8f955, transparent 45%),
-    var(--bg);
+  background: linear-gradient(180deg, #fffefc 0%, #fff8fb 40%, #f5f9ff 100%);
   color: var(--ink);
   font-family: "Prompt", "Noto Sans Thai", "Sarabun", "Segoe UI", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
+html.dark body {
+  background: linear-gradient(180deg, #5c4658 0%, #4a3a4c 48%, #3d384e 100%);
+}
+
 button,
 a {
   touch-action: manipulation;
+}
+
+@layer components {
+  .ui-card {
+    border-radius: 1.75rem;
+    border: 1px solid #fff;
+    background: #fff;
+    box-shadow: 0 10px 24px rgb(251 113 133 / 0.08);
+  }
+  .dark .ui-card {
+    border-color: rgb(255 255 255 / 0.22);
+    background: rgb(255 255 255 / 0.16);
+    box-shadow: 0 10px 24px rgb(0 0 0 / 0.12);
+  }
+  .ui-chip {
+    min-height: 2.75rem;
+    border-radius: 999px;
+    border: 1px solid rgb(254 226 226 / 0.95);
+    background: #fff;
+    font-weight: 700;
+    color: #be123c;
+  }
+  .dark .ui-chip {
+    border-color: rgb(255 255 255 / 0.22);
+    background: rgb(255 255 255 / 0.14);
+    color: #ffe4e6;
+  }
+  .ui-chip-on {
+    min-height: 2.75rem;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #fb7185, #f43f5e);
+    font-weight: 800;
+    color: #fff;
+    box-shadow: 0 4px 0 0 #e11d48;
+  }
+  .ui-go {
+    border-radius: 1.75rem;
+    background: linear-gradient(180deg, #fb7185 0%, #f43f5e 100%);
+    font-weight: 800;
+    color: #fff;
+    box-shadow: 0 6px 0 0 #e11d48;
+  }
 }
 
 button:focus-visible,
