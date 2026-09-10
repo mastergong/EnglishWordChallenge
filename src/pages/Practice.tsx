@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { WordCard } from "../components/WordCard";
 import { loadWords } from "../utils/loadWords";
 import { loadSettings, loadWordProgress, saveSettings, saveWordProgress } from "../utils/storage";
-import { cancelSpeech, speakPracticeWord, spellingGuide } from "../utils/speech";
+import { cancelSpeech, letterAudioReady, speakPracticeWord, spellingGuide } from "../utils/speech";
 import { applyAnswerToProgress } from "../utils/adaptiveLearning";
 import { nextReviewAfterAnswer } from "../utils/spacedRepetition";
 import type { AppSettings } from "../types/game";
@@ -32,7 +32,8 @@ export function Practice() {
 
   useEffect(() => {
     if (!word || !settings.speech) return undefined;
-    speakPracticeWord(word.word, settings.voice, settings.spellLetters);
+    if (settings.spellLetters && !letterAudioReady()) return undefined;
+    void speakPracticeWord(word.word, settings.voice, settings.spellLetters);
     return () => cancelSpeech();
   }, [word?.id, settings.speech, settings.voice, settings.spellLetters]);
 
@@ -67,7 +68,11 @@ export function Practice() {
   return (
     <div className="space-y-4">
       <h1 className="text-3xl font-black">Practice · ฝึกคำศัพท์</h1>
-      <p className="text-sm text-slate-500">ฟังคำภาษาอังกฤษ และดูว่ามีตัวอักษรอะไรบ้าง</p>
+      <p className="text-sm text-slate-500">
+        {settings.spellLetters
+          ? "แตะ 🔊 ฟังสะกด เพื่อเล่นไฟล์ตัวอักษรทีละตัว แล้วค่อยอ่านทั้งคำ"
+          : "ฟังคำภาษาอังกฤษ และดูว่ามีตัวอักษรอะไรบ้าง"}
+      </p>
       <button
         type="button"
         onClick={toggleSpell}
@@ -81,7 +86,8 @@ export function Practice() {
       </button>
       <WordCard
         word={word}
-        onSpeak={() => settings.speech && speakPracticeWord(word.word, settings.voice, settings.spellLetters)}
+        speakLabel={settings.spellLetters ? "ฟังสะกด" : "Listen"}
+        onSpeak={() => settings.speech && void speakPracticeWord(word.word, settings.voice, settings.spellLetters)}
         extra={
           <div className="flex w-full basis-full flex-col gap-3">
             <div className="rounded-2xl bg-blue-50 px-3 py-3 dark:bg-white/10">

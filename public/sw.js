@@ -1,4 +1,4 @@
-const CACHE = "ewc-mobile-v2";
+const CACHE = "ewc-mobile-v3";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(self.skipWaiting());
@@ -16,6 +16,10 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
+  if (url.pathname.includes("/audio/") || url.pathname.endsWith(".mp3")) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
   event.respondWith(
     caches.open(CACHE).then(async (cache) => {
       try {

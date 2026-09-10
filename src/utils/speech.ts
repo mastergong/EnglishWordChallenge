@@ -54,6 +54,9 @@ function enqueue(text: string, lang: string, rate: number): void {
 
 let playGen = 0;
 let letterAudio: HTMLAudioElement | null = null;
+let audioCtx: AudioContext | null = null;
+let currentSource: AudioBufferSourceNode | null = null;
+const bufferCache = new Map<string, AudioBuffer>();
 
 export function letterAudioSrc(letter: string): string {
   const base = import.meta.env.BASE_URL || "/";
@@ -61,20 +64,77 @@ export function letterAudioSrc(letter: string): string {
   return `${prefix}audio/${letter.toLowerCase()}_letter.mp3`;
 }
 
+export function letterAudioReady(): boolean {
+  return Boolean(audioCtx && audioCtx.state === "running");
+}
+
 function stopLetterAudio(): void {
+  try {
+    currentSource?.stop();
+  } catch {
+    /* already stopped */
+  }
+  currentSource = null;
   if (!letterAudio) return;
   letterAudio.pause();
-  letterAudio.src = "";
+  letterAudio.removeAttribute("src");
+  letterAudio.load();
   letterAudio = null;
 }
 
-function playLetterFile(src: string, gen: number): Promise<void> {
+async function getAudioContext(): Promise<AudioContext | null> {
+  if (typeof window === "undefined") return null;
+  const Ctor = window.AudioContext || (window as Window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+  if (!Ctor) return null;
+  if (!audioCtx) audioCtx = new Ctor();
+  if (audioCtx.state === "suspended") await audioCtx.resume();
+  return audioCtx;
+}
+
+async function loadLetterBuffer(letter: string): Promise<AudioBuffer> {
+  const cached = bufferCache.get(letter);
+  if (cached) return cached;
+  const ctx = await getAudioContext();
+  if (!ctx) throw new Error("no-audio-context");
+  const response = await fetch(letterAudioSrc(letter));
+  if (!response.ok) throw new Error("missing-letter");
+  const buffer = await ctx.decodeAudioData(await response.arrayBuffer());
+  bufferCache.set(letter, buffer);
+  return buffer;
+}
+
+function playBuffer(buffer: AudioBuffer, gen: number): Promise<void> {
+  return new Promise((resolve, reject) => {
+    void getAudioContext().then((ctx) => {
+      if (!ctx || gen !== playGen) {
+        resolve();
+        return;
+      }
+      const source = ctx.createBufferSource();
+      currentSource = source;
+      source.buffer = buffer;
+      source.connect(ctx.destination);
+      source.onended = () => {
+        if (currentSource === source) currentSource = null;
+        resolve();
+      };
+      try {
+        source.start();
+      } catch (error) {
+        reject(error);
+      }
+    });
+  });
+}
+
+function playLetterElement(src: string, gen: number): Promise<void> {
   return new Promise((resolve) => {
     if (typeof Audio === "undefined" || gen !== playGen) {
       resolve();
       return;
     }
     const audio = new Audio(src);
+    audio.preload = "auto";
     letterAudio = audio;
     const done = () => {
       if (letterAudio === audio) letterAudio = null;
@@ -84,6 +144,16 @@ function playLetterFile(src: string, gen: number): Promise<void> {
     audio.addEventListener("error", done);
     void audio.play().catch(done);
   });
+}
+
+async function playOneLetter(letter: string, gen: number): Promise<void> {
+  try {
+    const buffer = await loadLetterBuffer(letter);
+    if (gen !== playGen) return;
+    await playBuffer(buffer, gen);
+  } catch {
+    await playLetterElement(letterAudioSrc(letter), gen);
+  }
 }
 
 export function speakEnglish(text: string, lang: VoiceAccent = "en-US"): void {
@@ -107,10 +177,12 @@ export async function speakPracticeWord(word: string, lang: VoiceAccent = "en-US
   } catch {
     /* ignore */
   }
+  await getAudioContext();
   if (spell) {
     for (const letter of lettersOf(word)) {
       if (gen !== playGen) return;
-      await playLetterFile(letterAudioSrc(letter), gen);
+      await playOneLetter(letter, gen);
+      if (gen === playGen) await new Promise((resolve) => window.setTimeout(resolve, 80));
     }
   }
   if (gen !== playGen) return;
