@@ -5,7 +5,9 @@ import { ProgressBar } from "../components/ProgressBar";
 import { InstallHint } from "../components/InstallHint";
 import { useStatistics } from "../hooks/useStatistics";
 import { useDailyChallenge } from "../hooks/useDailyChallenge";
-import { loadSettings, saveSettings } from "../utils/storage";
+import { loadSettings, loadWordProgress, saveSettings } from "../utils/storage";
+import { loadWords } from "../utils/loadWords";
+import { dueWords } from "../utils/spacedRepetition";
 import type { AppSettings } from "../types/game";
 import type { CEFRLevel } from "../types/word";
 import type { GameMode } from "../types/game";
@@ -15,6 +17,7 @@ export function Home() {
   const { stats, accuracy, playByLevel, weakWords } = useStatistics();
   const { todayState, streak } = useDailyChallenge();
   const settings = loadSettings();
+  const dueCount = dueWords(loadWords(), loadWordProgress()).length;
   const [level, setLevel] = useState<CEFRLevel | "adaptive">("A1");
   const [questionCount, setQuestionCount] = useState<AppSettings["questionCount"]>(settings.questionCount);
 
@@ -25,8 +28,8 @@ export function Home() {
   const modes = useMemo(
     () =>
       [
-        ["classic", "Classic", `${questionCount} ข้อ`],
-        ["challenge", "Challenge", `${questionCount} ข้อ`],
+        ["classic", "Classic", `${questionCount} ข้อ · มีตัวช่วย`],
+        ["challenge", "Challenge", `${questionCount} ข้อ · เคานต์ดาวน์ ไม่มีตัวช่วย`],
         ["endless", "Endless", "จนกว่าจะผิด"],
         ["timeAttack", "Time Attack", "60 วินาที"],
         ["adaptive", "Adaptive", "ปรับตามคุณ"],
@@ -72,6 +75,15 @@ export function Home() {
           Best {todayState.bestScore} {todayState.completed ? "· Completed" : "· ยังไม่เล่นวันนี้"}
         </p>
       </Link>
+
+      {dueCount > 0 ? (
+        <Link
+          to="/practice?due=1"
+          className="flex min-h-12 w-full items-center justify-center rounded-3xl bg-amber-500 font-bold text-white shadow"
+        >
+          ทบทวนวันนี้ · {dueCount} คำ
+        </Link>
+      ) : null}
 
       <section className="rounded-3xl bg-white/80 p-4 shadow dark:bg-white/10">
         <h2 className="mb-1 font-bold">เลือกเลเวล</h2>

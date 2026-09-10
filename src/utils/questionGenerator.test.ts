@@ -128,19 +128,31 @@ describe("question generation", () => {
     expect(questions).toHaveLength(8);
     const ids = questions.map((q) => q.wordId);
     expect(new Set(ids).size).toBe(ids.length);
+    const types = new Set(questions.map((q) => q.type));
+    expect([...types].every((type) => type === "enToTh" || type === "thToEn")).toBe(true);
     for (const q of questions) {
-      expect(q.type).toBe("enToTh");
-      expect(q.prompt).toMatch(/^คำว่า «.+» หมายความว่าอะไร\?$/);
+      const word = sample.find((w) => w.id === q.wordId);
+      const meaning = (word?.meaningTh ?? "").split("/")[0]?.trim();
       const correct = q.choices.filter((c) => c.isCorrect);
       expect(correct).toHaveLength(1);
-      expect(correct[0]?.label).toBe(
-        (sample.find((w) => w.id === q.wordId)?.meaningTh ?? "").split("/")[0]?.trim(),
-      );
+      if (q.type === "enToTh") {
+        expect(q.prompt).toMatch(/^คำว่า «.+» หมายความว่าอะไร\?$/);
+        expect(correct[0]?.label).toBe(meaning);
+      } else {
+        expect(q.prompt).toMatch(/^คำภาษาอังกฤษข้อไหนมีความหมายว่า «.+»\?$/);
+        expect(correct[0]?.label).toBe(word?.word);
+      }
       const labels = q.choices.map((c) => c.label.toLowerCase());
       expect(new Set(labels).size).toBe(labels.length);
       expect(q.choices.length).toBeLessThanOrEqual(4);
       expect(q.choices.length).toBeGreaterThanOrEqual(2);
     }
+  });
+
+  it("builds Thai-to-English choices from the English word", () => {
+    const q = buildQuestion(sample[0]!, sample, "thToEn", seededRandom(7));
+    expect(q.choices.filter((c) => c.isCorrect)).toHaveLength(1);
+    expect(q.choices.find((c) => c.isCorrect)?.label).toBe("achieve");
   });
 
   it("randomizes correct answer position", () => {
@@ -150,6 +162,12 @@ describe("question generation", () => {
       positions.add(q.choices.findIndex((c) => c.isCorrect));
     }
     expect(positions.size).toBeGreaterThan(1);
+  });
+
+  it("mixes English-to-Thai and Thai-to-English questions", () => {
+    const questions = generateQuestions({ words: sample, count: 24, adaptive: false, rng: seededRandom(99) });
+    expect(questions.some((q) => q.type === "enToTh")).toBe(true);
+    expect(questions.some((q) => q.type === "thToEn")).toBe(true);
   });
 
   it("makes daily challenge deterministic", () => {

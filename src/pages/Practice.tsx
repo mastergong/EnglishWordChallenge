@@ -5,16 +5,21 @@ import { loadWords } from "../utils/loadWords";
 import { loadSettings, loadWordProgress, saveSettings, saveWordProgress } from "../utils/storage";
 import { cancelSpeech, letterAudioReady, speakPracticeWord, spellingGuide } from "../utils/speech";
 import { applyAnswerToProgress } from "../utils/adaptiveLearning";
-import { nextReviewAfterAnswer } from "../utils/spacedRepetition";
+import { dueWords, nextReviewAfterAnswer } from "../utils/spacedRepetition";
 import type { AppSettings } from "../types/game";
+import type { Word } from "../types/word";
 
 export function Practice() {
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   const [settings, setSettings] = useState<AppSettings>(loadSettings());
+  const [tick, setTick] = useState(0);
   const all = loadWords();
   const progress = loadWordProgress();
   const weakOnly = params.get("weak") === "1";
+  const dueOnly = params.get("due") === "1";
   const wordId = Number(params.get("word") ?? 0);
+
+  const due = dueWords(all, progress);
 
   const queue = useMemo(() => {
     if (wordId) return all.filter((word) => word.id === wordId);
@@ -24,11 +29,19 @@ export function Practice() {
         .sort((a, b) => (progress[String(b.id)]?.wrongCount ?? 0) - (progress[String(a.id)]?.wrongCount ?? 0));
       return weak.length ? weak : all.slice(0, 20);
     }
-    return all.slice().sort((a, b) => (progress[String(a.id)]?.mastery ?? 0) - (progress[String(b.id)]?.mastery ?? 0));
-  }, [all, progress, weakOnly, wordId]);
+    if (dueOnly) return due;
+    const rest = all
+      .filter((word) => !due.some((item) => item.id === word.id))
+      .sort((a, b) => (progress[String(a.id)]?.mastery ?? 0) - (progress[String(b.id)]?.mastery ?? 0));
+    return [...due, ...rest];
+  }, [all, due, dueOnly, progress, tick, weakOnly, wordId]);
 
   const [index, setIndex] = useState(0);
-  const word = queue[index];
+  const word = queue[index] ?? queue[0];
+
+  useEffect(() => {
+    setIndex(0);
+  }, [dueOnly, weakOnly, wordId]);
 
   useEffect(() => {
     if (!word || !settings.speech) return undefined;
@@ -41,6 +54,14 @@ export function Practice() {
     const next = { ...loadSettings(), spellLetters: !settings.spellLetters };
     saveSettings(next);
     setSettings(next);
+  }
+
+  function setFilter(next: { due?: boolean; weak?: boolean }) {
+    const search = new URLSearchParams();
+    if (next.due) search.set("due", "1");
+    if (next.weak) search.set("weak", "1");
+    setParams(search, { replace: true });
+    setIndex(0);
   }
 
   function mark(know: boolean) {
@@ -56,7 +77,30 @@ export function Practice() {
       nextReviewAfterAnswer(consecutive, know),
     );
     saveWordProgress(map);
-    setIndex((value) => (value + 1) % queue.length);
+    setTick((value) => value + 1);
+    setIndex((value) => {
+      const nextList = rebuildQueue(all, map, { dueOnly, weakOnly, wordId });
+      if (!nextList.length) return 0;
+      return (value + 1) % nextList.length;
+    });
+  }
+
+  if (dueOnly && due.length === 0) {
+    return (
+      <div className="space-y-4">
+        <h1 className="text-3xl font-black">Practice · ฝึกคำศัพท์</h1>
+        <p className="rounded-3xl bg-white/85 p-5 text-center shadow dark:bg-white/10">
+          วันนี้ยังไม่มีคำครบกำหนดทบทวน · เล่นเกมก่อน แล้วคำจะกลับมาตามรอบ SRS
+        </p>
+        <button
+          type="button"
+          className="min-h-12 w-full rounded-2xl bg-blue-600 font-bold text-white"
+          onClick={() => setFilter({})}
+        >
+          ฝึกคำทั่วไป
+        </button>
+      </div>
+    );
   }
 
   if (!word) {
@@ -73,6 +117,11 @@ export function Practice() {
           ? "แตะ 🔊 ฟังสะกด เพื่อเล่นไฟล์ตัวอักษรทีละตัว แล้วค่อยอ่านทั้งคำ"
           : "ฟังคำภาษาอังกฤษ และดูว่ามีตัวอักษรอะไรบ้าง"}
       </p>
+      <div className="grid grid-cols-3 gap-2">
+        <FilterChip label={`วันนี้ ${due.length}`} active={dueOnly} onClick={() => setFilter({ due: true })} />
+        <FilterChip label="คำอ่อน" active={weakOnly} onClick={() => setFilter({ weak: true })} />
+        <FilterChip label="ทั้งหมด" active={!dueOnly && !weakOnly && !wordId} onClick={() => setFilter({})} />
+      </div>
       <button
         type="button"
         onClick={toggleSpell}
@@ -120,5 +169,38 @@ export function Practice() {
         }
       />
     </div>
+  );
+}
+
+function rebuildQueue(
+  all: Word[],
+  progress: ReturnType<typeof loadWordProgress>,
+  options: { dueOnly: boolean; weakOnly: boolean; wordId: number },
+): Word[] {
+  if (options.wordId) return all.filter((word) => word.id === options.wordId);
+  if (options.weakOnly) {
+    return all
+      .filter((word) => (progress[String(word.id)]?.wrongCount ?? 0) >= 1)
+      .sort((a, b) => (progress[String(b.id)]?.wrongCount ?? 0) - (progress[String(a.id)]?.wrongCount ?? 0));
+  }
+  const due = dueWords(all, progress);
+  if (options.dueOnly) return due;
+  const rest = all
+    .filter((word) => !due.some((item) => item.id === word.id))
+    .sort((a, b) => (progress[String(a.id)]?.mastery ?? 0) - (progress[String(b.id)]?.mastery ?? 0));
+  return [...due, ...rest];
+}
+
+function FilterChip({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`min-h-11 rounded-2xl text-sm font-bold ${
+        active ? "bg-blue-600 text-white" : "bg-white shadow dark:bg-white/10"
+      }`}
+    >
+      {label}
+    </button>
   );
 }

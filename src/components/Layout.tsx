@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 export function Layout({ children }: { children: ReactNode }) {
   const location = useLocation();
-  const immersive = location.pathname === "/game";
+  const immersive = location.pathname === "/game" || location.pathname === "/daily";
   if (immersive) {
     return <div className="h-dvh overflow-hidden">{children}</div>;
   }

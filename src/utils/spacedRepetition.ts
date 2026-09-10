@@ -25,3 +25,11 @@ export function isDueForReview(progress: WordProgress | undefined, now = Date.no
   if (!progress?.nextReview) return false;
   return new Date(progress.nextReview).getTime() <= now;
 }
+
+export function dueWords<T extends { id: number }>(
+  words: T[],
+  progress: Record<string, WordProgress>,
+  now = Date.now(),
+): T[] {
+  return words.filter((word) => isDueForReview(progress[String(word.id)], now));
+}

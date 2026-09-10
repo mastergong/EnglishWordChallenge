@@ -116,8 +116,9 @@ export function buildQuestion(word: Word, pool: Word[], type: QuestionType, rng:
     correct = quizMeaning(word.meaningTh);
     distractors = pickDistractors(word, pool, 3, rng, "meaningTh").map((item) => quizMeaning(item.meaningTh));
   } else if (type === "thToEn") {
-    prompt = `คำภาษาอังกฤษข้อไหนมีความหมายว่า «${word.meaningTh}»?`;
-    highlight = word.meaningTh;
+    const meaning = quizMeaning(word.meaningTh);
+    prompt = `คำภาษาอังกฤษข้อไหนมีความหมายว่า «${meaning}»?`;
+    highlight = meaning;
     correct = word.word;
     distractors = pickDistractors(word, pool, 3, rng, "word").map((item) => item.word);
   } else if (type === "exampleMeaning") {
@@ -225,7 +226,11 @@ export function generateQuestions(options: {
 }): QuizQuestion[] {
   const rng = options.rng ?? Math.random;
   const selected = selectQuizWords({ ...options, rng });
-  return selected.map((word) => buildQuestion(word, options.words, "enToTh", rng));
+  return selected.map((word) => buildQuestion(word, options.words, pickQuestionType(rng), rng));
+}
+
+export function pickQuestionType(rng: RNG): QuestionType {
+  return rng() < 0.5 ? "enToTh" : "thToEn";
 }
 
 export function generateDailyQuestions(words: Word[], dateKey: string, count = 10): QuizQuestion[] {

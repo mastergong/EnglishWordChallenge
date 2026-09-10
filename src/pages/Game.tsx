@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { AnswerButton } from "../components/AnswerButton";
+import { Countdown } from "../components/Countdown";
 import { QuizCard } from "../components/QuizCard";
 import { Timer } from "../components/Timer";
 import { persistLastResult, useQuiz } from "../hooks/useQuiz";
@@ -17,25 +18,44 @@ const LETTERS = ["A", "B", "C", "D"];
 
 export function Game() {
   const [params] = useSearchParams();
-  return <GamePlay key={params.toString()} />;
-}
-
-function GamePlay() {
-  const [params] = useSearchParams();
-  const navigate = useNavigate();
-  const settings = loadSettings();
   const mode = (params.get("mode") as GameMode) || "classic";
   const level = (params.get("level") as CEFRLevel | "adaptive") || "A1";
+  return (
+    <GamePlay
+      key={params.toString()}
+      mode={mode}
+      level={level}
+      preferWeak={params.get("weak") === "1"}
+    />
+  );
+}
+
+export function GamePlay({
+  mode,
+  level,
+  preferWeak = false,
+}: {
+  mode: GameMode;
+  level: CEFRLevel | "adaptive";
+  preferWeak?: boolean;
+}) {
+  const navigate = useNavigate();
+  const settings = loadSettings();
   const daily = useDailyChallenge();
   const quiz = useQuiz({
     mode,
     level,
     questions: mode === "daily" ? daily.questions : undefined,
-    preferWeak: params.get("weak") === "1",
+    preferWeak,
   });
   const { speak, stop } = useSpeech(settings.speech, settings.voice);
+  const challengeStart = mode === "challenge";
+  const lifelines = mode !== "challenge";
 
-  const [phase, setPhase] = useState<"question" | "feedback">("question");
+  const [phase, setPhase] = useState<"countdown" | "question" | "feedback">(
+    challengeStart ? "countdown" : "question",
+  );
+  const [count, setCount] = useState(settings.countdownSec as number);
   const [locked, setLocked] = useState(false);
   const [picked, setPicked] = useState<string | null>(null);
   const [hiddenIds, setHiddenIds] = useState<string[]>([]);
@@ -51,6 +71,16 @@ function GamePlay() {
 
   const totalMs = mode === "timeAttack" ? 60_000 : settings.questionTimeSec * 1000;
   const timed = mode !== "practice";
+
+  useEffect(() => {
+    if (phase !== "countdown") return undefined;
+    void playSfx(count === 0 ? "go" : "countdown", settings.sound);
+    const id = window.setTimeout(() => {
+      if (count === 0) setPhase("question");
+      else setCount((value) => value - 1);
+    }, count === 0 ? 700 : 1000);
+    return () => window.clearTimeout(id);
+  }, [phase, count, settings.sound]);
 
   useEffect(() => {
     if (phase !== "question" || !timed) return undefined;
@@ -69,7 +99,7 @@ function GamePlay() {
   }, [phase, round, quiz.index, mode, totalMs, timed]);
 
   useEffect(() => {
-    if (phase === "question" && settings.autoPronounce && quiz.current) {
+    if (phase === "question" && settings.autoPronounce && quiz.current && quiz.current.type !== "thToEn") {
       speak(quiz.current.speakText);
     }
     return () => stop();
@@ -177,7 +207,8 @@ function GamePlay() {
           <div className="inline-flex min-w-0 items-center gap-1.5 rounded-full border border-blue-200 bg-blue-100/80 px-3 py-1 text-xs font-bold tracking-wide text-blue-700 shadow-sm">
             <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-blue-500" />
             <span className="truncate">
-              {display.level} • หมวด{categoryLabelTh(display.category)}
+              {mode === "daily" ? "Daily" : mode === "challenge" ? "Challenge" : display.level} • หมวด
+              {categoryLabelTh(display.category)}
             </span>
           </div>
           <div className="flex shrink-0 items-center gap-2">
@@ -193,7 +224,7 @@ function GamePlay() {
                 คะแนน x2
               </span>
             ) : null}
-            {timed ? (
+            {timed && phase !== "countdown" ? (
               <Timer remainingMs={phase === "question" ? remainingMs : 0} totalMs={totalMs} compact />
             ) : null}
           </div>
@@ -201,8 +232,16 @@ function GamePlay() {
       </header>
 
       <main className="relative z-10 flex min-h-0 flex-1 flex-col gap-2 overflow-hidden px-5 py-2">
+        {phase === "countdown" ? (
+          <Countdown value={count} />
+        ) : (
+          <>
         <div className="shrink-0">
-          <QuizCard question={display} showHint={showHint} onSpeak={() => speak(display.speakText)} />
+          <QuizCard
+            question={display}
+            showHint={showHint}
+            onSpeak={display.type === "thToEn" ? undefined : () => speak(display.speakText)}
+          />
         </div>
 
         <section
@@ -238,9 +277,12 @@ function GamePlay() {
             </p>
           ) : null}
         </section>
+          </>
+        )}
       </main>
 
       <footer className="relative z-10 shrink-0 border-t border-slate-200/70 bg-white/90 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 shadow-2xl backdrop-blur-md">
+        {lifelines ? (
         <div className="mb-2 flex items-center justify-center gap-3">
           <button
             type="button"
@@ -276,6 +318,9 @@ function GamePlay() {
             ข้าม
           </button>
         </div>
+        ) : (
+          <p className="mb-2 text-center text-[11px] font-semibold text-slate-400">Challenge · ไม่มีตัวช่วย</p>
+        )}
         {phase === "feedback" && !settings.autoNext && !quiz.finished ? (
           <button
             type="button"
@@ -284,7 +329,7 @@ function GamePlay() {
           >
             ข้อถัดไป
           </button>
-        ) : settings.confirmSubmit ? (
+        ) : settings.confirmSubmit && phase !== "countdown" ? (
           <button
             type="button"
             disabled={phase !== "question" || !picked}

@@ -20,7 +20,7 @@ export function Settings() {
     <div className="space-y-5">
       <h1 className="text-3xl font-black">Settings · ตั้งค่า</h1>
 
-      <Group title="Countdown">
+      <Group title="Challenge countdown">
         <Pills
           values={[3, 5, 10, 15]}
           value={settings.countdownSec}
