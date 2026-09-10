@@ -71,6 +71,11 @@ export function Settings() {
         on={settings.autoPronounce}
         onClick={() => update({ autoPronounce: !settings.autoPronounce })}
       />
+      <Toggle
+        label="สะกดทีละตัวตอนฝึก (เอ บี เอล อี)"
+        on={settings.spellLetters}
+        onClick={() => update({ spellLetters: !settings.spellLetters })}
+      />
       <Group title="Dark mode">
         <ThemeToggle value={settings.theme} onChange={(theme) => update({ theme })} />
       </Group>

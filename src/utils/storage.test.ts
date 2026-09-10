@@ -23,6 +23,12 @@ describe("storage", () => {
     expect(loadSettings().confirmSubmit).toBe(false);
   });
 
+  it("merges spellLetters default for older saved settings", () => {
+    expect(loadSettings().spellLetters).toBe(true);
+    saveSettings({ ...DEFAULT_SETTINGS, spellLetters: false });
+    expect(loadSettings().spellLetters).toBe(false);
+  });
+
   it("resets corrupted settings", () => {
     localStorage.setItem("ewc.settings", "{not json");
     expect(loadSettings().theme).toBe("system");

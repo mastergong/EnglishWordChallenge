@@ -21,10 +21,8 @@ export function WordMap() {
   const chain = family?.words ?? [];
   const selected = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const fromTap = chain.find((item) => item.id === activeId);
-    if (fromTap) return fromTap;
     return chain.find((item) => item.word.toLowerCase() === q) ?? chain[0];
-  }, [chain, query, activeId]);
+  }, [chain, query]);
 
   const related = useMemo(() => {
     if (!selected) return [];
@@ -40,7 +38,6 @@ export function WordMap() {
 
   function hear(word: Word) {
     setActiveId(word.id);
-    setQuery(word.word);
     speakEnglish(word.word, settings.voice);
   }
 
@@ -71,6 +68,7 @@ export function WordMap() {
 
   const title = familyTitle(family);
   const meaning = displayMeaning(selected.meaningTh);
+  const highlightId = activeId ?? selected.id;
 
   return (
     <div className="min-w-0 space-y-4">
@@ -148,17 +146,24 @@ export function WordMap() {
           <p className="rounded-2xl bg-white p-4 text-sm text-slate-500 shadow">ยังไม่มีคำอื่นในกลุ่มนี้</p>
         ) : (
           <div className="flex flex-wrap gap-2">
-            {related.slice(0, 24).map((word) => (
-              <button
-                key={word.id}
-                type="button"
-                onClick={() => hear(word)}
-                className="min-h-11 rounded-2xl bg-white px-3 py-2 text-left shadow dark:bg-white/10"
-              >
-                <span className="block font-black text-blue-700">{word.word}</span>
-                <span className="block text-xs text-slate-500">{displayMeaning(word.meaningTh)}</span>
-              </button>
-            ))}
+            {related.slice(0, 24).map((word) => {
+              const on = word.id === highlightId;
+              return (
+                <button
+                  key={word.id}
+                  type="button"
+                  onClick={() => hear(word)}
+                  className={`min-h-11 rounded-2xl px-3 py-2 text-left shadow ${
+                    on ? "bg-blue-600 text-white" : "bg-white dark:bg-white/10"
+                  }`}
+                >
+                  <span className={`block font-black ${on ? "text-white" : "text-blue-700"}`}>{word.word}</span>
+                  <span className={`block text-xs ${on ? "text-blue-100" : "text-slate-500"}`}>
+                    {displayMeaning(word.meaningTh)}
+                  </span>
+                </button>
+              );
+            })}
           </div>
         )}
         {related.length > 24 ? (
@@ -188,7 +193,7 @@ export function WordMap() {
         <h2 className="font-black">คำทั้งหมด · {chain.length} คำ</h2>
         <ul className="mt-3 max-h-[min(40vh,22rem)] space-y-2 overflow-y-auto overscroll-contain">
           {chain.map((word) => {
-            const on = word.id === selected.id;
+            const on = word.id === highlightId;
             return (
               <li key={word.id}>
                 <button

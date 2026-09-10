@@ -94,6 +94,7 @@ export type AppSettings = {
   levelLock: boolean;
   autoNext: boolean;
   confirmSubmit: boolean;
+  spellLetters: boolean;
 };
 
 export const DEFAULT_SETTINGS: AppSettings = {
@@ -109,4 +110,5 @@ export const DEFAULT_SETTINGS: AppSettings = {
   levelLock: true,
   autoNext: true,
   confirmSubmit: true,
+  spellLetters: true,
 };
