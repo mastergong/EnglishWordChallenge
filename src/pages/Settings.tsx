@@ -66,6 +66,29 @@ export function Settings() {
           </button>
         </div>
       </Group>
+      <Group title="ออกเสียงใน Classic">
+        <p className="text-sm text-slate-500">โหมด Classic อ่านคำอังกฤษ ความหมายไทย หรือทั้งสองตามที่เลือก</p>
+        <div className="grid grid-cols-3 gap-2">
+          {(
+            [
+              ["en", "อังกฤษ"],
+              ["th", "ไทย"],
+              ["both", "ทั้งสอง"],
+            ] as const
+          ).map(([value, label]) => (
+            <button
+              key={value}
+              type="button"
+              className={`min-h-11 rounded-2xl text-sm font-semibold ${
+                settings.quizSpeakLang === value ? "bg-blue-600 text-white" : "bg-white/70 dark:bg-white/10"
+              }`}
+              onClick={() => update({ quizSpeakLang: value })}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </Group>
       <Toggle
         label="Auto pronunciation"
         on={settings.autoPronounce}

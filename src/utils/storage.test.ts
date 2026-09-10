@@ -23,10 +23,10 @@ describe("storage", () => {
     expect(loadSettings().confirmSubmit).toBe(false);
   });
 
-  it("merges spellLetters default for older saved settings", () => {
-    expect(loadSettings().spellLetters).toBe(true);
-    saveSettings({ ...DEFAULT_SETTINGS, spellLetters: false });
-    expect(loadSettings().spellLetters).toBe(false);
+  it("merges quizSpeakLang default for older saved settings", () => {
+    expect(loadSettings().quizSpeakLang).toBe("both");
+    saveSettings({ ...DEFAULT_SETTINGS, quizSpeakLang: "th" });
+    expect(loadSettings().quizSpeakLang).toBe("th");
   });
 
   it("resets corrupted settings", () => {

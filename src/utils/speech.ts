@@ -1,4 +1,4 @@
-import type { VoiceAccent } from "../types/game";
+import type { QuizSpeakLang, VoiceAccent } from "../types/game";
 
 const THAI_LETTER: Record<string, string> = {
   A: "เอ",
@@ -163,6 +163,39 @@ export function speakEnglish(text: string, lang: VoiceAccent = "en-US"): void {
   try {
     window.speechSynthesis.cancel();
     enqueue(text, lang, 0.92);
+  } catch {
+    /* speech unavailable */
+  }
+}
+
+export function quizSpeechParts(
+  lang: QuizSpeakLang,
+  english: string,
+  thai: string,
+  allowEnglish: boolean,
+): { english?: string; thai?: string } {
+  const en = allowEnglish ? english.trim() : "";
+  const th = thai.trim();
+  if (lang === "en") return en ? { english: en } : {};
+  if (lang === "th") return th ? { thai: th } : {};
+  return {
+    ...(en ? { english: en } : {}),
+    ...(th ? { thai: th } : {}),
+  };
+}
+
+export function speakQuizAudio(
+  parts: { english?: string; thai?: string },
+  voice: VoiceAccent = "en-US",
+): void {
+  playGen += 1;
+  stopLetterAudio();
+  if (typeof window === "undefined" || !window.speechSynthesis) return;
+  if (!parts.english && !parts.thai) return;
+  try {
+    window.speechSynthesis.cancel();
+    if (parts.english) enqueue(parts.english, voice, 0.92);
+    if (parts.thai) enqueue(parts.thai, "th-TH", 1);
   } catch {
     /* speech unavailable */
   }

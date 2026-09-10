@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { lettersOf, letterAudioSrc, spellingGuide } from "./speech";
+import { lettersOf, letterAudioSrc, quizSpeechParts, spellingGuide } from "./speech";
 
 describe("spellingGuide", () => {
   it("lists English letters for able", () => {
@@ -14,5 +14,19 @@ describe("spellingGuide", () => {
   it("points letter clips at the audio folder", () => {
     expect(letterAudioSrc("A")).toBe("/audio/a_letter.mp3");
     expect(letterAudioSrc("b")).toBe("/audio/b_letter.mp3");
+  });
+});
+
+describe("quizSpeechParts", () => {
+  it("speaks English then Thai when both are allowed", () => {
+    expect(quizSpeechParts("both", "able", "สามารถ", true)).toEqual({
+      english: "able",
+      thai: "สามารถ",
+    });
+  });
+
+  it("omits English on Thai-to-English items so the answer is not spoken", () => {
+    expect(quizSpeechParts("both", "able", "สามารถ", false)).toEqual({ thai: "สามารถ" });
+    expect(quizSpeechParts("en", "able", "สามารถ", false)).toEqual({});
   });
 });

@@ -11,7 +11,8 @@ import { loadSettings } from "../utils/storage";
 import { playSfx } from "../utils/sfx";
 import { categoryLabelTh } from "../data/categoryLabels";
 import { displayMeaning } from "../utils/questionGenerator";
-import type { GameMode } from "../types/game";
+import { quizSpeechParts, speakQuizAudio } from "../utils/speech";
+import type { GameMode, QuizQuestion, QuizSpeakLang } from "../types/game";
 import type { CEFRLevel } from "../types/word";
 
 const LETTERS = ["A", "B", "C", "D"];
@@ -48,7 +49,22 @@ export function GamePlay({
     questions: mode === "daily" ? daily.questions : undefined,
     preferWeak,
   });
-  const { speak, stop } = useSpeech(settings.speech, settings.voice);
+  const { stop } = useSpeech(settings.speech, settings.voice);
+
+  function questionSpeech(question: QuizQuestion) {
+    const lang: QuizSpeakLang = mode === "classic" ? settings.quizSpeakLang : "en";
+    return quizSpeechParts(
+      lang,
+      question.targetWord,
+      displayMeaning(question.meaningTh),
+      question.type !== "thToEn",
+    );
+  }
+
+  function playQuestionSpeech(question: QuizQuestion) {
+    if (!settings.speech) return;
+    speakQuizAudio(questionSpeech(question), settings.voice);
+  }
   const challengeStart = mode === "challenge";
   const lifelines = mode !== "challenge";
 
@@ -99,11 +115,13 @@ export function GamePlay({
   }, [phase, round, quiz.index, mode, totalMs, timed]);
 
   useEffect(() => {
-    if (phase === "question" && settings.autoPronounce && quiz.current && quiz.current.type !== "thToEn") {
-      speak(quiz.current.speakText);
+    if (phase === "question" && settings.autoPronounce && quiz.current) {
+      const parts = questionSpeech(quiz.current);
+      if (parts.english || parts.thai) playQuestionSpeech(quiz.current);
     }
     return () => stop();
-  }, [phase, quiz.current, settings.autoPronounce, speak, stop]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, quiz.current, settings.autoPronounce, settings.quizSpeakLang, settings.voice, stop]);
 
   async function finishChoice(choiceId: string | null, timeout = false) {
     if (locked || !quiz.current) return;
@@ -157,6 +175,7 @@ export function GamePlay({
 
   const last = quiz.results[quiz.results.length - 1];
   const display = quiz.current;
+  const speechParts = questionSpeech(display);
   const questionNo = quiz.index + 1;
   const total = quiz.questions.length;
   const percent = Math.round((questionNo / total) * 100);
@@ -240,7 +259,9 @@ export function GamePlay({
           <QuizCard
             question={display}
             showHint={showHint}
-            onSpeak={display.type === "thToEn" ? undefined : () => speak(display.speakText)}
+            onSpeak={
+              speechParts.english || speechParts.thai ? () => playQuestionSpeech(display) : undefined
+            }
           />
         </div>
 
