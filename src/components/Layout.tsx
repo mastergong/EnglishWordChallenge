@@ -17,7 +17,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <div className="mx-auto grid max-w-lg grid-cols-6 gap-0.5 px-1 py-2 text-[10px] font-semibold">
           <Tab to="/" label="Home" icon="🏠" />
           <Tab to="/daily" label="Daily" icon="📅" />
-          <Tab to="/map" label="Map" icon="🧠" />
+          <Tab to="/map" label="Map" icon="🗺️" />
           <Tab to="/practice" label="Practice" icon="📖" />
           <Tab to="/stats" label="Stats" icon="📊" />
           <Tab to="/settings" label="Settings" icon="⚙️" />

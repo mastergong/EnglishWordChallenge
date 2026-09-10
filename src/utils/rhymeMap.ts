@@ -127,6 +127,11 @@ export function buildRhymeFamilies(words: Word[], minSize = 2): RhymeFamily[] {
     .sort((a, b) => b.words.length - a.words.length || a.key.localeCompare(b.key));
 }
 
+export function familyTitle(family: RhymeFamily): string {
+  if (/^[a-z']{2,8}$/.test(family.key)) return `-${family.key}`;
+  return family.words[0]?.word ?? family.key;
+}
+
 export function findFamily(families: RhymeFamily[], query: string): RhymeFamily | undefined {
   const q = query.trim().toLowerCase();
   if (!q) return families[0];

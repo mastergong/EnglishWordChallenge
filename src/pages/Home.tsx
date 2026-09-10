@@ -117,7 +117,7 @@ export function Home() {
         to="/map"
         className="flex min-h-12 w-full items-center justify-center rounded-3xl bg-white/80 font-bold shadow dark:bg-white/10"
       >
-        🧠 Mind Map · ice ⇒ rice ⇒ price
+        🧠 คำที่เสียงคล้ายกัน · ice → rice → price
       </Link>
 
       <button

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildRhymeFamilies, rhymeKey } from "./rhymeMap";
+import { buildRhymeFamilies, familyTitle, rhymeKey } from "./rhymeMap";
 import type { Word } from "../types/word";
 
 function stub(id: number, word: string, ipa = `/${word}/`): Word {
@@ -32,5 +32,6 @@ describe("rhyme mind map", () => {
     ]);
     const ice = families.find((family) => family.words.some((item) => item.word === "ice"));
     expect(ice?.words.map((item) => item.word)).toEqual(["ice", "rice", "price"]);
+    expect(familyTitle(ice!)).toMatch(/ice|aɪs|-/);
   });
 });

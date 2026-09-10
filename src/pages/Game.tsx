@@ -173,25 +173,30 @@ function GamePlay() {
             <span className="font-game-display text-xs font-extrabold text-sky-700">{quiz.score}</span>
           </div>
         </div>
-        <div className="mt-2 flex items-center justify-between">
-          <div className="inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-blue-100/80 px-3 py-1 text-xs font-bold tracking-wide text-blue-700 shadow-sm">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-blue-500" />
-            <span>
+        <div className="mt-2 flex items-center justify-between gap-2">
+          <div className="inline-flex min-w-0 items-center gap-1.5 rounded-full border border-blue-200 bg-blue-100/80 px-3 py-1 text-xs font-bold tracking-wide text-blue-700 shadow-sm">
+            <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-blue-500" />
+            <span className="truncate">
               {display.level} • หมวด{categoryLabelTh(display.category)}
             </span>
           </div>
-          {quiz.streak > 0 ? (
-            <span className="flex items-center gap-1 text-[11px] font-semibold text-slate-400">
-              <svg className="h-3.5 w-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              คะแนน x2
-            </span>
-          ) : null}
+          <div className="flex shrink-0 items-center gap-2">
+            {quiz.streak > 0 ? (
+              <span className="flex items-center gap-1 text-[11px] font-semibold text-slate-400">
+                <svg className="h-3.5 w-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                คะแนน x2
+              </span>
+            ) : null}
+            {timed ? (
+              <Timer remainingMs={phase === "question" ? remainingMs : 0} totalMs={totalMs} compact />
+            ) : null}
+          </div>
         </div>
       </header>
 
@@ -233,12 +238,6 @@ function GamePlay() {
             </p>
           ) : null}
         </section>
-
-        {timed ? (
-          <div className="shrink-0 py-1">
-            <Timer remainingMs={phase === "question" ? remainingMs : 0} totalMs={totalMs} />
-          </div>
-        ) : null}
       </main>
 
       <footer className="relative z-10 shrink-0 border-t border-slate-200/70 bg-white/90 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 shadow-2xl backdrop-blur-md">
