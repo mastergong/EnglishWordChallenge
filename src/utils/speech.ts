@@ -52,7 +52,43 @@ function enqueue(text: string, lang: string, rate: number): void {
   window.speechSynthesis.speak(utterance);
 }
 
+let playGen = 0;
+let letterAudio: HTMLAudioElement | null = null;
+
+export function letterAudioSrc(letter: string): string {
+  const base = import.meta.env.BASE_URL || "/";
+  const prefix = base.endsWith("/") ? base : `${base}/`;
+  return `${prefix}audio/${letter.toLowerCase()}_letter.mp3`;
+}
+
+function stopLetterAudio(): void {
+  if (!letterAudio) return;
+  letterAudio.pause();
+  letterAudio.src = "";
+  letterAudio = null;
+}
+
+function playLetterFile(src: string, gen: number): Promise<void> {
+  return new Promise((resolve) => {
+    if (typeof Audio === "undefined" || gen !== playGen) {
+      resolve();
+      return;
+    }
+    const audio = new Audio(src);
+    letterAudio = audio;
+    const done = () => {
+      if (letterAudio === audio) letterAudio = null;
+      resolve();
+    };
+    audio.addEventListener("ended", done);
+    audio.addEventListener("error", done);
+    void audio.play().catch(done);
+  });
+}
+
 export function speakEnglish(text: string, lang: VoiceAccent = "en-US"): void {
+  playGen += 1;
+  stopLetterAudio();
   if (typeof window === "undefined" || !window.speechSynthesis) return;
   try {
     window.speechSynthesis.cancel();
@@ -62,23 +98,23 @@ export function speakEnglish(text: string, lang: VoiceAccent = "en-US"): void {
   }
 }
 
-/** Spell letters in Thai names, then read the English word. */
-export function speakPracticeWord(word: string, lang: VoiceAccent = "en-US", spell = true): void {
-  if (typeof window === "undefined" || !window.speechSynthesis) return;
+/** Play letter clips from /audio, then read the English word. */
+export async function speakPracticeWord(word: string, lang: VoiceAccent = "en-US", spell = true): Promise<void> {
+  const gen = ++playGen;
+  stopLetterAudio();
   try {
-    window.speechSynthesis.cancel();
-    if (spell) {
-      const guide = spellingGuide(word);
-      if (guide.length) {
-        const voices = window.speechSynthesis.getVoices();
-        const thaiVoice = pickVoice(voices, "th-TH");
-        if (thaiVoice) {
-          enqueue(guide.map((item) => item.thai).join(" "), "th-TH", 0.82);
-        } else {
-          enqueue(guide.map((item) => item.letter).join(", "), lang, 0.72);
-        }
-      }
+    window.speechSynthesis?.cancel();
+  } catch {
+    /* ignore */
+  }
+  if (spell) {
+    for (const letter of lettersOf(word)) {
+      if (gen !== playGen) return;
+      await playLetterFile(letterAudioSrc(letter), gen);
     }
+  }
+  if (gen !== playGen) return;
+  try {
     enqueue(word, lang, 0.92);
   } catch {
     /* speech unavailable */
@@ -86,6 +122,8 @@ export function speakPracticeWord(word: string, lang: VoiceAccent = "en-US", spe
 }
 
 export function cancelSpeech(): void {
+  playGen += 1;
+  stopLetterAudio();
   try {
     window.speechSynthesis?.cancel();
   } catch {

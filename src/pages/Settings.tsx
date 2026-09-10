@@ -72,7 +72,7 @@ export function Settings() {
         onClick={() => update({ autoPronounce: !settings.autoPronounce })}
       />
       <Toggle
-        label="สะกดทีละตัวตอนฝึก (เอ บี เอล อี)"
+        label="สะกดทีละตัวตอนฝึก (ไฟล์เสียงตัวอักษร)"
         on={settings.spellLetters}
         onClick={() => update({ spellLetters: !settings.spellLetters })}
       />
