@@ -22,12 +22,23 @@ root.render(
   </div>,
 );
 
-void ensureWords().then(() => {
-  root.render(
-    <StrictMode>
-      <HashRouter>
-        <App />
-      </HashRouter>
-    </StrictMode>,
-  );
-});
+void ensureWords()
+  .then(() => {
+    root.render(
+      <StrictMode>
+        <HashRouter>
+          <App />
+        </HashRouter>
+      </StrictMode>,
+    );
+  })
+  .catch(() => {
+    root.render(
+      <div className="flex min-h-dvh flex-col items-center justify-center gap-3 px-6 text-center font-semibold text-blue-700">
+        <p>โหลดคำศัพท์ไม่สำเร็จ</p>
+        <button type="button" className="rounded-2xl bg-blue-600 px-4 py-2 text-white" onClick={() => window.location.reload()}>
+          ลองใหม่
+        </button>
+      </div>,
+    );
+  });

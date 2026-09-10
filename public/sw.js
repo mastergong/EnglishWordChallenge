@@ -1,4 +1,4 @@
-const CACHE = "ewc-mobile-v1";
+const CACHE = "ewc-mobile-v2";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(self.skipWaiting());
