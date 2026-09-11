@@ -11,7 +11,7 @@ import { loadSettings } from "../utils/storage";
 import { playSfx } from "../utils/sfx";
 import { categoryLabelTh } from "../data/categoryLabels";
 import { displayMeaning } from "../utils/questionGenerator";
-import { quizSpeechParts, speakQuizAudio } from "../utils/speech";
+import { choiceSpeechParts, quizSpeechParts, speakQuizAudio } from "../utils/speech";
 import type { GameMode, QuizQuestion, QuizSpeakLang } from "../types/game";
 import type { CEFRLevel } from "../types/word";
 
@@ -50,8 +50,15 @@ export function GamePlay({
     preferWeak,
   });
   const { stop } = useSpeech(settings.speech, settings.voice);
+  const speakOnChoice = mode === "classic" && settings.quizSpeakLang === "both";
 
   function questionSpeech(question: QuizQuestion) {
+    if (speakOnChoice) {
+      if (question.type === "thToEn") {
+        return quizSpeechParts("th", question.targetWord, displayMeaning(question.meaningTh), false);
+      }
+      return quizSpeechParts("en", question.targetWord, displayMeaning(question.meaningTh), true);
+    }
     const lang: QuizSpeakLang = mode === "classic" ? settings.quizSpeakLang : "en";
     return quizSpeechParts(
       lang,
@@ -64,6 +71,11 @@ export function GamePlay({
   function playQuestionSpeech(question: QuizQuestion) {
     if (!settings.speech) return;
     speakQuizAudio(questionSpeech(question), settings.voice);
+  }
+
+  function playChoiceSpeech(label: string) {
+    if (!settings.speech || !speakOnChoice) return;
+    speakQuizAudio(choiceSpeechParts(label), settings.voice);
   }
   const challengeStart = mode === "challenge";
   const lifelines = mode !== "challenge";
@@ -115,13 +127,14 @@ export function GamePlay({
   }, [phase, round, quiz.index, mode, totalMs, timed]);
 
   useEffect(() => {
+    if (speakOnChoice) return () => stop();
     if (phase === "question" && settings.autoPronounce && quiz.current) {
       const parts = questionSpeech(quiz.current);
       if (parts.english || parts.thai) playQuestionSpeech(quiz.current);
     }
     return () => stop();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, quiz.current, settings.autoPronounce, settings.quizSpeakLang, settings.voice, stop]);
+  }, [phase, quiz.current, settings.autoPronounce, settings.quizSpeakLang, settings.voice, speakOnChoice, stop]);
 
   async function finishChoice(choiceId: string | null, timeout = false) {
     if (locked || !quiz.current) return;
@@ -130,9 +143,19 @@ export function GamePlay({
     const leftover = remainingMs;
     const outcome = quiz.answer(choiceId, leftover, timeout);
     if (!outcome) return;
-    if (outcome.result.outcome === "correct") void playSfx("correct", settings.sound);
-    if (outcome.result.outcome === "wrong") void playSfx("wrong", settings.sound);
-    if (outcome.result.outcome === "timeout") void playSfx("timeout", settings.sound);
+    if (outcome.result.outcome === "correct") {
+      void playSfx("correct", settings.sound);
+      const label = quiz.current.choices.find((choice) => choice.id === choiceId)?.label;
+      if (label) playChoiceSpeech(label);
+    }
+    if (outcome.result.outcome === "wrong") {
+      void playSfx("wrong", settings.sound);
+      stop();
+    }
+    if (outcome.result.outcome === "timeout") {
+      void playSfx("timeout", settings.sound);
+      stop();
+    }
     setPhase("feedback");
     if (outcome.done && outcome.summary) {
       persistLastResult(outcome.summary);

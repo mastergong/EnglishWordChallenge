@@ -67,7 +67,9 @@ export function Settings() {
         </div>
       </Group>
       <Group title="ออกเสียงใน Classic">
-        <p className="text-sm text-slate-500">โหมด Classic อ่านคำอังกฤษ ความหมายไทย หรือทั้งสองตามที่เลือก</p>
+        <p className="text-sm text-slate-500">
+          อังกฤษหรือไทยอ่านตอนขึ้นคำถาม · ทั้งสองอ่านปุ่มที่กด ถ้าตอบผิดจะไม่อ่าน
+        </p>
         <div className="grid grid-cols-3 gap-2">
           {(
             [

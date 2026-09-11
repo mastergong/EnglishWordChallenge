@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { lettersOf, letterAudioSrc, quizSpeechParts, spellingGuide } from "./speech";
+import { choiceSpeechParts, lettersOf, letterAudioSrc, quizSpeechParts, spellingGuide } from "./speech";
 
 describe("spellingGuide", () => {
   it("lists English letters for able", () => {
@@ -28,5 +28,12 @@ describe("quizSpeechParts", () => {
   it("omits English on Thai-to-English items so the answer is not spoken", () => {
     expect(quizSpeechParts("both", "able", "สามารถ", false)).toEqual({ thai: "สามารถ" });
     expect(quizSpeechParts("en", "able", "สามารถ", false)).toEqual({});
+  });
+});
+
+describe("choiceSpeechParts", () => {
+  it("reads English choice labels in English and Thai labels in Thai", () => {
+    expect(choiceSpeechParts("book")).toEqual({ english: "book" });
+    expect(choiceSpeechParts("หนังสือ")).toEqual({ thai: "หนังสือ" });
   });
 });
