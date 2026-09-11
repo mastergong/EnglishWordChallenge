@@ -12,6 +12,16 @@ export type WordProgress = {
   consecutiveCorrect: number;
 };
 
+export type DailyHistoryEntry = {
+  date: string;
+  bestScore: number;
+  lastScore: number;
+  correct: number;
+  total: number;
+  accuracy: number;
+  plays: number;
+};
+
 export type DailyChallengeState = {
   date: string;
   completed: boolean;

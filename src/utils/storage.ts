@@ -3,10 +3,12 @@ import { DEFAULT_SETTINGS } from "../types/game";
 import type {
   AppStatistics,
   DailyChallengeState,
+  DailyHistoryEntry,
   DailyStreakState,
   WordProgress,
 } from "../types/statistics";
 import { DEFAULT_DAILY_STREAK, DEFAULT_STATISTICS } from "../types/statistics";
+import { dailyHistoryFromGames } from "./dailyHistory";
 
 const KEYS = {
   settings: "ewc.settings",
@@ -14,6 +16,7 @@ const KEYS = {
   wordProgress: "ewc.wordProgress",
   dailyChallenge: "ewc.dailyChallenge",
   dailyStreak: "ewc.dailyStreak",
+  dailyHistory: "ewc.dailyHistory",
 } as const;
 
 function canUseStorage(): boolean {
@@ -139,6 +142,29 @@ export function loadDailyStreak(): DailyStreakState {
 
 export function saveDailyStreak(state: DailyStreakState): void {
   writeJson(KEYS.dailyStreak, state);
+}
+
+function isDailyHistory(value: unknown): value is DailyHistoryEntry[] {
+  return (
+    Array.isArray(value) &&
+    value.every(
+      (item) =>
+        Boolean(item) &&
+        typeof item === "object" &&
+        typeof (item as DailyHistoryEntry).date === "string" &&
+        typeof (item as DailyHistoryEntry).bestScore === "number",
+    )
+  );
+}
+
+export function loadDailyHistory(): DailyHistoryEntry[] {
+  const stored = readJson<DailyHistoryEntry[]>(KEYS.dailyHistory, [], isDailyHistory);
+  if (stored.length) return stored;
+  return dailyHistoryFromGames(loadStatistics().gameHistory);
+}
+
+export function saveDailyHistory(history: DailyHistoryEntry[]): void {
+  writeJson(KEYS.dailyHistory, history.slice(0, 60));
 }
 
 export function resetAllProgress(): void {

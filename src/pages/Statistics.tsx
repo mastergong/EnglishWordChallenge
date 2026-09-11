@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { ProgressBar } from "../components/ProgressBar";
 import { useStatistics } from "../hooks/useStatistics";
+import { loadDailyHistory } from "../utils/storage";
+import { DailyScoreList } from "../components/DailyScoreList";
+import { localDateKey } from "../utils/random";
 import { CEFR_LEVELS } from "../types/word";
 
 export function StatisticsPage() {
@@ -36,6 +39,12 @@ export function StatisticsPage() {
             : `${level}    ยังไม่เล่น`;
           return <ProgressBar key={level} label={label} value={row.accuracy} />;
         })}
+      </section>
+
+      <section>
+        <h2 className="mb-2 font-bold">Daily · คะแนนแต่ละวัน</h2>
+        <p className="mb-2 text-xs text-slate-500">คะแนนสูงสุดของวัน · และผลรอบล่าสุด</p>
+        <DailyScoreList history={loadDailyHistory()} today={localDateKey()} limit={30} />
       </section>
 
       <section>

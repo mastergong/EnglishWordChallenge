@@ -3,7 +3,9 @@ import { readLastResult } from "../hooks/useQuiz";
 import { loadWords } from "../utils/loadWords";
 import { PronunciationButton } from "../components/PronunciationButton";
 import { speakEnglish } from "../utils/speech";
-import { loadSettings } from "../utils/storage";
+import { loadDailyHistory, loadSettings } from "../utils/storage";
+import { DailyScoreList } from "../components/DailyScoreList";
+import { localDateKey } from "../utils/random";
 
 export function Result() {
   const result = readLastResult();
@@ -34,6 +36,12 @@ export function Result() {
         <Card label="Best Streak" value={String(result.bestStreak)} />
         <Card label="Level" value={String(result.level)} />
       </section>
+      {result.mode === "daily" ? (
+        <section>
+          <h2 className="mb-2 font-bold">Daily · คะแนนรายวัน</h2>
+          <DailyScoreList history={loadDailyHistory()} today={localDateKey()} limit={14} />
+        </section>
+      ) : null}
       <section>
         <h2 className="mb-2 font-bold">Words to Review · ควรทบทวน</h2>
         {wrong.length === 0 ? (
@@ -60,10 +68,10 @@ export function Result() {
         )}
       </section>
       <Link
-        to="/"
+        to={result.mode === "daily" ? "/daily" : "/"}
         className="flex min-h-12 items-center justify-center rounded-3xl bg-blue-600 font-bold text-white"
       >
-        Home
+        {result.mode === "daily" ? "Daily อีกครั้ง" : "Home"}
       </Link>
     </div>
   );

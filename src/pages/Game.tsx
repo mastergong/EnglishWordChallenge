@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { AnswerButton } from "../components/AnswerButton";
 import { Countdown } from "../components/Countdown";
+import { DailyScoreList } from "../components/DailyScoreList";
 import { QuizCard } from "../components/QuizCard";
 import { Timer } from "../components/Timer";
 import { persistLastResult, useQuiz } from "../hooks/useQuiz";
@@ -65,13 +66,13 @@ export function GamePlay({
     if (!settings.speech) return;
     speakQuizAudio(questionSpeech(question), settings.voice);
   }
-  const challengeStart = mode === "challenge";
+  const prestart = mode === "challenge" || mode === "daily";
   const lifelines = mode !== "challenge";
 
   const [phase, setPhase] = useState<"countdown" | "question" | "feedback">(
-    challengeStart ? "countdown" : "question",
+    prestart ? "countdown" : "question",
   );
-  const [count, setCount] = useState(settings.countdownSec as number);
+  const [count, setCount] = useState(mode === "daily" ? 10 : (settings.countdownSec as number));
   const [locked, setLocked] = useState(false);
   const [picked, setPicked] = useState<string | null>(null);
   const [hiddenIds, setHiddenIds] = useState<string[]>([]);
@@ -136,7 +137,7 @@ export function GamePlay({
     setPhase("feedback");
     if (outcome.done && outcome.summary) {
       persistLastResult(outcome.summary);
-      if (mode === "daily") daily.complete(outcome.summary.score);
+      if (mode === "daily") daily.complete(outcome.summary);
       window.setTimeout(() => {
         void playSfx("complete", settings.sound);
         navigate("/result");
@@ -252,7 +253,18 @@ export function GamePlay({
 
       <main className="relative z-10 flex min-h-0 flex-1 flex-col gap-2 overflow-hidden px-5 py-2">
         {phase === "countdown" ? (
-          <Countdown value={count} />
+          <div className="flex min-h-0 flex-1 flex-col items-center overflow-hidden">
+            <p className="mb-2 shrink-0 text-sm font-bold text-blue-600">
+              {mode === "daily" ? "Daily Challenge เริ่มใน" : "Challenge เริ่มใน"}
+            </p>
+            <Countdown value={count} />
+            {mode === "daily" ? (
+              <div className="mt-3 min-h-0 w-full flex-1 overflow-y-auto pb-2">
+                <p className="mb-2 text-center text-xs font-bold text-slate-500">สรุปคะแนนรายวัน</p>
+                <DailyScoreList history={daily.history} today={daily.date} compact limit={14} />
+              </div>
+            ) : null}
+          </div>
         ) : (
           <>
         <div className="shrink-0">

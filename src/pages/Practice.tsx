@@ -9,10 +9,13 @@ import { dueWords, nextReviewAfterAnswer } from "../utils/spacedRepetition";
 import type { AppSettings } from "../types/game";
 import type { Word } from "../types/word";
 
+const WORD_PAUSE_MS = 1400;
+
 export function Practice() {
   const [params, setParams] = useSearchParams();
   const [settings, setSettings] = useState<AppSettings>(loadSettings());
   const [tick, setTick] = useState(0);
+  const [autoPlay, setAutoPlay] = useState(true);
   const all = loadWords();
   const progress = loadWordProgress();
   const weakOnly = params.get("weak") === "1";
@@ -37,6 +40,7 @@ export function Practice() {
   }, [all, due, dueOnly, progress, tick, weakOnly, wordId]);
 
   const [index, setIndex] = useState(0);
+  const [heardOnce, setHeardOnce] = useState(false);
   const word = queue[index] ?? queue[0];
 
   useEffect(() => {
@@ -44,16 +48,52 @@ export function Practice() {
   }, [dueOnly, weakOnly, wordId]);
 
   useEffect(() => {
-    if (!word || !settings.speech) return undefined;
-    if (settings.spellLetters && !letterAudioReady()) return undefined;
+    if (!word) return undefined;
+    const canSpell = !settings.spellLetters || letterAudioReady() || heardOnce;
+    if (autoPlay) {
+      if (settings.speech && settings.spellLetters && !canSpell) return undefined;
+      let cancelled = false;
+      void (async () => {
+        if (settings.speech) {
+          await speakPracticeWord(word.word, settings.voice, settings.spellLetters);
+        }
+        if (cancelled) return;
+        await new Promise((resolve) => window.setTimeout(resolve, WORD_PAUSE_MS));
+        if (cancelled) return;
+        setIndex((value) => (queue.length ? (value + 1) % queue.length : 0));
+      })();
+      return () => {
+        cancelled = true;
+        cancelSpeech();
+      };
+    }
+    if (!settings.speech) return undefined;
+    if (settings.spellLetters && !canSpell) return undefined;
     void speakPracticeWord(word.word, settings.voice, settings.spellLetters);
     return () => cancelSpeech();
-  }, [word?.id, settings.speech, settings.voice, settings.spellLetters]);
+  }, [
+    word?.id,
+    settings.speech,
+    settings.voice,
+    settings.spellLetters,
+    autoPlay,
+    heardOnce,
+    queue.length,
+  ]);
 
   function toggleSpell() {
     const next = { ...loadSettings(), spellLetters: !settings.spellLetters };
     saveSettings(next);
     setSettings(next);
+  }
+
+  function toggleAuto() {
+    setAutoPlay((on) => {
+      const next = !on;
+      if (next) setHeardOnce(true);
+      else cancelSpeech();
+      return next;
+    });
   }
 
   function setFilter(next: { due?: boolean; weak?: boolean }) {
@@ -113,15 +153,28 @@ export function Practice() {
     <div className="space-y-4">
       <h1 className="text-3xl font-black">Practice · ฝึกคำศัพท์</h1>
       <p className="text-sm text-slate-500">
-        {settings.spellLetters
-          ? "แตะ 🔊 ฟังสะกด เพื่อเล่นไฟล์ตัวอักษรทีละตัว แล้วค่อยอ่านทั้งคำ"
-          : "ฟังคำภาษาอังกฤษ และดูว่ามีตัวอักษรอะไรบ้าง"}
+        {autoPlay && settings.spellLetters && !heardOnce
+          ? "แตะ 🔊 ฟังสะกด ครั้งแรก เพื่อเริ่มเล่นอัตโนมัติ แล้วจะเปลี่ยนคำเอง"
+          : autoPlay
+            ? "เล่นอัตโนมัติ: สะกดแล้วอ่านทั้งคำ จากนั้นเว้นจังหวะแล้วไปคำถัดไป"
+            : settings.spellLetters
+              ? "แตะ 🔊 ฟังสะกด เพื่อเล่นไฟล์ตัวอักษรทีละตัว แล้วค่อยอ่านทั้งคำ"
+              : "ฟังคำภาษาอังกฤษ และดูว่ามีตัวอักษรอะไรบ้าง"}
       </p>
       <div className="grid grid-cols-3 gap-2">
         <FilterChip label={`วันนี้ ${due.length}`} active={dueOnly} onClick={() => setFilter({ due: true })} />
         <FilterChip label="คำอ่อน" active={weakOnly} onClick={() => setFilter({ weak: true })} />
         <FilterChip label="ทั้งหมด" active={!dueOnly && !weakOnly && !wordId} onClick={() => setFilter({})} />
       </div>
+      <button
+        type="button"
+        onClick={toggleAuto}
+        className="flex min-h-12 w-full items-center justify-between rounded-2xl bg-white px-4 font-semibold shadow dark:bg-white/10"
+        aria-pressed={autoPlay}
+      >
+        เล่นอัตโนมัติ · เปลี่ยนคำเอง
+        <span className={autoPlay ? "text-blue-600" : "text-slate-400"}>{autoPlay ? "ON" : "OFF"}</span>
+      </button>
       <button
         type="button"
         onClick={toggleSpell}
@@ -136,7 +189,11 @@ export function Practice() {
       <WordCard
         word={word}
         speakLabel={settings.spellLetters ? "ฟังสะกด" : "Listen"}
-        onSpeak={() => settings.speech && void speakPracticeWord(word.word, settings.voice, settings.spellLetters)}
+        onSpeak={() => {
+          if (!settings.speech) return;
+          setHeardOnce(true);
+          void speakPracticeWord(word.word, settings.voice, settings.spellLetters);
+        }}
         extra={
           <div className="flex w-full basis-full flex-col gap-3">
             <div className="rounded-2xl bg-blue-50 px-3 py-3 dark:bg-white/10">

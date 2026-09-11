@@ -43,25 +43,57 @@ function pickVoice(voices: SpeechSynthesisVoice[], lang: string): SpeechSynthesi
 }
 
 function enqueue(text: string, lang: string, rate: number): void {
-  if (typeof window === "undefined" || !window.speechSynthesis) return;
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = lang;
-  utterance.rate = rate;
-  const preferred = pickVoice(window.speechSynthesis.getVoices(), lang);
-  if (preferred) utterance.voice = preferred;
-  window.speechSynthesis.speak(utterance);
+  void speakUtterance(text, lang, rate, playGen);
+}
+
+function speakUtterance(text: string, lang: string, rate: number, gen: number): Promise<void> {
+  return new Promise((resolve) => {
+    if (typeof window === "undefined" || !window.speechSynthesis || gen !== playGen) {
+      resolve();
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = lang;
+    utterance.rate = rate;
+    const preferred = pickVoice(window.speechSynthesis.getVoices(), lang);
+    if (preferred) utterance.voice = preferred;
+    let settled = false;
+    const timeout = window.setTimeout(() => done(), Math.min(8000, 900 + text.length * 220));
+    const done = () => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timeout);
+      resolve();
+    };
+    utterance.onend = done;
+    utterance.onerror = done;
+    try {
+      window.speechSynthesis.speak(utterance);
+    } catch {
+      done();
+    }
+  });
 }
 
 let playGen = 0;
 let letterAudio: HTMLAudioElement | null = null;
 let audioCtx: AudioContext | null = null;
 let currentSource: AudioBufferSourceNode | null = null;
+const scheduledSources: AudioBufferSourceNode[] = [];
 const bufferCache = new Map<string, AudioBuffer>();
+const MIN_LETTER_MS = 420;
+const LETTER_TAIL_MS = 80;
+const LETTER_GAP_MS = 200;
 
 export function letterAudioSrc(letter: string): string {
   const base = import.meta.env.BASE_URL || "/";
   const prefix = base.endsWith("/") ? base : `${base}/`;
   return `${prefix}audio/${letter.toLowerCase()}_letter.mp3`;
+}
+
+export function letterPlaySlotMs(durationSec: number): number {
+  const audible = Number.isFinite(durationSec) ? durationSec * 1000 : 0;
+  return Math.max(MIN_LETTER_MS, Math.round(audible) + LETTER_TAIL_MS);
 }
 
 export function letterAudioReady(): boolean {
@@ -75,6 +107,14 @@ function stopLetterAudio(): void {
     /* already stopped */
   }
   currentSource = null;
+  while (scheduledSources.length) {
+    const source = scheduledSources.pop();
+    try {
+      source?.stop();
+    } catch {
+      /* already stopped */
+    }
+  }
   if (!letterAudio) return;
   letterAudio.pause();
   letterAudio.removeAttribute("src");
@@ -103,8 +143,16 @@ async function loadLetterBuffer(letter: string): Promise<AudioBuffer> {
   return buffer;
 }
 
+function cloneBuffer(ctx: AudioContext, buffer: AudioBuffer): AudioBuffer {
+  const copy = ctx.createBuffer(buffer.numberOfChannels, buffer.length, buffer.sampleRate);
+  for (let channel = 0; channel < buffer.numberOfChannels; channel += 1) {
+    copy.getChannelData(channel).set(buffer.getChannelData(channel));
+  }
+  return copy;
+}
+
 function playBuffer(buffer: AudioBuffer, gen: number): Promise<void> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     void getAudioContext().then((ctx) => {
       if (!ctx || gen !== playGen) {
         resolve();
@@ -112,17 +160,21 @@ function playBuffer(buffer: AudioBuffer, gen: number): Promise<void> {
       }
       const source = ctx.createBufferSource();
       currentSource = source;
-      source.buffer = buffer;
+      scheduledSources.push(source);
+      source.buffer = cloneBuffer(ctx, buffer);
       source.connect(ctx.destination);
-      source.onended = () => {
+      const holdMs = letterPlaySlotMs(buffer.duration);
+      const finish = () => {
         if (currentSource === source) currentSource = null;
         resolve();
       };
       try {
         source.start();
-      } catch (error) {
-        reject(error);
+      } catch {
+        finish();
+        return;
       }
+      window.setTimeout(finish, holdMs);
     });
   });
 }
@@ -140,9 +192,15 @@ function playLetterElement(src: string, gen: number): Promise<void> {
       if (letterAudio === audio) letterAudio = null;
       resolve();
     };
-    audio.addEventListener("ended", done);
-    audio.addEventListener("error", done);
-    void audio.play().catch(done);
+    const startWait = () => {
+      const holdMs = letterPlaySlotMs(Number.isFinite(audio.duration) ? audio.duration : 0.4);
+      void audio.play().then(() => {
+        window.setTimeout(done, holdMs);
+      }).catch(done);
+    };
+    if (audio.readyState >= 1) startWait();
+    else audio.addEventListener("loadedmetadata", startWait, { once: true });
+    audio.addEventListener("error", done, { once: true });
   });
 }
 
@@ -211,12 +269,12 @@ export async function speakPracticeWord(word: string, lang: VoiceAccent = "en-US
     for (const letter of lettersOf(word)) {
       if (gen !== playGen) return;
       await playOneLetter(letter, gen);
-      if (gen === playGen) await new Promise((resolve) => window.setTimeout(resolve, 80));
+      if (gen === playGen) await new Promise((resolve) => window.setTimeout(resolve, LETTER_GAP_MS));
     }
   }
   if (gen !== playGen) return;
   try {
-    enqueue(word, lang, 0.92);
+    await speakUtterance(word, lang, 0.92, gen);
   } catch {
     /* speech unavailable */
   }

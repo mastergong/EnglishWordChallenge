@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { lettersOf, letterAudioSrc, quizSpeechParts, spellingGuide } from "./speech";
+import { letterPlaySlotMs, lettersOf, letterAudioSrc, quizSpeechParts, spellingGuide } from "./speech";
 
 describe("spellingGuide", () => {
   it("lists English letters for able", () => {
@@ -14,6 +14,11 @@ describe("spellingGuide", () => {
   it("points letter clips at the audio folder", () => {
     expect(letterAudioSrc("A")).toBe("/audio/a_letter.mp3");
     expect(letterAudioSrc("b")).toBe("/audio/b_letter.mp3");
+  });
+
+  it("keeps a minimum slot so short letter clips are not cut off", () => {
+    expect(letterPlaySlotMs(0.12)).toBeGreaterThanOrEqual(420);
+    expect(letterPlaySlotMs(0.6)).toBeGreaterThan(600);
   });
 });
 

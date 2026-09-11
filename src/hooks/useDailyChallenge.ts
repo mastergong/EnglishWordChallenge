@@ -1,8 +1,16 @@
 import { generateDailyQuestions } from "../utils/questionGenerator";
 import { localDateKey } from "../utils/random";
-import { loadDailyChallenge, loadDailyStreak, saveDailyChallenge, saveDailyStreak } from "../utils/storage";
+import {
+  loadDailyChallenge,
+  loadDailyHistory,
+  loadDailyStreak,
+  saveDailyChallenge,
+  saveDailyHistory,
+  saveDailyStreak,
+} from "../utils/storage";
 import { daysBetween } from "../utils/random";
 import { loadWords } from "../utils/loadWords";
+import { upsertDailyHistory } from "../utils/dailyHistory";
 
 export function useDailyChallenge() {
   const date = localDateKey();
@@ -11,15 +19,25 @@ export function useDailyChallenge() {
   const state = loadDailyChallenge();
   const todayState = state?.date === date ? state : { date, completed: false, bestScore: 0, lastScore: 0 };
   const streak = loadDailyStreak();
+  const history = loadDailyHistory();
 
-  function complete(score: number) {
-    const bestScore = Math.max(todayState.bestScore, score);
+  function complete(play: { score: number; correct: number; total: number; accuracy: number }) {
+    const bestScore = Math.max(todayState.bestScore, play.score);
     saveDailyChallenge({
       date,
       completed: true,
       bestScore,
-      lastScore: score,
+      lastScore: play.score,
     });
+    saveDailyHistory(
+      upsertDailyHistory(loadDailyHistory(), {
+        date,
+        score: play.score,
+        correct: play.correct,
+        total: play.total,
+        accuracy: play.accuracy,
+      }),
+    );
     const previous = loadDailyStreak();
     if (previous.lastCompletedDate === date) {
       return { ...previous, bestScore };
@@ -35,5 +53,5 @@ export function useDailyChallenge() {
     return next;
   }
 
-  return { date, questions, todayState, streak, complete };
+  return { date, questions, todayState, streak, history, complete };
 }
