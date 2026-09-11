@@ -177,18 +177,7 @@ export function quizSpeechParts(
   const en = allowEnglish ? english.trim() : "";
   const th = thai.trim();
   if (lang === "en") return en ? { english: en } : {};
-  if (lang === "th") return th ? { thai: th } : {};
-  return {
-    ...(en ? { english: en } : {}),
-    ...(th ? { thai: th } : {}),
-  };
-}
-
-export function choiceSpeechParts(label: string): { english?: string; thai?: string } {
-  const text = label.trim();
-  if (!text) return {};
-  if (/[\u0E00-\u0E7F]/.test(text)) return { thai: text };
-  return { english: text };
+  return th ? { thai: th } : {};
 }
 
 export function speakQuizAudio(

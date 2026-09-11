@@ -80,7 +80,7 @@ export type GameResult = {
 
 export type ThemePreference = "light" | "dark" | "system";
 export type VoiceAccent = "en-US" | "en-GB";
-export type QuizSpeakLang = "en" | "th" | "both";
+export type QuizSpeakLang = "en" | "th";
 
 export type AppSettings = {
   countdownSec: 3 | 5 | 10 | 15;
@@ -106,7 +106,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   sound: true,
   speech: true,
   voice: "en-US",
-  quizSpeakLang: "both",
+  quizSpeakLang: "en",
   autoPronounce: true,
   theme: "system",
   adaptiveLearning: true,

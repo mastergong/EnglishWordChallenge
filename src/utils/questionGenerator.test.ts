@@ -170,6 +170,25 @@ describe("question generation", () => {
     expect(questions.some((q) => q.type === "thToEn")).toBe(true);
   });
 
+  it("can lock Classic to English-to-Thai or Thai-to-English", () => {
+    const en = generateQuestions({
+      words: sample,
+      count: 8,
+      adaptive: false,
+      rng: seededRandom(1),
+      questionType: "enToTh",
+    });
+    const th = generateQuestions({
+      words: sample,
+      count: 8,
+      adaptive: false,
+      rng: seededRandom(1),
+      questionType: "thToEn",
+    });
+    expect(en.every((q) => q.type === "enToTh")).toBe(true);
+    expect(th.every((q) => q.type === "thToEn")).toBe(true);
+  });
+
   it("makes daily challenge deterministic", () => {
     const a = generateDailyQuestions(sample, "2026-09-08", 5);
     const b = generateDailyQuestions(sample, "2026-09-08", 5);

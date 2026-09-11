@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { choiceSpeechParts, lettersOf, letterAudioSrc, quizSpeechParts, spellingGuide } from "./speech";
+import { lettersOf, letterAudioSrc, quizSpeechParts, spellingGuide } from "./speech";
 
 describe("spellingGuide", () => {
   it("lists English letters for able", () => {
@@ -18,22 +18,13 @@ describe("spellingGuide", () => {
 });
 
 describe("quizSpeechParts", () => {
-  it("speaks English then Thai when both are allowed", () => {
-    expect(quizSpeechParts("both", "able", "สามารถ", true)).toEqual({
-      english: "able",
-      thai: "สามารถ",
-    });
+  it("speaks only English or only Thai from the setting", () => {
+    expect(quizSpeechParts("en", "able", "สามารถ", true)).toEqual({ english: "able" });
+    expect(quizSpeechParts("th", "able", "สามารถ", true)).toEqual({ thai: "สามารถ" });
   });
 
-  it("omits English on Thai-to-English items so the answer is not spoken", () => {
-    expect(quizSpeechParts("both", "able", "สามารถ", false)).toEqual({ thai: "สามารถ" });
+  it("omits English when the answer would be spoken", () => {
     expect(quizSpeechParts("en", "able", "สามารถ", false)).toEqual({});
-  });
-});
-
-describe("choiceSpeechParts", () => {
-  it("reads English choice labels in English and Thai labels in Thai", () => {
-    expect(choiceSpeechParts("book")).toEqual({ english: "book" });
-    expect(choiceSpeechParts("หนังสือ")).toEqual({ thai: "หนังสือ" });
+    expect(quizSpeechParts("th", "able", "สามารถ", false)).toEqual({ thai: "สามารถ" });
   });
 });

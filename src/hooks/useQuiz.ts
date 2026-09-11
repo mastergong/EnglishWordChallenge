@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { GameMode, GameResult, QuestionResult, QuizQuestion } from "../types/game";
+import type { GameMode, GameResult, QuestionResult, QuestionType, QuizQuestion } from "../types/game";
 import type { CEFRLevel } from "../types/word";
 import { generateQuestions } from "../utils/questionGenerator";
 import { calcQuestionScore } from "../utils/scoring";
@@ -30,6 +30,9 @@ export function useQuiz(options: {
         ? Math.min(50, words.length)
         : settings.questionCount;
 
+  const questionType: QuestionType | undefined =
+    options.mode === "classic" ? (settings.quizSpeakLang === "th" ? "thToEn" : "enToTh") : undefined;
+
   const initialQuestions = useMemo(() => {
     if (options.questions) return options.questions;
     return generateQuestions({
@@ -39,8 +42,9 @@ export function useQuiz(options: {
       progress: loadWordProgress(),
       adaptive: settings.adaptiveLearning || options.mode === "adaptive",
       preferWeak: options.preferWeak || options.mode === "adaptive",
+      questionType,
     });
-  }, [options.level, options.mode, options.preferWeak, options.questions, questionCount, words]);
+  }, [options.level, options.mode, options.preferWeak, options.questions, questionCount, questionType, words]);
 
   const [questions] = useState(initialQuestions);
   const [index, setIndex] = useState(0);

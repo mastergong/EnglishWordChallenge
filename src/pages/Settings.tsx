@@ -68,14 +68,13 @@ export function Settings() {
       </Group>
       <Group title="ออกเสียงใน Classic">
         <p className="text-sm text-slate-500">
-          อังกฤษหรือไทยอ่านตอนขึ้นคำถาม · ทั้งสองอ่านปุ่มที่กด ถ้าตอบผิดจะไม่อ่าน
+          อังกฤษ: คำถามภาษาอังกฤษ คำตอบไทย · ไทย: คำถามภาษาไทย คำตอบอังกฤษ
         </p>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-2 gap-2">
           {(
             [
               ["en", "อังกฤษ"],
               ["th", "ไทย"],
-              ["both", "ทั้งสอง"],
             ] as const
           ).map(([value, label]) => (
             <button

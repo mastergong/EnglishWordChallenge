@@ -82,7 +82,11 @@ function isProgressMap(value: unknown): value is Record<string, WordProgress> {
 
 export function loadSettings(): AppSettings {
   const stored = readJson<AppSettings>(KEYS.settings, DEFAULT_SETTINGS, isSettings);
-  return { ...DEFAULT_SETTINGS, ...stored };
+  const merged = { ...DEFAULT_SETTINGS, ...stored };
+  if (merged.quizSpeakLang !== "en" && merged.quizSpeakLang !== "th") {
+    merged.quizSpeakLang = DEFAULT_SETTINGS.quizSpeakLang;
+  }
+  return merged;
 }
 
 export function saveSettings(settings: AppSettings): void {

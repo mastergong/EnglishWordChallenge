@@ -24,7 +24,7 @@ describe("storage", () => {
   });
 
   it("merges quizSpeakLang default for older saved settings", () => {
-    expect(loadSettings().quizSpeakLang).toBe("both");
+    expect(loadSettings().quizSpeakLang).toBe("en");
     saveSettings({ ...DEFAULT_SETTINGS, quizSpeakLang: "th" });
     expect(loadSettings().quizSpeakLang).toBe("th");
   });

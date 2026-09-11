@@ -223,10 +223,13 @@ export function generateQuestions(options: {
   adaptive?: boolean;
   rng?: RNG;
   preferWeak?: boolean;
+  questionType?: QuestionType;
 }): QuizQuestion[] {
   const rng = options.rng ?? Math.random;
   const selected = selectQuizWords({ ...options, rng });
-  return selected.map((word) => buildQuestion(word, options.words, pickQuestionType(rng), rng));
+  return selected.map((word) =>
+    buildQuestion(word, options.words, options.questionType ?? pickQuestionType(rng), rng),
+  );
 }
 
 export function pickQuestionType(rng: RNG): QuestionType {
